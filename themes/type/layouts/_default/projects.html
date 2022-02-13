@@ -1,0 +1,18 @@
+{{ define "main" }}
+	<main class='{{- .Params.category | default "default" -}}'>
+		<article class="content">
+			{{ if or .Title .Content }}
+				{{ with .Title }}<h1>{{ . }}</h1>{{ end }}
+				{{ with .Content }}{{ . }}{{ end }}
+			{{ end }}
+		</article>
+		<!-- <ul class="links">
+		{{ range .Paginator.Pages }}
+			<li{{ with .Params.project }} class="project"{{ end }}>
+				<a href="{{ .Permalink }}">{{ .Title }}</a>
+			</li>
+		{{ end }}
+		</ul> -->
+		
+	</main>
+{{ end }}

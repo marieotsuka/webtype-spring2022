@@ -1,0 +1,54 @@
+{{ define "main" }}
+	<main class="index">
+		<article>
+			<section>
+				{{.Content}}
+			
+				<!-- {{$posts := ($.Site.GetPage "section" "schedule").Pages.ByPublishDate.Reverse}}
+				{{ range $index, $element := first 1 $posts }}
+				
+
+				<h1>{{ .Title }}</h1>
+				<time>{{ .Date.Format "January 2, 2006" }}</time>
+				<div class="week content">
+					<div class="assignments">
+						<div class="row">
+							<h4>Class</h4>
+							<div class="item">{{.Content}}</div>
+						</div>
+						<div class="row">
+							<h4>Project</h4>
+							{{ with .Site.GetPage .Params.project }}
+								<div class="item"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
+							{{ end }}
+						</div>
+						{{ with .Site.GetPage .Params.exercise }}
+						<div class="row">
+							<h4>Exercise</h4>
+								<div class="item"><a href="{{ .Permalink }}">{{ .Title }}</a></div>						
+						</div>
+						{{ end }}
+						<div class="row">
+							<h4>Reading</h4>
+							<div class="item">{{ .Params.reading | markdownify }}</div>
+						</div>
+						<div class="row">
+							<h4>Tutorials</h4>
+							<div class="item">{{ .Params.tutorials | markdownify }}</div>
+						</div>
+						{{  with .Params.lectures}}
+						<div class="row">
+							<h4>Lectures</h4>
+							<div class="item">{{ . | markdownify }}</div>
+						</div>
+						{{ end }}
+					</div>
+					
+				</div>
+				{{ end }} -->
+			</section>
+
+		</article>
+	</main>
+
+{{ end }}

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web Type</title>
+    <link>https://webtype.htmlkitchen.net/</link>
+    <description>Recent content on Web Type</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://webtype.htmlkitchen.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Syllabus</title>
+      <link>https://webtype.htmlkitchen.net/syllabus/</link>
+      <pubDate>Tue, 25 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://webtype.htmlkitchen.net/syllabus/</guid>
+      <description>Course Information  WEB TYPE (RISD GRAPH-2313-01), Spring 2022 Thursdays 1:10–6:10pm 3 credit elective Marie Otsuka (motsuka@risd.edu) Hybrid model of in-person and remote meetings: see Schedule for details. Office Hours TBD  Course Description This course explores the intersection of typography and web design as a creative medium. By engaging with type that activates the capacities of browsers, we will push beyond “resonsive design” as a layout-based exercise and question what typography can “respond to” — whether user input, network conditions, or the physical environment.</description>
+    </item>
+    
+    <item>
+      <title>Various types of sites</title>
+      <link>https://webtype.htmlkitchen.net/resources/links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://webtype.htmlkitchen.net/resources/links/</guid>
+      <description>Below are links to webtype-type sites. The purpose here is to document a variety of web/type use rather than to showcase exemplary samples of content or aesthetics.
+Reading collections  The Avery Review HTML Output Critical Atlas of the Internet Justin McGuirk Poetic Computation Untold Stories Wendy36  Typographic web designs  Illuminating Radioactivity XXXI XXXI Intro to Coding Workshop Nathan Tokyo Z-Bau Typeforce Wattis Institute Shiraz Abdullahi Gallab: Headgear Synoptic Office: Chinese Type Archive Russian Type journal Dowse Museum Stedlijk Strelka Alumni Ball Het Nieuwe Institut PACKET Index Art Book Fair Kurimanzutto  Sites for Typefaces  Fem Type Untitled Sans Hypertext Google Fonts and Chinese Google Fonts and Korean Temporary State Alfatype Gimlet IBM Plex Recursive  Type as Form  Sweethearts Elswewhere Data Patterns Monomono studio YES YES YES Moonsick Gang  Interactive Text  place a stone clickclickclick 2013 Lisbon Architecture Triennale  Generators  Hello from Here Space Type Generator Letters from Sweden: Funkis ABC Metaflop Universal Sans  Type and Audio  Secousse Radio Laurel Halo Truth and Quantity Goertek Phase  Online Publications  Rhizome Triple Canopy Triple Canopy: The Binder and the Server E-flux The New Inquiry Rachel Rosenfelt: The New Inquiry The Intercept The Creative Independent Dan Michaelson / Jack Balkin: Sometimes it looks like a duck, sometimes it looks like a rabbit  Web Design Studios  Linked by Air Rumors Studio Studio Moniker Project Projects  General Website Collections  Hoverstates Hallo Internet Brutalist Websites Readymag  Classics  Rafael Rozendaal Jodi.</description>
+    </item>
+    
+    <item>
+      <title>Colophon</title>
+      <link>https://webtype.htmlkitchen.net/colophon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://webtype.htmlkitchen.net/colophon/</guid>
+      <description>This is the class website for Web Type at RISD, Spring 2022 with Marie Otsuka. It will be updated closer to the beginning of the spring semester.
+  </description>
+    </item>
+    
+    <item>
+      <title>Presentation</title>
+      <link>https://webtype.htmlkitchen.net/projects/presentation/</link>
+      <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://webtype.htmlkitchen.net/projects/presentation/</guid>
+      <description>Select a typographic topic of interest and its relationship with web / technology. Consider this as an opportunity to research something you’ve already been exploring, with a specific lense considering the context of the internet, websites, or tools.
+Some Possible Topics  An overview of Donald Knuth’s Metafont project The history of Optical Character Recognition and the Google Books archive The use of machine learning in categorizing typefaces The relationship of vertical scripts with CSS typesetting The design of multi-script fonts On bilingual typesetting A deep-dive into the design and use of a particular typeface  Requirements  Visual examples Research into the technology or concept About 15min, including questions to the class  </description>
+    </item>
+    
+    <item>
+      <title>Responsive Design</title>
+      <link>https://webtype.htmlkitchen.net/notes/06-responsive/</link>
+      <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://webtype.htmlkitchen.net/notes/06-responsive/</guid>
+      <description>A flexible typographic systems</description>
+    </item>
+    
+    <item>
+      <title>JavaScript</title>
+      <link>https://webtype.htmlkitchen.net/notes/07-javascript/</link>
+      <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://webtype.htmlkitchen.net/notes/07-javascript/</guid>
+      <description>Writing instructions</description>
+    </item>
+    
+    <item>
+      <title>jQuery and JSON</title>
+      <link>https://webtype.htmlkitchen.net/notes/08-jquery/</link>
+      <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://webtype.htmlkitchen.net/notes/08-jquery/</guid>
+      <description>Objects in JavaScript</description>
+    </item>
+    
+    <item>
+      <title>Variable Fonts</title>
+      <link>https://webtype.htmlkitchen.net/notes/03-variable-fonts/</link>
+      <pubDate>Thu, 25 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://webtype.htmlkitchen.net/notes/03-variable-fonts/</guid>
+      <description>Type Design Basics and Variable Fonts</description>
+    </item>
+    
+    <item>
+      <title>CSS Basics</title>
+      <link>https://webtype.htmlkitchen.net/notes/02-css/</link>
+      <pubDate>Fri, 05 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://webtype.htmlkitchen.net/notes/02-css/</guid>
+      <description>Basic syntax, inheritance, the cascade, and selectors</description>
+    </item>
+    
+    <item>
+      <title>Layouts and Structure</title>
+      <link>https://webtype.htmlkitchen.net/notes/03-layouts/</link>
+      <pubDate>Fri, 05 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://webtype.htmlkitchen.net/notes/03-layouts/</guid>
+      <description>Positioning, layouts, and responsive design</description>
+    </item>
+    
+    <item>
+      <title>Movement in CSS</title>
+      <link>https://webtype.htmlkitchen.net/notes/04-movement/</link>
+      <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://webtype.htmlkitchen.net/notes/04-movement/</guid>
+      <description>CSS transitions and animations</description>
+    </item>
+    
+    <item>
+      <title>HTML</title>
+      <link>https://webtype.htmlkitchen.net/notes/01-html/</link>
+      <pubDate>Thu, 25 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://webtype.htmlkitchen.net/notes/01-html/</guid>
+      <description>Semantic markup</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Web</title>
+      <link>https://webtype.htmlkitchen.net/notes/00-webintro/</link>
+      <pubDate>Thu, 25 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://webtype.htmlkitchen.net/notes/00-webintro/</guid>
+      <description>“[Artists] have to start understanding the anatomy of machines, the language of machines, their nature, and to re-route them into functioning in irregular ways to create works of art with the machines themselves, using their own means.”
+— Bruno Munari: 1938 Manifesto del Macchinismo
+ The Cloud It’s easy to think of the internet lacking any anatomy. It seems immaterial, with our common language around online activities like “virtual” sessions hosted in the “cloud.</description>
+    </item>
+    
+    <item>
+      <title>Common Errors</title>
+      <link>https://webtype.htmlkitchen.net/resources/common-errors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://webtype.htmlkitchen.net/resources/common-errors/</guid>
+      <description>Common errors to watch out for when troubleshooting:
+HTML  Are your HTML elements wrapped in open and close tags? Are your HTML elements properly nested? Do your attribute values have quotation marks around them? Are your directory paths correct? Double check your link syntax.  CSS  Do you have opening and closing brackets? Does your property and value pairs have colons in between them? Do you have a semicolon at the end of each declaration?</description>
+    </item>
+    
+    <item>
+      <title>Glossary</title>
+      <link>https://webtype.htmlkitchen.net/resources/html-terms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://webtype.htmlkitchen.net/resources/html-terms/</guid>
+      <description>Tag a tag is used for creating an element, which consists of the name of an HTML element in angle brackets. (i.e. &amp;lt;p&amp;gt; for paragraph.)
+Element An element is a part of a webpage. A typical element includes an opening tag with some attributes, enclosed text content, and a closing tag. (i.e. &amp;lt;h1 class=&amp;quot;news&amp;quot;&amp;gt; Heading &amp;lt;/h1&amp;gt;)
+Attribute An attribute extends a tag, changing its behavior or providing metadata. An attribute always has the form name=value, such as defining the link location (&amp;lt;a href=&amp;quot;index.</description>
+    </item>
+    
+    <item>
+      <title>Type Resources</title>
+      <link>https://webtype.htmlkitchen.net/resources/type-help/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://webtype.htmlkitchen.net/resources/type-help/</guid>
+      <description>Below are links to some resources for typefaces and typography.
+Typography Reference  Using Type in the Digital Realm with Indra Kupferschmid Matthew Butterick’s Practical Typography Typewolf Ellen Lupton&amp;rsquo;s Thinking with Type  Open Source  Open Foundry Future Fonts Use &amp;amp; Modify Libre Fonts by Womxn Velvetyne Collletttivo OSP Kitchen League of Movable Type Font Squirrel and webfont generator  Webfont distributors  Any foundry website Adobe Fonts Google Web Fonts  Should you self-host Google Fonts?</description>
+    </item>
+    
+    <item>
+      <title>Web Resources</title>
+      <link>https://webtype.htmlkitchen.net/resources/web-help/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://webtype.htmlkitchen.net/resources/web-help/</guid>
+      <description>Below are links to some resources for coding.
+Documentation  Mozilla Developer Network Devdocs  Guides  Publish Something Online What is a URL? Folder Poetry Dealing with files What goes in your head Why Coding Style Matters on Smashing Magazine (with useful list of validators) Writing your Best Code: HTML/CSS coding best practices and list of resources Google developer documentation style guide Sublime Text unofficial documentation &amp;amp; keyboard shortcuts  HTML  About Semantic HTML elements Overview of newer HTML tags Mix Blend Mode Nth-Child Paragraph Formatting on the Web Character sets: HTML Entities and Character Codes  CSS  CSS inheritance Shay Howe’s Guides CSS Basics Codecademy A guide to centering things Layout tutorials CSS Tricks Simple Grid Approach Articles on A List Apart: Content-out Layout | The Infinite Grid | Fluid Grids Using Style Tiles  Media Queries &amp;amp; Responsive design  Responsive Web Design Responsive Design Media Queries 7 Habits of Highly Effective Media Queries mediaqueri.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>JavaScript</title>
+	
+	
+
+	
+	<link rel="stylesheet" href="https://webtype.htmlkitchen.net/css/style.css">
+
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script>
+
+	
+	<script src='https://webtype.htmlkitchen.net/js/script.js'></script>
+</head>
+<body>
+	<div class="container">
+		<header>
+	
+	<nav>
+		<a href="https://webtype.htmlkitchen.net/" class="home">Web Type</a>
+		<div class="menu-icon">≡≡</div>
+		<div class="nav-links">
+			
+			
+				
+				<a href="/syllabus/" class="">Syllabus</a>
+			
+				
+				<a href="/schedule/" class="">Schedule</a>
+			
+				
+				<a href="/projects/" class="">Projects</a>
+			
+				
+				<a href="/notes/" class="active">Notes</a>
+			
+				
+				<a href="/resources/" class="">Resources</a>
+			
+				
+				<a href="/colophon/" class="">Colophon</a>
+			
+		</div>
+	</nav>
+	
+</header>
+
+		
+	<main class='default'>
+		<article id="javascript" class="content">
+			<h1>JavaScript</h1><p>Unlike HTML and CSS, Javascript is a programming language and can perform all sorts of actions. JavaScript is list of instructions to be interpreted and executed by your computer, either by a browser or other JavaScript interpreter (in the command line.)</p>
+<ul>
+<li>content, HTML</li>
+<li>form, CSS</li>
+<li><strong>behavior, JavaScript</strong></li>
+</ul>
+<p>Javascript can add interactivity to a page by manipulating the DOM (Document Object Model).</p>
+<ul>
+<li>Access the content of the page</li>
+<li>Modify the content of the page</li>
+<li>Program rules or instructions the browser can follow</li>
+<li>React to events triggered by the user or browser</li>
+<li>Use an API via HTTP(S)</li>
+</ul>
+<h2><a id="setup" class="anchor" ariaLabel="Anchor"></a> Setup</h2>
+<p>Like CSS, JavaScript can be included within the <code>&lt;head&gt;&lt;/head&gt;</code> your <code>html</code> file as well as linked as an external file. It can also be included at the bottom of your document, right before the closing <code>&lt;/body&gt;</code> tag.</p>
+<div class="highlight"><pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="c">&lt;!-- Internal JavaScript --&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">language</span><span class="o">=</span><span class="s">&#34;javascript&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/javascript&#34;</span><span class="p">&gt;</span>
+  <span class="nx">JavaScript</span> <span class="nx">code</span> 
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+
+
+<span class="c">&lt;!-- External JavaScript --&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">language</span><span class="o">=</span><span class="s">&#34;javascript&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;js/filename.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div><h2><a id="output" class="anchor" ariaLabel="Anchor"></a> Output</h2>
+<p>When you instruct Javascript to perform a task, it will usually give you some output, but it won’t automatically display it anywhere. You can verify your result by using the Console of your browser.</p>
+<div class="highlight"><pre class="chroma"><code class="language-JS" data-lang="JS"><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">language</span><span class="o">=</span><span class="s2">&#34;javascript&#34;</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text/javascript&#34;</span><span class="o">&gt;</span>
+	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Hello World!&#34;</span><span class="p">);</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+</code></pre></div><h2><a id="comments" class="anchor" ariaLabel="Anchor"></a> Comments</h2>
+<p>Comments are important to keep your code legible — they help you execute the program in your head.  They’re a great tool to keep track of the purpose of each line of your script. They also help future you (and others) read and understand your code.</p>
+<div class="highlight"><pre class="chroma"><code class="language-JS" data-lang="JS"><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">language</span><span class="o">=</span><span class="s2">&#34;javascript&#34;</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text/javascript&#34;</span><span class="o">&gt;</span>
+      
+      <span class="c1">// ”//” starts a single line comment.
+</span><span class="c1"></span>
+      <span class="cm">/* “/*” opens a multiline comment,
+</span><span class="cm">         and “*/</span><span class="err">”</span> <span class="nx">closes</span> <span class="nx">it</span><span class="p">.</span> <span class="o">*</span><span class="err">/</span>
+
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+</code></pre></div><h2><a id="syntax" class="anchor" ariaLabel="Anchor"></a> Syntax</h2>
+<p>A script is a series of instructions that a computer can follow one-by-one. Each individual instruction or step is known as a <em>statement</em>. Statements should end with a semicolon (<code>;</code>) Statements are composed of <em>values</em>, <em>operators</em>, <em>expression</em>, <em>keywords</em>, and <em>comments</em>. Semicolons are not needed after curly brackets <code>}</code> (except when it is an expression.)</p>
+<table>
+<thead>
+<tr>
+<th>type</th>
+<th>description</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>values</td>
+<td>Fixed values are called <em>literals</em>, such as numbers or texts (strings). Variable values are called <em>variables</em>.</td>
+<td><code>&quot;Hello!&quot;</code> <code>23</code></td>
+</tr>
+<tr>
+<td>operators</td>
+<td>Operators determine the relationship between the left and right side of the operand. There are different categories of operators</td>
+<td><code>var x = 5;</code> <code>(5 + 6) * 9;</code></td>
+</tr>
+<tr>
+<td>expression</td>
+<td>An expression is a combination of values, variables, and operators, which computes to a value. The computation is called an evaluation.</td>
+<td><code>(5 + 6) * 9;</code> <code>&quot;Web&quot; + &quot; &quot; + &quot;Design&quot;;</code> <code>x * 10;</code></td>
+</tr>
+<tr>
+<td>keywords</td>
+<td>Keywords are used to identify actions to be performed.</td>
+<td><code>let x = 5;</code></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre class="chroma"><code class="language-JS" data-lang="JS"><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">language</span><span class="o">=</span><span class="s2">&#34;javascript&#34;</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text/javascript&#34;</span><span class="o">&gt;</span>
+
+      <span class="nx">alert</span><span class="p">(</span><span class="s2">&#34;hi&#34;</span><span class="p">);</span>
+
+      <span class="k">if</span> <span class="p">(</span><span class="err">…</span><span class="p">)</span> <span class="p">{</span>
+       <span class="err">…</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+       <span class="err">…</span>
+      <span class="p">}</span>
+
+      <span class="kd">function</span> <span class="nx">foo</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="kd">let</span> <span class="nx">foo</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+      <span class="p">};</span> <span class="c1">// this is an expression
+</span><span class="c1"></span>
+      <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+         <span class="c1">// actions 
+</span><span class="c1"></span>      <span class="p">}</span> 
+
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+</code></pre></div><h2><a id="data-types" class="anchor" ariaLabel="Anchor"></a> Data types</h2>
+<h3><a id="strings" class="anchor" ariaLabel="Anchor"></a> Strings</h3>
+<p>In programming languages, any textual content that is not part of the programming instructions must be surrounded in single or double quotes (just make sure they match, and that they’re not curly quotes.)</p>
+<div class="highlight"><pre class="chroma"><code class="language-JS" data-lang="JS"><span class="s2">&#34;Hello World&#34;</span><span class="p">;</span>   <span class="c1">// works
+</span><span class="c1"></span><span class="s1">&#39;Hi&#39;</span><span class="p">;</span>            <span class="c1">// works
+</span><span class="c1"></span><span class="err">&#34;</span><span class="nx">This</span><span class="err">&#39;</span><span class="p">;</span>         <span class="c1">// won’t work
+</span></code></pre></div><h3><a id="numbers" class="anchor" ariaLabel="Anchor"></a> Numbers</h3>
+<p>Numbers do not need to be surrounded in quotes <code>&quot;&quot;</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-JS" data-lang="JS"><span class="mi">1</span>    <span class="c1">// integers
+</span><span class="c1"></span><span class="mf">0.5</span>  <span class="c1">// non-integers with decimal digits are called floats
+</span></code></pre></div><h3><a id="boolean" class="anchor" ariaLabel="Anchor"></a> Boolean</h3>
+<p>A binary value of either <code>true</code> or <code>false</code>. These are useful for <a href="#conditionals">conditionals</a>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-JS" data-lang="JS"><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// this code is not executed
+</span><span class="c1"></span><span class="p">}</span>
+</code></pre></div><h3><a id="variables" class="anchor" ariaLabel="Anchor"></a> Variables</h3>
+<p>A variable is a named location for storing a value. That way an unpredictable value can be accessed through a predetermined name; it can serve as a container for anything (numbers, strings, booleans, arrays, other variables.)</p>
+<div class="highlight"><pre class="chroma"><code class="language-JS" data-lang="JS"><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">9</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">school</span> <span class="o">=</span> <span class="s2">&#34;RISD&#34;</span><span class="p">;</span>
+</code></pre></div><h3><a id="variable-naming-conventions" class="anchor" ariaLabel="Anchor"></a> Variable naming conventions</h3>
+<p>You can call a variable pretty much anything you like, but there are limitations. Generally, you should stick to just using Latin characters (0-9, a-z, A-Z) and the underscore character.</p>
+<ul>
+<li>Avoid underscores at the start of variable names — this is used in certain JavaScript constructs to mean specific things, so may get confusing.</li>
+<li>Avoid numbers at the start of variables.</li>
+<li>A safe convention to stick to is so-called &ldquo;lower camel case&rdquo;, where you stick together multiple words, using lower case for the whole first word and then capitalize subsequent words. <code>camelCase</code></li>
+<li>Make variable names intuitive, so they describe the data they contain. Avoid single letters/numbers, or big long phrases.</li>
+<li>Variables are case sensitive — so myage is a different variable from myAge.</li>
+<li>Avoid using JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords">reserved words</a> as your variable names — like <code>var</code>, <code>function</code>, <code>let</code>, and <code>for</code> — since browsers recognize them as code.</li>
+</ul>
+<h3><a id="arrays" class="anchor" ariaLabel="Anchor"></a> Arrays</h3>
+<p>An array is a data type that contains a group of values. This can be a list of anything—strings, integers, variables. An array is defined by a comma-separated list of items in square brackets <code>[]</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-JS" data-lang="JS"><span class="kd">let</span> <span class="nx">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;red&#34;</span><span class="p">,</span><span class="s2">&#34;green&#34;</span><span class="p">,</span><span class="s2">&#34;blue&#34;</span><span class="p">];</span>
+</code></pre></div><p>You can access array items by their <em>index,</em> or numerical label, inserted between square brackets<code>[]</code>. The starting position is <code>0</code>, not <code>1.</code>  The <code>length</code> property will give you the number of items in an array.</p>
+<div class="highlight"><pre class="chroma"><code class="language-JS" data-lang="JS"><span class="nx">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c1">// red
+</span><span class="c1"></span><span class="nx">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="c1">// green
+</span><span class="c1"></span><span class="nx">colors</span><span class="p">.</span><span class="nx">length</span> <span class="c1">// 3
+</span></code></pre></div><h3><a id="objects" class="anchor" ariaLabel="Anchor"></a> Objects</h3>
+<p>An object is a collection of data, where each data in the collection has a unique name that identifies it. An object is defined by a comma-separated list of <code>key: value</code> pairs in curly brackets <code>{}</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-JS" data-lang="JS"><span class="kd">let</span> <span class="nx">numbers</span> <span class="o">=</span> <span class="p">{</span><span class="nx">e</span><span class="o">:</span> <span class="mf">2.7183</span><span class="p">,</span> <span class="nx">pi</span><span class="o">:</span> <span class="mf">3.1416</span><span class="p">};</span>
+</code></pre></div><p>Each item in the object has a <em>key</em> and a <em>value.</em> You use the key to get at the value! You can access the value either by a <code>.</code> before the key or by inserting the key within square brackets <code>[]</code>. If using square brackets, make sure to surround the key in quotes <code>''</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-JS" data-lang="JS"><span class="nx">numbers</span><span class="p">.</span><span class="nx">e</span> <span class="c1">// 2.7183
+</span><span class="c1"></span><span class="nx">numbers</span><span class="p">[</span><span class="s1">&#39;pi&#39;</span><span class="p">]</span> <span class="c1">// 3.1416
+</span></code></pre></div><h2><a id="operators" class="anchor" ariaLabel="Anchor"></a> Operators</h2>
+<h3><a id="assignment-operators" class="anchor" ariaLabel="Anchor"></a> Assignment operators</h3>
+<p>The assignment operator <code>=</code> assigns the right-hand value to the left-hand operand.</p>
+<div class="highlight"><pre class="chroma"><code class="language-JS" data-lang="JS"><span class="kd">let</span> <span class="nx">name</span> <span class="o">=</span> <span class="s2">&#34;Beatrice&#34;</span><span class="p">;</span> <span class="c1">// assigns Beatrice to the name variable
+</span><span class="c1"></span><span class="nx">name</span> <span class="o">=</span> <span class="s2">&#34;Betty&#34;</span><span class="p">;</span> <span class="c1">// updates the value of name to Betty
+</span><span class="c1"></span>
+<span class="kd">let</span> <span class="nx">count</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span> <span class="c1">//assigns 5 to the variable count
+</span><span class="c1"></span><span class="nx">count</span> <span class="o">=</span> <span class="nx">count</span> <span class="o">+</span> <span class="mi">3</span><span class="p">;</span> <span class="c1">// updates the count variable by adding 3 to itself. count is now 8. 
+</span></code></pre></div><p>There is a shorthand for variables to cumulatively assign new values to itself.</p>
+<div class="highlight"><pre class="chroma"><code class="language-JS" data-lang="JS"><span class="nx">count</span> <span class="o">+=</span> <span class="mi">3</span><span class="p">;</span> <span class="c1">// same as count = count + 3
+</span><span class="c1"></span><span class="nx">count</span> <span class="o">++</span><span class="p">;</span> <span class="c1">// same as count += 1, or count = count + 1
+</span></code></pre></div><h3><a id="string-operators" class="anchor" ariaLabel="Anchor"></a> String operators</h3>
+<p>The concatenation operator (<code>+</code>) concatenates two string values together, returning another string that is the union of the two operand strings.</p>
+<div class="highlight"><pre class="chroma"><code class="language-JS" data-lang="JS"><span class="kd">var</span> <span class="nx">mystring</span> <span class="o">=</span> <span class="s2">&#34;alpha&#34;</span><span class="p">;</span>
+<span class="nx">mystring</span> <span class="o">+=</span> <span class="s2">&#34;bet&#34;</span><span class="p">;</span> <span class="c1">// evaluates to &#34;alphabet&#34; and assigns this value to mystring.
+</span></code></pre></div><h3><a id="comparison-operators" class="anchor" ariaLabel="Anchor"></a> Comparison operators</h3>
+<p>Comparison evaluates an expression, returning a boolean, <code>true</code> or <code>false</code>.
+Below are some examples — these are <strong>strict</strong> comparison formats, meaning they will check both the data type and the value.</p>
+<table>
+<thead>
+<tr>
+<th>operator</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>===</code></td>
+<td>checks whether they are equal</td>
+</tr>
+<tr>
+<td><code>!==</code></td>
+<td>checks whether they are NOT equal</td>
+</tr>
+<tr>
+<td><code>&lt;</code> or <code>&gt;</code></td>
+<td>checks that the number on the left is less than or greater than the right</td>
+</tr>
+</tbody>
+</table>
+<h3><a id="logical-operators" class="anchor" ariaLabel="Anchor"></a> Logical operators</h3>
+<p>Logical operators combine multiple conditions</p>
+<table>
+<thead>
+<tr>
+<th>operator</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&amp;&amp;</code></td>
+<td>logical AND <br> <code>3 &lt; 5 &amp;&amp; 2 &gt; 9 // evaluates to false</code></td>
+</tr>
+<tr>
+<td>`</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2><a id="conditionals" class="anchor" ariaLabel="Anchor"></a> Conditionals</h2>
+<p>Conditionals allow you to declare different actions based on different conditions. You can use If <code>if</code> / Then <code>else if</code> / Else <code>else</code> logic to define your scenarios.</p>
+<div class="highlight"><pre class="chroma"><code class="language-JS" data-lang="JS"><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">x</span> <span class="o">===</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;x is 2&#34;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">x</span> <span class="o">===</span> <span class="mi">3</span><span class="p">){</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;x is 3&#34;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;x is neither 2 nor 3&#34;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div><h2><a id="functions" class="anchor" ariaLabel="Anchor"></a> Functions</h2>
+<p>A function is a set of actions to be performed. These can include built-in functions, like <code>console.log</code> or <code>alert</code>, or you can define your own function. Most functions are groups of other functions.</p>
+<p>After declaring a function, you can execute its statements by calling the function. While it’s possible to call a function before it’s declared, it’s best practice to declare your functions before you call them.</p>
+<div class="highlight"><pre class="chroma"><code class="language-JS" data-lang="JS"><span class="c1">// define custom function we called sayHi. This only defines the function and does not execute it.
+</span><span class="c1"></span><span class="kd">function</span> <span class="nx">sayHi</span><span class="p">()</span> <span class="p">{</span> 		
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Hi!&#34;</span><span class="p">);</span>  <span class="c1">// native function console.log
+</span><span class="c1"></span>  <span class="nx">alert</span><span class="p">(</span><span class="s2">&#34;Hi&#34;</span><span class="p">);</span>  <span class="c1">// native function alert
+</span><span class="c1"></span><span class="p">}</span>
+
+<span class="c1">//call (execute) the sayHi function
+</span><span class="c1"></span><span class="nx">sayHi</span><span class="p">();</span>			
+
+</code></pre></div><h3><a id="parameters-and-arguments" class="anchor" ariaLabel="Anchor"></a> Parameters and arguments</h3>
+<p>A function may need inputs to process its statements. These inputs are known as <em>parameters</em> and are used as variables in the function’s statements — you can give them whatever name is appropriate. <em>Arguments</em> are inputs passed into the function when it is called. When you expect a function to provide an answer or output, it’s know as the <em>return value</em>.</p>
+<p>The above function can be re-written to be more general.</p>
+<div class="highlight"><pre class="chroma"><code class="language-JS" data-lang="JS"><span class="c1">//sets up &#34;something&#34; as a parameter.
+</span><span class="c1"></span><span class="kd">function</span> <span class="nx">saySomething</span><span class="p">(</span><span class="nx">something</span><span class="p">)</span> <span class="p">{</span> 	
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">something</span><span class="p">);</span>	
+  <span class="nx">alert</span><span class="p">(</span><span class="nx">something</span><span class="p">);</span>					
+<span class="p">}</span>
+
+<span class="c1">//call saySomething function via the function name and parentheses (). 
+</span><span class="c1"></span><span class="nx">saySomething</span><span class="p">(</span><span class="s2">&#34;Hi&#34;</span><span class="p">);</span> <span class="c1">// executes the same statements as above
+</span></code></pre></div><p>You can also define multiple arguments</p>
+<div class="highlight"><pre class="chroma"><code class="language-JS" data-lang="JS"><span class="c1">//define function with parameters width and height
+</span><span class="c1"></span><span class="kd">function</span> <span class="nx">getArea</span><span class="p">(</span><span class="nx">width</span><span class="p">,</span> <span class="nx">height</span><span class="p">)</span> <span class="p">{</span>
+   <span class="k">return</span> <span class="nx">width</span><span class="o">*</span><span class="nx">height</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">//call getArea function with arguments 3 and 5
+</span><span class="c1"></span><span class="nx">getArea</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span> <span class="c1">//returns 15
+</span><span class="c1"></span>
+</code></pre></div><h2><a id="loops" class="anchor" ariaLabel="Anchor"></a> Loops</h2>
+<p>For loops allow you to run a function by specifying the number of iterations you want it to repeat; it uses a counter as its condition to run.</p>
+<div class="highlight"><pre class="chroma"><code class="language-JS" data-lang="JS"><span class="c1">// logs &#34;Hello&#34; in the console 5 times
+</span><span class="c1"></span><span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span> <span class="c1">// i is the index, or the count value of the loop. It start at 0 and will increment (i++) every iteration, untill it’s no longer &lt; 10.
+</span><span class="c1"></span>	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="s2">&#34;Hello&#34;</span><span class="p">);</span> 
+<span class="p">}</span>
+</code></pre></div><p>Expected output in Console</p>
+<pre><code>0 Hello
+1 Hello
+2 Hello
+3 Hello
+4 Hello
+</code></pre><h2><a id="objects-properties-and-methods" class="anchor" ariaLabel="Anchor"></a> Objects, properties, and methods</h2>
+<p>Objects are containers for named values, which could <em>properties</em> or <em>methods</em>.
+<em>Properties</em> are data (see data types above) associated to the particular object, and <em>Methods</em> are specific functions for ane object; both are accessible as <em>key</em>s of the object. Below are two examples of JavaScript objects.</p>
+<h3><a id="the-document-object" class="anchor" ariaLabel="Anchor"></a> The Document Object</h3>
+<p>The most important object in JavaScript is the Document Object: it represents an HTML web page.</p>
+<ul>
+<li><em>Properties</em> describe characteristics of the current web page (such as the title of the page).</li>
+<li><em>Methods</em> perform tasks associated with the document currently loaded in the browser (such as getting information from a specified element or adding new content).</li>
+<li><em>Events</em>, such as a user clicking or tapping on an element, can be used as triggers for methods</li>
+</ul>
+<p>We will use the <a href="https://jquery.com/">jQuery</a> library to navigate and manipulate the DOM.</p>
+<h3><a id="the-math-object" class="anchor" ariaLabel="Anchor"></a> The Math Object</h3>
+<p>There is a <code>Math</code> object in JavaScript can be used to work with numbers, and it comes with several <em>methods</em>. The outputs of these can be scaled to your desired range.</p>
+<table>
+<thead>
+<tr>
+<th>method</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Math.random()</code></td>
+<td>generates a number [0, 1) that is, from 0 (inclusive) up to but not including 1 (exclusive).</td>
+</tr>
+<tr>
+<td><code>Math.floor()</code></td>
+<td>returns the largest integer less than or equal to a given number</td>
+</tr>
+<tr>
+<td><code>parseInt()</code></td>
+<td>converts its first argument to a string, parses it, and returns an integer or NaN (not a number.)</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre class="chroma"><code class="language-JS" data-lang="JS"><span class="c1">// get a random integer between 2 numbers, including the min and max.
+</span><span class="c1"></span><span class="kd">function</span> <span class="nx">getRandomNumber</span><span class="p">(</span><span class="nx">min</span><span class="p">,</span> <span class="nx">max</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">min</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">ceil</span><span class="p">(</span><span class="nx">min</span><span class="p">);</span>
+  <span class="nx">max</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">max</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="p">(</span><span class="nx">max</span> <span class="o">-</span> <span class="nx">min</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span> <span class="o">+</span> <span class="nx">min</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nx">getRandomNumber</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span> <span class="c1">// returns a random number: 0, 1, 2, 3, 4, or 5.
+</span></code></pre></div></article>
+	</main>
+
+		<footer>
+	<ul>
+		<li>WEB TYPE (RISD GRAPH-2313-01)</li>
+		<li>Thursdays 1:10pm–6:10pm</li>
+		
+	</ul>
+</footer>
+
+	</div>
+</body>
+</html>

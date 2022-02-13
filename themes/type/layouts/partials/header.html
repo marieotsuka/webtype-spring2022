@@ -1,0 +1,16 @@
+<header>
+	
+	<nav>
+		<a href="{{ .Site.BaseURL }}" class="home">{{ .Site.Title }}</a>
+		<div class="menu-icon">≡≡</div>
+		<div class="nav-links">
+			{{ $current := . }}
+			{{ range .Site.Menus.main }}
+				{{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+				<a href="{{ .URL }}" class="{{ if $active }}active{{ end }}">{{ .Name }}</a>
+			{{ end }}
+		</div>
+	</nav>
+	<!-- <div id="dark-mode">
+	</div> -->
+</header>

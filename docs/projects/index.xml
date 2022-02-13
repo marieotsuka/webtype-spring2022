@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Web Type</title>
+    <link>https://webtype.htmlkitchen.net/projects/</link>
+    <description>Recent content in Projects on Web Type</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://webtype.htmlkitchen.net/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Presentation</title>
+      <link>https://webtype.htmlkitchen.net/projects/presentation/</link>
+      <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://webtype.htmlkitchen.net/projects/presentation/</guid>
+      <description>Select a typographic topic of interest and its relationship with web / technology. Consider this as an opportunity to research something you’ve already been exploring, with a specific lense considering the context of the internet, websites, or tools.
+Some Possible Topics  An overview of Donald Knuth’s Metafont project The history of Optical Character Recognition and the Google Books archive The use of machine learning in categorizing typefaces The relationship of vertical scripts with CSS typesetting The design of multi-script fonts On bilingual typesetting A deep-dive into the design and use of a particular typeface  Requirements  Visual examples Research into the technology or concept About 15min, including questions to the class  </description>
+    </item>
+    
+  </channel>
+</rss>

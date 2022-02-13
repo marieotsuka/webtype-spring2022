@@ -1,0 +1,4 @@
+baseURL = "https://webtype.htmlkitchen.net/"
+publishDir = "docs"
+buildDrafts = false
+buildFuture = true
