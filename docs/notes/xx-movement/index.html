@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Movement in CSS — WebType</title>
+	<meta name="description" content="Class website for Web Type, Spring 2022 at RISD">
+	<meta name="author" content="Marie Otsuka">
+	<link rel=icon href=/assets/img/favicon.png type="image/png">
+	<link rel="stylesheet" href="/css/style.css">
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script>
+	<script src="/assets/js/script.js"></script>
+</head>
+<body>
+<div class="container">
+	<header>
+	<nav>
+		<a href="/" class="home">Web Type</a>
+		<div class="menu-icon">≡≡</div>
+		<div class="nav-links">
+			<div class="meta">Web Type @ RISD</div>
+			<a href="/">index</a><br>
+			<a href="/syllabus/">syllabus</a><br>
+			<a href="/schedule/">schedule</a><br>
+			<a href="/projects/">projects</a><br>
+			<a href="/readings/">readings</a><br>
+			<a href="/resources/">resources</a><br>
+			<a href="/colophon/">colophon</a>
+			<br>
+			<br>
+			<div class="meta">Quick links</div>
+			<a href="https://risd.zoom.us/j/97883162532" target="_blank">zoom</a> &rarr;<br>
+			<a href="https://docs.google.com/spreadsheets/d/1pCrREKrOvXLRe-MtiWhGrCLuv4MRFct_YnuBqMec8KI/edit#gid=0" target="_blank">office hours</a> &rarr;<br>
+			<a href="https://github.com/risd-web/webtype-demos" target="_blank">demos repository</a> &rarr;
+			<a href="https://risd.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=fe7e0ae6-604e-44ec-a7d7-ae3f0033a340" target="_blank">tutorial videos</a> &rarr;	
+			<a href="https://drive.google.com/drive/folders/1f21gsrM7leOLwqET_ZrsLhG3KTlqQzBA?usp=sharing" target="_blank">technical slides</a> &rarr;	
+		</div>
+	</nav>
+</header>
+
+	<main class="content">
+		
+<div class="resources">
+	<article>
+		<h1>Movement in CSS</h1>
+		<p><h2>CSS Transforms</h2>
+<p>CSS transform allows you to change the shape and position of HTML elements without disrupting the normal flow.
+For 2dimensional transforms, the x-value is declared first, then the y-value.</p>
+<h3>Transform Origin</h3>
+<p><code>transform-origin</code> specifies the origin point of the transformation performed. This can be specified in multiple forms, including keywords, <code>%</code> values, and <code>px</code>. It is at the center of the element by default.</p>
+<pre><code class="language-CSS">.example {
+  transform: rotate(-10deg);
+  transform-origin: bottom left;
+}
+</code></pre>
+<div class="diagram" style="height: 150px">
+<div class="square dotted" style="position: absolute;">
+</div>
+<div class="square marked" style="position: absolute; transform: rotate(-10deg); transform-origin: bottom left;">
+</div>
+</div>
+<h3>Rotate</h3>
+<p><code>rotate()</code> Rotates the div clockwise or counter-clockwise(-), specified in degrees (deg).</p>
+<pre><code class="language-CSS">.rotate {
+  transform: rotate(30deg);
+}
+</code></pre>
+<div class="diagram" style="height: 150px">
+<div class="square dotted" style="position: absolute;">
+</div>
+<div class="square marked" style="position: absolute; transform: rotate(30deg); ">
+</div>
+</div>
+<h3>2D Translate</h3>
+<p><code>translate()</code> moves an element sideways, up, or down. This can be specified in any length unit.</p>
+<pre><code class="language-CSS">.translate{
+  transform: translate(40px, 20px);
+}
+</code></pre>
+<div class="diagram" style="height: 150px">
+<div class="square dotted" style="position: absolute;">
+</div>
+<div class="square marked" style="position: absolute; transform: translate(40px, 20px);">
+</div>
+</div>
+<h3>Scale</h3>
+<p><code>scale()</code> stretches an element horizontally and/or vertically. Scale values are unitless. This also applies to the font-size, padding, height, and width of an element.</p>
+<pre><code class="language-CSS">.scale-preserve-ratio {
+  transform: scale(.7);
+}
+
+.scale-xy {
+  transform: scale(.5, 1.5);
+}
+</code></pre>
+<div class="diagram" style="height: 150px">
+<div class="square dotted" style="position: absolute;">
+</div>
+<div class="square marked" style="position: absolute; transform: scale(.7);">
+</div>
+</div>
+<div class="diagram" style="height: 150px">
+<div class="square dotted" style="position: absolute;">
+</div>
+<div class="square marked" style="position: absolute; transform: scale(.5, 1.5);">
+</div>
+</div>
+<h3>Skew</h3>
+<p><code>skew()</code> stretches an element horizontally and/or vertically. Skews are defined in degrees. Contained elements, such as text, will also be skewed.</p>
+<pre><code class="language-CSS">.skew {
+  transform: skew(10deg,30deg);
+}
+</code></pre>
+<div class="diagram" style="height: 150px">
+<div class="square dotted" style="position: absolute;">
+</div>
+<div class="square marked" style="position: absolute; transform: skew(10deg,30deg);">
+</div>
+</div>
+<h3>Combining transforms</h3>
+<p>Multiple transforms can be applied to the same element with a space in between. (Note: you cannot declare transforms separately; the latter will override the former.) Transforms are applied in the order they are declared.
+<a href="https://learn.shayhowe.com/advanced-html-css/css-transforms/">More on transforms</a> including perspectival / 3D effects.</p>
+<pre><code class="language-CSS">.combined-example {
+  transform: scale(.3, 1.2) rotate(30deg) skewY(-15deg) translate(50px, 20%);
+}
+</code></pre>
+<div class="diagram" style="height: 150px">
+<div class="square dotted" style="position: absolute;">
+</div>
+<div class="square marked" style="position: absolute; transform: scale(.3, 1.2) rotate(30deg) skewY(-15deg) translate(50px, 20%);">
+</div>
+</div>
+<h2>CSS Transitions</h2>
+<p>Transform functions combine well with CSS animations and transitions.
+Transitions allow property changes in CSS values to occur smoothly over a specified duration. Transitions requires a trigger (such as <code>:hover</code>) to take effect. They are declared to the element targeted for the change. (Note that by specifying the transition on the element itself, you define the transition to occur in both directions. )</p>
+<p><code>transition: background-color 1s ease-in 2s;</code></p>
+<p>*This is shorthand notation that combines the following properties. The first unit of time is always the duration; the second the delay.</p>
+<table>
+<thead>
+<tr>
+<th>property</th>
+<th>description</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>transition-property</td>
+<td>property being transitioned (or use <code>transition-property: all</code>) — see <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">list of properties</a></td>
+<td><code>transition-property: background-color</code></td>
+</tr>
+<tr>
+<td>transition-duration</td>
+<td>duration of effect, in seconds (s) or milliseconds (ms)</td>
+<td><code>transition-duration: 1s;</code></td>
+</tr>
+<tr>
+<td>transition-timing-function</td>
+<td>transition style — see <a href="https://codepen.io/stephengreig/pen/bHzqm">common easing effects</a></td>
+<td><code>transition-timing-function: ease-in; </code></td>
+</tr>
+<tr>
+<td>transition-delay</td>
+<td>delay until starting effect, in seconds (s) or milliseconds (ms)</td>
+<td><code>transition-delay: 2s;</code></td>
+</tr>
+</tbody>
+</table>
+<h2>CSS Animations</h2>
+<p>Using just CSS, you can create animation sequences for any element. (Animations allow motion without triggers.)
+Animations consist of <em>two separate sets</em> of CSS declarations:</p>
+<ul>
+<li><strong>@keyframes</strong>: specifies the state of the element at a certain time point (relative to defined timing of animation.)</li>
+<li><strong>animation properties</strong> apply the keyframe animation to one or many elements</li>
+</ul>
+<pre><code class="language-CSS">@keyframes changecolor {
+  0% {
+    background-color: blue;
+  }
+  50% {
+    background-color: yellow;
+    color: rgba(200,155,20,0.8);
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+#animated-div{
+  animation: changecolor 3.5s linear 0.2s infinite alternate;
+}
+</code></pre>
+<div id="animated div" style="padding: 1em; margin: 1em; animation: changecolor 3.5s linear 0.2s infinite alternate;">
+  Animation Demo
+</div>
+<ul>
+<li><code>changecolor</code> is the identifier — your name for the animation. This must match the name used to declare animation properties</li>
+<li>The nested brackets, or keyframes are the timestamps / waypoints in the animation. You can use <code>from</code>,<code>to</code>, <code>%</code> to specify these points.</li>
+</ul>
+<p>*This animation shorthand notation that combines the following properties. The first unit of time is always the duration; the second the delay.</p>
+<table>
+<thead>
+<tr>
+<th>property</th>
+<th>description</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>animation-name</td>
+<td>identifier given to animation in @keyframes declarations, any name without spaces</td>
+<td><code>animation-name: changecolor;</code></td>
+</tr>
+<tr>
+<td>animation-duration</td>
+<td>duration of animation, which is broken up into the waypoints defined in keyframes, in seconds (s) or milliseconds (ms)</td>
+<td><code>animation-duration: 3.5s;</code></td>
+</tr>
+<tr>
+<td>animation-timing-function</td>
+<td>animation style, same as transitions</td>
+<td><code>animation-timing-function: linear; </code></td>
+</tr>
+<tr>
+<td>animation-delay</td>
+<td>delay until starting animation, in seconds (s) or milliseconds (ms)</td>
+<td><code>animation-delay: 0.2s;</code></td>
+</tr>
+<tr>
+<td>animation-iteration-count</td>
+<td>number of times the animation runs, <code>infinite</code> or numbers</td>
+<td><code>animation-iteration-count: 3;</code></td>
+</tr>
+<tr>
+<td>animation-direction</td>
+<td>from what direction the animation begins, <code>normal</code>, <code>reverse</code>, <code>alternate</code>, <code>alternate-reverse</code></td>
+<td><code>animation-direction: alternate;</code></td>
+</tr>
+<tr>
+<td>animation-play-state</td>
+<td>whether to play or pause, <code>running</code> (default), <code>paused</code></td>
+<td><code>animation-play-state: running;</code></td>
+</tr>
+<tr>
+<td>animation-fill-mode</td>
+<td>whether to apply styles before and after the animation executes, <code>none</code> (default), <code>forwards</code>, <code>backwards</code>, <code>both</code></td>
+<td><code>animation-fill-mode: none;</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Animations and transforms</h3>
+<p>Transitions and animations can also be combined with any “animatable” CSS property, but we should be careful as some properties may eat up some of your performance (and your animation may appear choppy.) Not all properties are “animatable.” Transform properties lend well to transitions and animations. Variable font properties can also be animated.</p>
+</p>
+	</article>
+	<aside>
+		<div class="notes">
+			
+			
+				<a href="/notes/webintro/">
+					The Internet
+				</a>
+			
+				<a href="/notes/01-html/">
+					HTML
+				</a>
+			
+				<a href="/notes/02-css/">
+					CSS Basics
+				</a>
+			
+				<a href="/notes/03-layouts/">
+					Layouts and Structure
+				</a>
+			
+				<a href="/notes/04-responsive/">
+					Responsive Design
+				</a>
+			
+			
+
+			
+			
+				<a href="/resources/html-terms/">
+					Glossary
+				</a>
+			
+				<a href="/resources/type-help/">
+					Type Resources
+				</a>
+			
+				<a href="/resources/web-help/">
+					Web Resources
+				</a>
+			
+				<a href="/resources/">
+					Troubleshooting
+				</a>
+			
+		</div>
+	</aside>
+</div>
+
+	</main>
+	<footer>
+	<ul>
+		<li>WEB TYPE (RISD GRAPH-2313-01)</li>
+		<li>Thursdays 1:10pm–6:10pm, DC 407</li>
+		<li>Sometimes on <a href="https://risd.zoom.us/j/97883162532" target="_blank">Zoom</a></li>
+	</ul>
+</footer>
+
+</div>
+</body>
+</html>

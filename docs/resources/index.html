@@ -4,101 +4,142 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Resources</title>
-	
-	
-
-	
-	<link rel="stylesheet" href="https://webtype.htmlkitchen.net/css/style.css">
-
+	<title>Troubleshooting — WebType</title>
+	<meta name="description" content="Class website for Web Type, Spring 2022 at RISD">
+	<meta name="author" content="Marie Otsuka">
+	<link rel=icon href=/assets/img/favicon.png type="image/png">
+	<link rel="stylesheet" href="/css/style.css">
 	<script
 	  src="https://code.jquery.com/jquery-3.4.1.min.js"
 	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 	  crossorigin="anonymous"></script>
-
-	
-	<script src='https://webtype.htmlkitchen.net/js/script.js'></script>
+	<script src="/assets/js/script.js"></script>
 </head>
 <body>
-	<div class="container">
-		<header>
-	
+<div class="container">
+	<header>
 	<nav>
-		<a href="https://webtype.htmlkitchen.net/" class="home">Web Type</a>
+		<a href="/" class="home">Web Type</a>
 		<div class="menu-icon">≡≡</div>
 		<div class="nav-links">
-			
-			
-				
-				<a href="/syllabus/" class="">Syllabus</a>
-			
-				
-				<a href="/schedule/" class="">Schedule</a>
-			
-				
-				<a href="/projects/" class="">Projects</a>
-			
-				
-				<a href="/notes/" class="">Notes</a>
-			
-				
-				<a href="/resources/" class="active">Resources</a>
-			
-				
-				<a href="/colophon/" class="">Colophon</a>
-			
+			<div class="meta">Web Type @ RISD</div>
+			<a href="/">index</a><br>
+			<a href="/syllabus/">syllabus</a><br>
+			<a href="/schedule/">schedule</a><br>
+			<a href="/projects/">projects</a><br>
+			<a href="/readings/">readings</a><br>
+			<a href="/resources/">resources</a><br>
+			<a href="/colophon/">colophon</a>
+			<br>
+			<br>
+			<div class="meta">Quick links</div>
+			<a href="https://risd.zoom.us/j/97883162532" target="_blank">zoom</a> &rarr;<br>
+			<a href="https://docs.google.com/spreadsheets/d/1pCrREKrOvXLRe-MtiWhGrCLuv4MRFct_YnuBqMec8KI/edit#gid=0" target="_blank">office hours</a> &rarr;<br>
+			<a href="https://github.com/risd-web/webtype-demos" target="_blank">demos repository</a> &rarr;
+			<a href="https://risd.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=fe7e0ae6-604e-44ec-a7d7-ae3f0033a340" target="_blank">tutorial videos</a> &rarr;	
+			<a href="https://drive.google.com/drive/folders/1f21gsrM7leOLwqET_ZrsLhG3KTlqQzBA?usp=sharing" target="_blank">technical slides</a> &rarr;	
 		</div>
 	</nav>
-	
 </header>
 
+	<main class="content">
 		
-	<main class='default'>
-		<article class="content">
+<div class="resources">
+	<article>
+		<h1>Troubleshooting</h1>
+		<p><h2>Troubleshooting Tips</h2>
+<p>Try to be patient when writing code. So much of programming is debugging; typos are one of the most common errors! If you find yourself stuck, try breaking your issue down into smaller, more manageable parts.</p>
+<p>Search Google or <a href="http://stackoverflow.com">Stack Overflow</a> for how to solve those parts, one at a time. While frustrating, these bugs may lead you to discover something new you would not have considered before. Code can be an unforgiving but rewarding medium. If you cannot solve a problem a way you anticipate, try “hacking” it—tackling the issue with the means you currently have.</p>
+<p>Below are some common errors to watch out for:</p>
+<h3>HTML</h3>
+<ul>
+<li>Are your HTML elements wrapped in open and close tags?</li>
+<li>Are your HTML elements properly nested?</li>
+<li>Do your attribute values have matching quotation marks around them?</li>
+<li>Are your directory paths correct? Double check your link / path syntax.</li>
+</ul>
+<h3>CSS</h3>
+<ul>
+<li>Do you have opening and closing brackets?</li>
+<li>Does your property and value pairs have colons in between them?</li>
+<li>Do you have a semicolon at the end of each declaration?</li>
+<li>Are your class / id names properly spelled, in the right case?</li>
+</ul>
+<h3>File management</h3>
+<p>It is critical to keep your web files organized, and that you have a clear understanding of where the files working together are located within your computer system (on your local hard drive.)</p>
+<p>As you make multiple sites, you will find that you will have many files named <code>index.html</code> or <code>style.css</code>. Make sure you are working with files in the desired folder location.</p>
+<p>To move a folders/files, make sure to save and close out of them in your text editor first, then reopen after moving the file. (If you keep your file open in your text editor and try to save, it might try resave in the original location.)</p>
+<h3>Naming</h3>
+<p>Because of the way special characters and spaces are treated in URLs, it’s best to avoid them when naming files and folders for web. <em>Hyphens</em> are used instead of spaces. It’s also recommended to use all <em>lowercase</em>, because of the way some systems may or may not be case-sensitive.</p>
+<ul>
+<li>Rename <code>Folder Name/Filename Test.html</code> → <code>folder-name/filename-test.html</code></li>
+</ul>
+<h3>Web Inspector</h3>
+<p>Keep your browser’s web inspector handy — it’s a critical tool in understanding how your code is being interpreted by your browser, whether its your HTML tree structure (in the <em>DOM</em>,) or how your styles are being inherited (your <em>CSS</em>).</p>
+<ul>
+<li>When in doubt, remember the shortcut <code>Option + Command + i</code></li>
+<li>More on the <a href="https://developer.chrome.com/docs/devtools/dom/">Chrome Inspector</a></li>
+<li>More on the <a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector">Firefox Inspector</a></li>
+</ul>
+</p>
+	</article>
+	<aside>
+		<div class="notes">
 			
-				<h1>Resources</h1>
-				<p>A collection of guides.</p>
+			
+				<a href="/notes/webintro/">
+					The Internet
+				</a>
+			
+				<a href="/notes/01-html/">
+					HTML
+				</a>
+			
+				<a href="/notes/02-css/">
+					CSS Basics
+				</a>
+			
+				<a href="/notes/03-layouts/">
+					Layouts and Structure
+				</a>
+			
+				<a href="/notes/04-responsive/">
+					Responsive Design
+				</a>
+			
+			
 
 			
-			<ul class="index-list">
 			
-				<li>
-					<a href="https://webtype.htmlkitchen.net/resources/links/">Various types of sites</a>
-					
-				</li>
+				<a href="/resources/html-terms/">
+					Glossary
+				</a>
 			
-				<li>
-					<a href="https://webtype.htmlkitchen.net/resources/common-errors/">Common Errors</a>
-					
-				</li>
+				<a href="/resources/type-help/">
+					Type Resources
+				</a>
 			
-				<li>
-					<a href="https://webtype.htmlkitchen.net/resources/html-terms/">Glossary</a>
-					
-				</li>
+				<a href="/resources/web-help/">
+					Web Resources
+				</a>
 			
-				<li>
-					<a href="https://webtype.htmlkitchen.net/resources/type-help/">Type Resources</a>
-					
-				</li>
+				<a href="/resources/">
+					Troubleshooting
+				</a>
 			
-				<li>
-					<a href="https://webtype.htmlkitchen.net/resources/web-help/">Web Resources</a>
-					
-				</li>
-			
-			</ul>
-		</article>
+		</div>
+	</aside>
+</div>
+
 	</main>
-
-		<footer>
+	<footer>
 	<ul>
 		<li>WEB TYPE (RISD GRAPH-2313-01)</li>
-		<li>Thursdays 1:10pm–6:10pm</li>
-		
+		<li>Thursdays 1:10pm–6:10pm, DC 407</li>
+		<li>Sometimes on <a href="https://risd.zoom.us/j/97883162532" target="_blank">Zoom</a></li>
 	</ul>
 </footer>
 
-	</div>
+</div>
 </body>
 </html>

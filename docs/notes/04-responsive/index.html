@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Responsive Design — WebType</title>
+	<meta name="description" content="Class website for Web Type, Spring 2022 at RISD">
+	<meta name="author" content="Marie Otsuka">
+	<link rel=icon href=/assets/img/favicon.png type="image/png">
+	<link rel="stylesheet" href="/css/style.css">
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script>
+	<script src="/assets/js/script.js"></script>
+</head>
+<body>
+<div class="container">
+	<header>
+	<nav>
+		<a href="/" class="home">Web Type</a>
+		<div class="menu-icon">≡≡</div>
+		<div class="nav-links">
+			<div class="meta">Web Type @ RISD</div>
+			<a href="/">index</a><br>
+			<a href="/syllabus/">syllabus</a><br>
+			<a href="/schedule/">schedule</a><br>
+			<a href="/projects/">projects</a><br>
+			<a href="/readings/">readings</a><br>
+			<a href="/resources/">resources</a><br>
+			<a href="/colophon/">colophon</a>
+			<br>
+			<br>
+			<div class="meta">Quick links</div>
+			<a href="https://risd.zoom.us/j/97883162532" target="_blank">zoom</a> &rarr;<br>
+			<a href="https://docs.google.com/spreadsheets/d/1pCrREKrOvXLRe-MtiWhGrCLuv4MRFct_YnuBqMec8KI/edit#gid=0" target="_blank">office hours</a> &rarr;<br>
+			<a href="https://github.com/risd-web/webtype-demos" target="_blank">demos repository</a> &rarr;
+			<a href="https://risd.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=fe7e0ae6-604e-44ec-a7d7-ae3f0033a340" target="_blank">tutorial videos</a> &rarr;	
+			<a href="https://drive.google.com/drive/folders/1f21gsrM7leOLwqET_ZrsLhG3KTlqQzBA?usp=sharing" target="_blank">technical slides</a> &rarr;	
+		</div>
+	</nav>
+</header>
+
+	<main class="content">
+		
+<div class="resources">
+	<article>
+		<h1>Responsive Design</h1>
+		<p><p>Responsive web design refers to the ability of websites to adapt the presentation of content to a range of devices and media.</p>
+<p>Responsive design involves:</p>
+<ul>
+<li>meta tag</li>
+<li>fluid layout</li>
+<li>relative units</li>
+<li>fluid images</li>
+<li>media queries</li>
+</ul>
+<h2>Meta tag</h2>
+<p>Insert this meta tag within the <code>&lt;head&gt;&lt;/head&gt;</code> of all your html pages.
+This ensures that the browser will register the physical width of the device’s screen as its screen width.</p>
+<pre><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+</code></pre>
+<h2>Fluid layout</h2>
+<p>A fluid layout often has:</p>
+<ul>
+<li>a container element that fills the entire screen size</li>
+<li>the container element responds to adjustments in browser widths</li>
+<li>widths of the columns nested within the container adjust accordingly</li>
+<li>Review the relative <a href="/notes/02-css#css-size-units">CSS Units</a></li>
+</ul>
+<p>The following CSS relative units may be useful for scalable designs.</p>
+<table>
+<thead>
+<tr>
+<th>unit</th>
+<th>description</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rem</td>
+<td>font size of the root element (html)</td>
+<td><code>font-size: 2rem;</code></td>
+</tr>
+<tr>
+<td>em</td>
+<td>font size of parent element</td>
+<td><code>font-size: 2em;</code></td>
+</tr>
+<tr>
+<td>vw</td>
+<td>1% of viewport’s width</td>
+<td><code>width: 100vw;</code></td>
+</tr>
+<tr>
+<td>vh</td>
+<td>1% viewport’s height</td>
+<td><code>height: 100vh;</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Fluid Images</h2>
+<p>Any embedded assets, such as images, videos, etc will need to scale appropriately.</p>
+<p>Usually, the image container has defined width. The image itself then has <code>max-width: 100%;</code> to scale down if its container resizes, but would never scale up to be larger than its original size.</p>
+<pre><code class="language-HTML">&lt;div class=&quot;container&quot;&gt;
+  &lt;img src=&quot;image.png&quot;&gt;
+&lt;/div&gt;
+</code></pre>
+<pre><code class="language-CSS">.container {
+  width: 33%;
+}
+
+.figure img {
+  width: 100%;
+}
+</code></pre>
+<h3>Retina displays</h3>
+<ul>
+<li>72dpi (dots  / inch, in this case pixels) used to be the standard for screen resolutions. But now with the introduction of mobile devices and retina screens, screen resolutions may be much higher.</li>
+<li>In order to have your images appear crisp on retina screens, you will need to provide higher resolution images (at least 2x large.) Many website prepare multiple versions of the same image so that those on a smaller screen (and a slower connection) will not need to download the higher-res image.</li>
+<li>Read more on various solutions to work with <a href="https://www.smashingmagazine.com/2012/08/towards-retina-web/">retina images</a>.</li>
+</ul>
+<h2>Media queries</h2>
+<p>Media queries are the crux of responsive design. They define the <strong>breakpoints</strong> at which different CSS rules are applied. <em>Any CSS rule can be adjusted within the media queries.</em></p>
+<p>You can approach this in two ways.</p>
+<ol>
+<li>Desktop first, defining <code>max-width</code> breakpoints to go smaller</li>
+<li>Mobile first, defining <code>min-width</code> breakpoints to go larger
+<ul>
+<li>Sometimes you need to use both <code>min</code> and <code>max</code></li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>Block-level containers are rearranged according to the DOM (HTML structure)</li>
+<li>Breakpoints determine the browser widths at which your containers will rearrange into a single column</li>
+<li>Some text may be shortened or omitted on the mobile website</li>
+<li>See an example of <a href="https://codepen.io/chriscoyier/pen/yCeax">flexbox and media queries</a></li>
+</ul>
+<pre><code class="language-CSS">@media screen and (max-width: 480px){ 
+  .container{
+    width: 100%;
+  }
+} 
+</code></pre>
+<p>Note: nested brackets</p>
+<h2>Common Responsive Layout Techniques</h2>
+<ul>
+<li>Collapsed menu</li>
+<li>Collapsed columns</li>
+<li>Scaled type sizes</li>
+<li>Adjusted line-height</li>
+<li>Adjusted paragraph widths (measure)</li>
+<li>Shortened words</li>
+<li>Adjusted image sizes</li>
+</ul>
+<h2>Reference</h2>
+<ul>
+<li><a href="https://alistapart.com/blog/post/variable-fonts-for-responsive-design/">Nick Sherman: Variable Fonts for Responsive Design</a></li>
+<li><a href="https://alistapart.com/article/live-font-interpolation-on-the-web/">Andrew Johnson: Live Interpolation on the Web</a></li>
+<li><a href="https://typetura.scottkellum.com/">Scott Kellum: Fluid typography and the creation of Typetura</a></li>
+</ul>
+</p>
+	</article>
+	<aside>
+		<div class="notes">
+			
+			
+				<a href="/notes/webintro/">
+					The Internet
+				</a>
+			
+				<a href="/notes/01-html/">
+					HTML
+				</a>
+			
+				<a href="/notes/02-css/">
+					CSS Basics
+				</a>
+			
+				<a href="/notes/03-layouts/">
+					Layouts and Structure
+				</a>
+			
+				<a href="/notes/04-responsive/">
+					Responsive Design
+				</a>
+			
+			
+
+			
+			
+				<a href="/resources/html-terms/">
+					Glossary
+				</a>
+			
+				<a href="/resources/type-help/">
+					Type Resources
+				</a>
+			
+				<a href="/resources/web-help/">
+					Web Resources
+				</a>
+			
+				<a href="/resources/">
+					Troubleshooting
+				</a>
+			
+		</div>
+	</aside>
+</div>
+
+	</main>
+	<footer>
+	<ul>
+		<li>WEB TYPE (RISD GRAPH-2313-01)</li>
+		<li>Thursdays 1:10pm–6:10pm, DC 407</li>
+		<li>Sometimes on <a href="https://risd.zoom.us/j/97883162532" target="_blank">Zoom</a></li>
+	</ul>
+</footer>
+
+</div>
+</body>
+</html>

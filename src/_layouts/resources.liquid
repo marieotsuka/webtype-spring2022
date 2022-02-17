@@ -1,0 +1,28 @@
+---
+layout: default.liquid
+---
+
+<div class="resources">
+	<article>
+		<h1>{{ title }}</h1>
+		<p>{{ content }}</p>
+	</article>
+	<aside>
+		<div class="notes">
+			{% assign notes = collections.note | sortByOrder %}
+			{% for n in notes %}
+				<a href="{{n.url}}">
+					{{n.data.title}}
+				</a>
+			{% endfor %}
+			
+
+			{% assign resources = collections.resource %}
+			{% for r in resources %}
+				<a href="{{r.url}}">
+					{{r.data.title}}
+				</a>
+			{% endfor %}
+		</div>
+	</aside>
+</div>

@@ -4,58 +4,50 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Glossary</title>
-	
-	
-
-	
-	<link rel="stylesheet" href="https://webtype.htmlkitchen.net/css/style.css">
-
+	<title>Glossary — WebType</title>
+	<meta name="description" content="Class website for Web Type, Spring 2022 at RISD">
+	<meta name="author" content="Marie Otsuka">
+	<link rel=icon href=/assets/img/favicon.png type="image/png">
+	<link rel="stylesheet" href="/css/style.css">
 	<script
 	  src="https://code.jquery.com/jquery-3.4.1.min.js"
 	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 	  crossorigin="anonymous"></script>
-
-	
-	<script src='https://webtype.htmlkitchen.net/js/script.js'></script>
+	<script src="/assets/js/script.js"></script>
 </head>
 <body>
-	<div class="container">
-		<header>
-	
+<div class="container">
+	<header>
 	<nav>
-		<a href="https://webtype.htmlkitchen.net/" class="home">Web Type</a>
+		<a href="/" class="home">Web Type</a>
 		<div class="menu-icon">≡≡</div>
 		<div class="nav-links">
-			
-			
-				
-				<a href="/syllabus/" class="">Syllabus</a>
-			
-				
-				<a href="/schedule/" class="">Schedule</a>
-			
-				
-				<a href="/projects/" class="">Projects</a>
-			
-				
-				<a href="/notes/" class="">Notes</a>
-			
-				
-				<a href="/resources/" class="active">Resources</a>
-			
-				
-				<a href="/colophon/" class="">Colophon</a>
-			
+			<div class="meta">Web Type @ RISD</div>
+			<a href="/">index</a><br>
+			<a href="/syllabus/">syllabus</a><br>
+			<a href="/schedule/">schedule</a><br>
+			<a href="/projects/">projects</a><br>
+			<a href="/readings/">readings</a><br>
+			<a href="/resources/">resources</a><br>
+			<a href="/colophon/">colophon</a>
+			<br>
+			<br>
+			<div class="meta">Quick links</div>
+			<a href="https://risd.zoom.us/j/97883162532" target="_blank">zoom</a> &rarr;<br>
+			<a href="https://docs.google.com/spreadsheets/d/1pCrREKrOvXLRe-MtiWhGrCLuv4MRFct_YnuBqMec8KI/edit#gid=0" target="_blank">office hours</a> &rarr;<br>
+			<a href="https://github.com/risd-web/webtype-demos" target="_blank">demos repository</a> &rarr;
+			<a href="https://risd.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=fe7e0ae6-604e-44ec-a7d7-ae3f0033a340" target="_blank">tutorial videos</a> &rarr;	
+			<a href="https://drive.google.com/drive/folders/1f21gsrM7leOLwqET_ZrsLhG3KTlqQzBA?usp=sharing" target="_blank">technical slides</a> &rarr;	
 		</div>
 	</nav>
-	
 </header>
 
+	<main class="content">
 		
-	<main class='terms'>
-		<article id="glossary" class="content">
-			<h1>Glossary</h1><p><strong>Tag</strong>
+<div class="resources">
+	<article>
+		<h1>Glossary</h1>
+		<p><p><strong>Tag</strong>
 a tag is used for creating an element, which consists of the name of an HTML element in angle brackets. (i.e. <code>&lt;p&gt;</code> for paragraph.)</p>
 <p><strong>Element</strong>
 An element is a part of a webpage. A typical element includes an opening tag with some attributes, enclosed text content, and a closing tag. (i.e. <code>&lt;h1 class=&quot;news&quot;&gt; Heading &lt;/h1&gt;</code>)</p>
@@ -63,45 +55,95 @@ An element is a part of a webpage. A typical element includes an opening tag wit
 An attribute extends a tag, changing its behavior or providing metadata. An attribute always has the form <code>name=value</code>, such as defining the link location (<code>&lt;a href=&quot;index.html&quot;&gt;Link&lt;/a&gt;</code>), setting the image path (<code>&lt;img src=&quot;path-to-image/image.png&quot; /&gt;</code>) or adding a class <code>&lt;h1 class=&quot;news&quot;&gt; Heading &lt;/h1&gt;</code>.</p>
 <p><strong>Parent</strong>
 In nested HTML structures, the parent refers to the element that contains another element. i.e. Below, <code>&lt;article&gt;</code> is the parent element for <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code>.</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
-	<span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>This is a heading<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-	<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is a paragraph.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
-</code></pre></div><p><strong>Child</strong>
+<pre><code class="language-html">&lt;article&gt;
+	&lt;h1&gt;This is a heading&lt;/h1&gt;
+	&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/article&gt;
+</code></pre>
+<p><strong>Child</strong>
 In nested HTML structures, the child refers to an element contained (nested within) another element. i.e. Above, <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code> are children of the <code>&lt;article&gt;</code> element.</p>
 <p><strong>Inline Element</strong> Inline elements are those which only occupy the space bounded by the tags defining the element, instead of breaking the flow of the content. An inline element does not start on a new line and only takes up as much width as necessary. (i.e. <code>&lt;a&gt;, &lt;img&gt;, &lt;em&gt;, &lt;strong&gt;, &lt;span&gt;</code>)(Opposite of block level elements)</p>
-<p><strong>Block Element</strong> A block-level element occupies the entire space of its parent element (container), creating a &ldquo;block.&rdquo; It always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can). You can visualize them as a stack of boxes. (i.e. <code>&lt;h2&gt;, &lt;p&gt;, &lt;section&gt;, &lt;li&gt;, &lt;div&gt;</code>)(Opposite of inline elements)</p>
+<p><strong>Block Element</strong> A block-level element occupies the entire space of its parent element (container), creating a &quot;block.&quot; It always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can). You can visualize them as a stack of boxes. (i.e. <code>&lt;h2&gt;, &lt;p&gt;, &lt;section&gt;, &lt;li&gt;, &lt;div&gt;</code>)(Opposite of inline elements)</p>
 <p><strong>BoxModel</strong> Every element within a document is structured as a rectangular box inside the document layout. The size and spacing around the box can be tweaked using some specific CSS properties such as <code>width</code>, <code>height</code>, <code>padding</code>, <code>border</code>, <code>margin</code>, <code>overflow</code> (depending on whether the element is <code>inline</code> or <code>block</code>)</p>
 <p><strong>CSS</strong>
-Cascading Style Sheets is a language that controls how webpages look in the browser. A style declaration consists of a selector (the targeted element, i.e. <code>p</code>), a property (what you&rsquo;re styling, i.e. <code>font-size</code>), and value (how you&rsquo;re styling it, i.e. <code>1em</code>)</p>
-<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">p</span> <span class="p">{</span> 
-	<span class="k">font-size</span><span class="p">:</span> <span class="mi">1</span><span class="kt">em</span><span class="p">;</span>
-	<span class="k">color</span><span class="p">:</span> <span class="kc">blue</span><span class="p">;</span>
-<span class="p">}</span>
+Cascading Style Sheets is a language that controls how webpages look in the browser. A style declaration consists of a selector (the targeted element, i.e. <code>p</code>), a property (what you're styling, i.e. <code>font-size</code>), and value (how you're styling it, i.e. <code>1em</code>)</p>
+<pre><code class="language-css">p { 
+	font-size: 1em;
+	color: blue;
+}
 
-<span class="p">.</span><span class="nc">news</span> <span class="p">{</span>
-	<span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
-<span class="p">}</span>
+.news {
+	font-weight: bold;
+}
 
-<span class="p">#</span><span class="nn">intro</span> <span class="p">{</span>
-	<span class="k">font-style</span><span class="p">:</span> <span class="kc">italic</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div><p><strong>class</strong>
+#intro {
+	font-style: italic;
+}
+</code></pre>
+<p><strong>class</strong>
 Classes allows you to apply a set of styling rules to multiple elements. The CSS class selector matches HTML elements based on the contents of their <code>class</code> attribute (<code>&lt;h1 class=&quot;news&quot;&gt; Heading &lt;/h1&gt;</code>). In CSS, you add a period (<code>.</code>) before the class name to create a class selector (i.e. <code>.news</code>). You can appy multiple classes to an element by space-sparating them. (<code>&lt;h1 class=&quot;news special&quot;&gt; Heading &lt;/h1&gt;</code>).</p>
 <p><strong>id</strong>
 IDs allows you to apply a set of styling rules to one specific element in the document. The CSS ID selector matches an HTML element based on the contents of the <code>id</code> attribute. (<code>&lt;p id=&quot;intro&quot;&gt;Intro paragraph&lt;/p&gt;</code>). In CSS, you add a hashtag (<code>#</code>) before the class name to create an ID selector (i.e. <code>#intro</code>). Elements can only have one ID.</p>
 <p>Definitions adapted from the <a href="https://developer.mozilla.org/en-US/docs/Glossary">MDN Glossary</a></p>
-</article>
-	</main>
+</p>
+	</article>
+	<aside>
+		<div class="notes">
+			
+			
+				<a href="/notes/webintro/">
+					The Internet
+				</a>
+			
+				<a href="/notes/01-html/">
+					HTML
+				</a>
+			
+				<a href="/notes/02-css/">
+					CSS Basics
+				</a>
+			
+				<a href="/notes/03-layouts/">
+					Layouts and Structure
+				</a>
+			
+				<a href="/notes/04-responsive/">
+					Responsive Design
+				</a>
+			
+			
 
-		<footer>
+			
+			
+				<a href="/resources/html-terms/">
+					Glossary
+				</a>
+			
+				<a href="/resources/type-help/">
+					Type Resources
+				</a>
+			
+				<a href="/resources/web-help/">
+					Web Resources
+				</a>
+			
+				<a href="/resources/">
+					Troubleshooting
+				</a>
+			
+		</div>
+	</aside>
+</div>
+
+	</main>
+	<footer>
 	<ul>
 		<li>WEB TYPE (RISD GRAPH-2313-01)</li>
-		<li>Thursdays 1:10pm–6:10pm</li>
-		
+		<li>Thursdays 1:10pm–6:10pm, DC 407</li>
+		<li>Sometimes on <a href="https://risd.zoom.us/j/97883162532" target="_blank">Zoom</a></li>
 	</ul>
 </footer>
 
-	</div>
+</div>
 </body>
 </html>

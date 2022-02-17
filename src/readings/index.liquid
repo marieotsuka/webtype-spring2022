@@ -1,0 +1,22 @@
+---
+title: "Readings"
+permalink: "/readings/index.html"
+layout: page
+eleventyExcludeFromCollections: true
+---
+
+<div class="readings">
+	<p>
+		Readings will be dispersed throughout the semester to inform and contextualize our work with each project. Be prepared to respond, raise questions, and discuss the text during class.
+	</p>
+	{% assign readings = collections.reading | reverse %}
+	{% for r in readings %}
+		<a href="{{r.data.link}}" target="_blank" class="link-button">
+			
+			<div class="reading">
+				<div class="meta">Reading {{ forloop.index }}</div>
+				{{r.data.author}}: {{r.data.title}}
+			</div>
+		</a>
+	{% endfor %}
+</div>

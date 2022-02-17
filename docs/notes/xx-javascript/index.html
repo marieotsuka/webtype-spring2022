@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>JavaScript — WebType</title>
+	<meta name="description" content="Class website for Web Type, Spring 2022 at RISD">
+	<meta name="author" content="Marie Otsuka">
+	<link rel=icon href=/assets/img/favicon.png type="image/png">
+	<link rel="stylesheet" href="/css/style.css">
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script>
+	<script src="/assets/js/script.js"></script>
+</head>
+<body>
+<div class="container">
+	<header>
+	<nav>
+		<a href="/" class="home">Web Type</a>
+		<div class="menu-icon">≡≡</div>
+		<div class="nav-links">
+			<div class="meta">Web Type @ RISD</div>
+			<a href="/">index</a><br>
+			<a href="/syllabus/">syllabus</a><br>
+			<a href="/schedule/">schedule</a><br>
+			<a href="/projects/">projects</a><br>
+			<a href="/readings/">readings</a><br>
+			<a href="/resources/">resources</a><br>
+			<a href="/colophon/">colophon</a>
+			<br>
+			<br>
+			<div class="meta">Quick links</div>
+			<a href="https://risd.zoom.us/j/97883162532" target="_blank">zoom</a> &rarr;<br>
+			<a href="https://docs.google.com/spreadsheets/d/1pCrREKrOvXLRe-MtiWhGrCLuv4MRFct_YnuBqMec8KI/edit#gid=0" target="_blank">office hours</a> &rarr;<br>
+			<a href="https://github.com/risd-web/webtype-demos" target="_blank">demos repository</a> &rarr;
+			<a href="https://risd.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=fe7e0ae6-604e-44ec-a7d7-ae3f0033a340" target="_blank">tutorial videos</a> &rarr;	
+			<a href="https://drive.google.com/drive/folders/1f21gsrM7leOLwqET_ZrsLhG3KTlqQzBA?usp=sharing" target="_blank">technical slides</a> &rarr;	
+		</div>
+	</nav>
+</header>
+
+	<main class="content">
+		
+<div class="resources">
+	<article>
+		<h1>JavaScript</h1>
+		<p><p>Unlike HTML and CSS, Javascript is a programming language and can perform all sorts of actions. JavaScript is list of instructions to be interpreted and executed by your computer, either by a browser or other JavaScript interpreter (in the command line.)</p>
+<ul>
+<li>content, HTML</li>
+<li>form, CSS</li>
+<li><strong>behavior, JavaScript</strong></li>
+</ul>
+<p>Javascript can add interactivity to a page by manipulating the DOM (Document Object Model).</p>
+<ul>
+<li>Access the content of the page</li>
+<li>Modify the content of the page</li>
+<li>Program rules or instructions the browser can follow</li>
+<li>React to events triggered by the user or browser</li>
+<li>Use an API via HTTP(S)</li>
+</ul>
+<h2>Setup</h2>
+<p>Like CSS, JavaScript can be included within the <code>&lt;head&gt;&lt;/head&gt;</code> your <code>html</code> file as well as linked as an external file. It can also be included at the bottom of your document, right before the closing <code>&lt;/body&gt;</code> tag.</p>
+<pre><code class="language-HTML">&lt;!-- Internal JavaScript --&gt;
+&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;
+  JavaScript code 
+&lt;/script&gt;
+
+
+&lt;!-- External JavaScript --&gt;
+&lt;script language=&quot;javascript&quot; src=&quot;js/filename.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<h2>Output</h2>
+<p>When you instruct Javascript to perform a task, it will usually give you some output, but it won’t automatically display it anywhere. You can verify your result by using the Console of your browser.</p>
+<pre><code class="language-JS">&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;
+	console.log(&quot;Hello World!&quot;);
+&lt;/script&gt;
+</code></pre>
+<h2>Comments</h2>
+<p>Comments are important to keep your code legible — they help you execute the program in your head.  They’re a great tool to keep track of the purpose of each line of your script. They also help future you (and others) read and understand your code.</p>
+<pre><code class="language-JS">&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;
+      
+      // ”//” starts a single line comment.
+
+      /* “/*” opens a multiline comment,
+         and “*/” closes it. */
+
+&lt;/script&gt;
+</code></pre>
+<h2>Syntax</h2>
+<p>A script is a series of instructions that a computer can follow one-by-one. Each individual instruction or step is known as a <em>statement</em>. Statements should end with a semicolon (<code>;</code>) Statements are composed of <em>values</em>, <em>operators</em>, <em>expression</em>, <em>keywords</em>, and <em>comments</em>. Semicolons are not needed after curly brackets <code>}</code> (except when it is an expression.)</p>
+<table>
+<thead>
+<tr>
+<th>type</th>
+<th>description</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>values</td>
+<td>Fixed values are called <em>literals</em>, such as numbers or texts (strings). Variable values are called <em>variables</em>.</td>
+<td><code>&quot;Hello!&quot;</code> <code>23</code></td>
+</tr>
+<tr>
+<td>operators</td>
+<td>Operators determine the relationship between the left and right side of the operand. There are different categories of operators</td>
+<td><code>var x = 5;</code> <code>(5 + 6) * 9;</code></td>
+</tr>
+<tr>
+<td>expression</td>
+<td>An expression is a combination of values, variables, and operators, which computes to a value. The computation is called an evaluation.</td>
+<td><code>(5 + 6) * 9;</code> <code>&quot;Web&quot; + &quot; &quot; + &quot;Design&quot;;</code> <code>x * 10;</code></td>
+</tr>
+<tr>
+<td>keywords</td>
+<td>Keywords are used to identify actions to be performed.</td>
+<td><code>let x = 5;</code></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-JS">&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;
+
+      alert(&quot;hi&quot;);
+
+      if (…) {
+       …
+      } else {
+       …
+      }
+
+      function foo() {
+        return true;
+      }
+
+      let foo = function() {
+        return true;
+      }; // this is an expression
+
+      for (let i=0; i &lt; 10; i++) {
+         // actions 
+      } 
+
+&lt;/script&gt;
+</code></pre>
+<h2>Data types</h2>
+<h3>Strings</h3>
+<p>In programming languages, any textual content that is not part of the programming instructions must be surrounded in single or double quotes (just make sure they match, and that they’re not curly quotes.)</p>
+<pre><code class="language-JS">&quot;Hello World&quot;;   // works
+'Hi';            // works
+&quot;This';         // won’t work
+</code></pre>
+<h3>Numbers</h3>
+<p>Numbers do not need to be surrounded in quotes <code>&quot;&quot;</code>.</p>
+<pre><code class="language-JS">1    // integers
+0.5  // non-integers with decimal digits are called floats
+</code></pre>
+<h3>Boolean</h3>
+<p>A binary value of either <code>true</code> or <code>false</code>. These are useful for <a href="#conditionals">conditionals</a>.</p>
+<pre><code class="language-JS">let x = false;
+if (x) {
+  // this code is not executed
+}
+</code></pre>
+<h3>Variables</h3>
+<p>A variable is a named location for storing a value. That way an unpredictable value can be accessed through a predetermined name; it can serve as a container for anything (numbers, strings, booleans, arrays, other variables.)</p>
+<pre><code class="language-JS">let x = 9;
+let school = &quot;RISD&quot;;
+</code></pre>
+<h3>Variable naming conventions</h3>
+<p>You can call a variable pretty much anything you like, but there are limitations. Generally, you should stick to just using Latin characters (0-9, a-z, A-Z) and the underscore character.</p>
+<ul>
+<li>Avoid underscores at the start of variable names — this is used in certain JavaScript constructs to mean specific things, so may get confusing.</li>
+<li>Avoid numbers at the start of variables.</li>
+<li>A safe convention to stick to is so-called &quot;lower camel case&quot;, where you stick together multiple words, using lower case for the whole first word and then capitalize subsequent words. <code>camelCase</code></li>
+<li>Make variable names intuitive, so they describe the data they contain. Avoid single letters/numbers, or big long phrases.</li>
+<li>Variables are case sensitive — so myage is a different variable from myAge.</li>
+<li>Avoid using JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords">reserved words</a> as your variable names — like <code>var</code>, <code>function</code>, <code>let</code>, and <code>for</code> — since browsers recognize them as code.</li>
+</ul>
+<h3>Arrays</h3>
+<p>An array is a data type that contains a group of values. This can be a list of anything—strings, integers, variables. An array is defined by a comma-separated list of items in square brackets <code>[]</code>.</p>
+<pre><code class="language-JS">let colors = [&quot;red&quot;,&quot;green&quot;,&quot;blue&quot;];
+</code></pre>
+<p>You can access array items by their <em>index,</em> or numerical label, inserted between square brackets<code>[]</code>. The starting position is <code>0</code>, not <code>1.</code>  The <code>length</code> property will give you the number of items in an array.</p>
+<pre><code class="language-JS">colors[0] // red
+colors[1] // green
+colors.length // 3
+</code></pre>
+<h3>Objects</h3>
+<p>An object is a collection of data, where each data in the collection has a unique name that identifies it. An object is defined by a comma-separated list of <code>key: value</code> pairs in curly brackets <code>{}</code>.</p>
+<pre><code class="language-JS">let numbers = {e: 2.7183, pi: 3.1416};
+</code></pre>
+<p>Each item in the object has a <em>key</em> and a <em>value.</em> You use the key to get at the value! You can access the value either by a <code>.</code> before the key or by inserting the key within square brackets <code>[]</code>. If using square brackets, make sure to surround the key in quotes <code>''</code>.</p>
+<pre><code class="language-JS">numbers.e // 2.7183
+numbers['pi'] // 3.1416
+</code></pre>
+<h2>Operators</h2>
+<h3>Assignment operators</h3>
+<p>The assignment operator <code>=</code> assigns the right-hand value to the left-hand operand.</p>
+<pre><code class="language-JS">let name = &quot;Beatrice&quot;; // assigns Beatrice to the name variable
+name = &quot;Betty&quot;; // updates the value of name to Betty
+
+let count = 5; //assigns 5 to the variable count
+count = count + 3; // updates the count variable by adding 3 to itself. count is now 8. 
+</code></pre>
+<p>There is a shorthand for variables to cumulatively assign new values to itself.</p>
+<pre><code class="language-JS">count += 3; // same as count = count + 3
+count ++; // same as count += 1, or count = count + 1
+</code></pre>
+<h3>String operators</h3>
+<p>The concatenation operator (<code>+</code>) concatenates two string values together, returning another string that is the union of the two operand strings.</p>
+<pre><code class="language-JS">var mystring = &quot;alpha&quot;;
+mystring += &quot;bet&quot;; // evaluates to &quot;alphabet&quot; and assigns this value to mystring.
+</code></pre>
+<h3>Comparison operators</h3>
+<p>Comparison evaluates an expression, returning a boolean, <code>true</code> or <code>false</code>.
+Below are some examples — these are <strong>strict</strong> comparison formats, meaning they will check both the data type and the value.</p>
+<table>
+<thead>
+<tr>
+<th>operator</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>===</code></td>
+<td>checks whether they are equal</td>
+</tr>
+<tr>
+<td><code>!==</code></td>
+<td>checks whether they are NOT equal</td>
+</tr>
+<tr>
+<td><code>&lt;</code> or <code>&gt;</code></td>
+<td>checks that the number on the left is less than or greater than the right</td>
+</tr>
+</tbody>
+</table>
+<h3>Logical operators</h3>
+<p>Logical operators combine multiple conditions</p>
+<table>
+<thead>
+<tr>
+<th>operator</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&amp;&amp;</code></td>
+<td>logical AND <br> <code>3 &lt; 5 &amp;&amp; 2 &gt; 9 // evaluates to false</code></td>
+</tr>
+<tr>
+<td>`</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2>Conditionals</h2>
+<p>Conditionals allow you to declare different actions based on different conditions. You can use If <code>if</code> / Then <code>else if</code> / Else <code>else</code> logic to define your scenarios.</p>
+<pre><code class="language-JS">let x = 2
+if (x === 2) {
+  console.log(&quot;x is 2&quot;);
+}
+else if (x === 3){
+  console.log(&quot;x is 3&quot;);
+}
+else {
+  console.log(&quot;x is neither 2 nor 3&quot;);
+}
+</code></pre>
+<h2>Functions</h2>
+<p>A function is a set of actions to be performed. These can include built-in functions, like <code>console.log</code> or <code>alert</code>, or you can define your own function. Most functions are groups of other functions.</p>
+<p>After declaring a function, you can execute its statements by calling the function. While it’s possible to call a function before it’s declared, it’s best practice to declare your functions before you call them.</p>
+<pre><code class="language-JS">// define custom function we called sayHi. This only defines the function and does not execute it.
+function sayHi() { 		
+  console.log(&quot;Hi!&quot;);  // native function console.log
+  alert(&quot;Hi&quot;);  // native function alert
+}
+
+//call (execute) the sayHi function
+sayHi();			
+
+</code></pre>
+<h3>Parameters and arguments</h3>
+<p>A function may need inputs to process its statements. These inputs are known as <em>parameters</em> and are used as variables in the function’s statements — you can give them whatever name is appropriate. <em>Arguments</em> are inputs passed into the function when it is called. When you expect a function to provide an answer or output, it’s know as the <em>return value</em>.</p>
+<p>The above function can be re-written to be more general.</p>
+<pre><code class="language-JS">//sets up &quot;something&quot; as a parameter.
+function saySomething(something) { 	
+  console.log(something);	
+  alert(something);					
+}
+
+//call saySomething function via the function name and parentheses (). 
+saySomething(&quot;Hi&quot;); // executes the same statements as above
+</code></pre>
+<p>You can also define multiple arguments</p>
+<pre><code class="language-JS">//define function with parameters width and height
+function getArea(width, height) {
+   return width*height;
+}
+
+//call getArea function with arguments 3 and 5
+getArea(3, 5); //returns 15
+
+</code></pre>
+<h2>Loops</h2>
+<p>For loops allow you to run a function by specifying the number of iterations you want it to repeat; it uses a counter as its condition to run.</p>
+<pre><code class="language-JS">// logs &quot;Hello&quot; in the console 5 times
+for(var i = 0; i &lt; 5; i++){ // i is the index, or the count value of the loop. It start at 0 and will increment (i++) every iteration, untill it’s no longer &lt; 10.
+	console.log(i, &quot;Hello&quot;); 
+}
+</code></pre>
+<p>Expected output in Console</p>
+<pre><code>0 Hello
+1 Hello
+2 Hello
+3 Hello
+4 Hello
+</code></pre>
+<h2>Objects, properties, and methods</h2>
+<p>Objects are containers for named values, which could <em>properties</em> or <em>methods</em>.
+<em>Properties</em> are data (see data types above) associated to the particular object, and <em>Methods</em> are specific functions for ane object; both are accessible as <em>key</em>s of the object. Below are two examples of JavaScript objects.</p>
+<h3>The Document Object</h3>
+<p>The most important object in JavaScript is the Document Object: it represents an HTML web page.</p>
+<ul>
+<li><em>Properties</em> describe characteristics of the current web page (such as the title of the page).</li>
+<li><em>Methods</em> perform tasks associated with the document currently loaded in the browser (such as getting information from a specified element or adding new content).</li>
+<li><em>Events</em>, such as a user clicking or tapping on an element, can be used as triggers for methods</li>
+</ul>
+<p>We will use the <a href="https://jquery.com/">jQuery</a> library to navigate and manipulate the DOM.</p>
+<h3>The Math Object</h3>
+<p>There is a <code>Math</code> object in JavaScript can be used to work with numbers, and it comes with several <em>methods</em>. The outputs of these can be scaled to your desired range.</p>
+<table>
+<thead>
+<tr>
+<th>method</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Math.random()</code></td>
+<td>generates a number [0, 1) that is, from 0 (inclusive) up to but not including 1 (exclusive).</td>
+</tr>
+<tr>
+<td><code>Math.floor()</code></td>
+<td>returns the largest integer less than or equal to a given number</td>
+</tr>
+<tr>
+<td><code>parseInt()</code></td>
+<td>converts its first argument to a string, parses it, and returns an integer or NaN (not a number.)</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-JS">// get a random integer between 2 numbers, including the min and max.
+function getRandomNumber(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min; 
+}
+
+getRandomNumber(0, 5); // returns a random number: 0, 1, 2, 3, 4, or 5.
+</code></pre>
+</p>
+	</article>
+	<aside>
+		<div class="notes">
+			
+			
+				<a href="/notes/webintro/">
+					The Internet
+				</a>
+			
+				<a href="/notes/01-html/">
+					HTML
+				</a>
+			
+				<a href="/notes/02-css/">
+					CSS Basics
+				</a>
+			
+				<a href="/notes/03-layouts/">
+					Layouts and Structure
+				</a>
+			
+				<a href="/notes/04-responsive/">
+					Responsive Design
+				</a>
+			
+			
+
+			
+			
+				<a href="/resources/html-terms/">
+					Glossary
+				</a>
+			
+				<a href="/resources/type-help/">
+					Type Resources
+				</a>
+			
+				<a href="/resources/web-help/">
+					Web Resources
+				</a>
+			
+				<a href="/resources/">
+					Troubleshooting
+				</a>
+			
+		</div>
+	</aside>
+</div>
+
+	</main>
+	<footer>
+	<ul>
+		<li>WEB TYPE (RISD GRAPH-2313-01)</li>
+		<li>Thursdays 1:10pm–6:10pm, DC 407</li>
+		<li>Sometimes on <a href="https://risd.zoom.us/j/97883162532" target="_blank">Zoom</a></li>
+	</ul>
+</footer>
+
+</div>
+</body>
+</html>

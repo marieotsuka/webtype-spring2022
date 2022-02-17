@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>jQuery and JSON — WebType</title>
+	<meta name="description" content="Class website for Web Type, Spring 2022 at RISD">
+	<meta name="author" content="Marie Otsuka">
+	<link rel=icon href=/assets/img/favicon.png type="image/png">
+	<link rel="stylesheet" href="/css/style.css">
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script>
+	<script src="/assets/js/script.js"></script>
+</head>
+<body>
+<div class="container">
+	<header>
+	<nav>
+		<a href="/" class="home">Web Type</a>
+		<div class="menu-icon">≡≡</div>
+		<div class="nav-links">
+			<div class="meta">Web Type @ RISD</div>
+			<a href="/">index</a><br>
+			<a href="/syllabus/">syllabus</a><br>
+			<a href="/schedule/">schedule</a><br>
+			<a href="/projects/">projects</a><br>
+			<a href="/readings/">readings</a><br>
+			<a href="/resources/">resources</a><br>
+			<a href="/colophon/">colophon</a>
+			<br>
+			<br>
+			<div class="meta">Quick links</div>
+			<a href="https://risd.zoom.us/j/97883162532" target="_blank">zoom</a> &rarr;<br>
+			<a href="https://docs.google.com/spreadsheets/d/1pCrREKrOvXLRe-MtiWhGrCLuv4MRFct_YnuBqMec8KI/edit#gid=0" target="_blank">office hours</a> &rarr;<br>
+			<a href="https://github.com/risd-web/webtype-demos" target="_blank">demos repository</a> &rarr;
+			<a href="https://risd.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=fe7e0ae6-604e-44ec-a7d7-ae3f0033a340" target="_blank">tutorial videos</a> &rarr;	
+			<a href="https://drive.google.com/drive/folders/1f21gsrM7leOLwqET_ZrsLhG3KTlqQzBA?usp=sharing" target="_blank">technical slides</a> &rarr;	
+		</div>
+	</nav>
+</header>
+
+	<main class="content">
+		
+<div class="resources">
+	<article>
+		<h1>jQuery and JSON</h1>
+		<p><h2>jQuery</h2>
+<p>jQuery is an easier way to write JavaScript: it is a JavaScript Library (think “plugin”) — a library of pre-written JavaScript which allows for easier development of JavaScript-based applications. jQuery is basically JavaScript, but it takes a lot of common tasks that require many lines of JavaScript code to process, and wraps them into <em>methods</em> that you can call with a single line of code.</p>
+<h3>Document Object Model</h3>
+<p>The DOM represents the document as nodes and objects. In this way, programming languages can connect to the page. When a web page is loaded, the browser builds up a model of the document’s structure and uses this model to draw the page on the screen.</p>
+<p>You can think a HTML document as a nested stracture of html as a tree of objects. Here’s an example document:</p>
+<pre><code class="language-HTML">&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;DOM tree example&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Title goes here&lt;/h1&gt;
+    &lt;h2&gt;Subtitle goes here&lt;/h2&gt;
+    &lt;p&gt;Body goes here with a &lt;a&gt;link&lt;/a&gt;&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3>How to implement jQuery</h3>
+<p>You can either <a href="https://jquery.com/download">download jQuery</a> or import it from a CDN.</p>
+<p><em>Download</em>: Select the “compressed, production jQuery” package of the latest version. Locate the jQuery script you download into your project’s JavaScript folder, and link to it before including your own JavaScript files.</p>
+<pre><code class="language-HTML">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;How to implment jQuery&lt;/title&gt;
+  &lt;script src=&quot;js/jquery-3.4.1.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;js/yourscript.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+...
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>If you don’t want to download and host jQuery yourself, you can include it from a CDN (stands for Content Delivery Network). It means a system of computers that exist all over the world and cache files for users to access. CDNs can reduce the load time of a page by offering files at a higher bandwidth from a server that is physically closer to your visitor than your web server might be. The jQuery library will already be cached in the visitor’s browser if they visited another website that references the same jQuery library. In this case, the visitor won’t even have to download the jQuery library.</p>
+<p>You can copy-paste the <a href="https://code.jquery.com/">jQuery CDN</a> into the <code>&lt;head&gt;&lt;/head&gt;</code> of your document.</p>
+<pre><code>&lt;script
+  src=&quot;https://code.jquery.com/jquery-3.4.1.min.js&quot;
+  integrity=&quot;sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=&quot;
+  crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+</code></pre>
+<h3>How to use jQuery</h3>
+<p>When you write JavaScript using jQuery, you should always wrap the JavaScript in a special jQuery function that waits to run the code until the rest of the document (DOM) has finished loading.</p>
+<pre><code class="language-JS">$(function() {
+  // Your JavaScript goes here.
+});
+</code></pre>
+<p>The jQuery basic syntax is <code>$(selector).action()</code>:</p>
+<ul>
+<li><code>$</code> sign define jQuery.</li>
+<li>A <code>(selector)</code> defines “query (or find)” HTML elements</li>
+<li>A <code>action()</code> to be performed on the element's.</li>
+</ul>
+<h2>JSON</h2>
+<p>JSON stands for JavaScript Object Notation is a standard text-based format for representing structured data based on JavaScript object syntax. JSON is widely used for storing, serializing, and transmitting structured data.</p>
+<p>JSON data is usaually loaded as an external file or request it from an API.
+You can:</p>
+<ul>
+<li>download a JSON from an online dataset</li>
+<li>convert a CSV file via an <a href="https://www.csvjson.com/csv2json">online converter</a></li>
+<li>create your own data with Google Spreadsheets / Microsoft Excel, export as CSV, then convert to JSON</li>
+</ul>
+<p>If you make your own file, make sure your JSON data is properly formatted, using tools such as <a href="https://jsonlint.com/">JSONLint</a> to validate your JSON.</p>
+<p>A JSON file will look like following, as a set of objects with properties defined in <code>&quot;key&quot;:&quot;value&quot;</code> pairs.</p>
+<pre><code>{
+  &quot;r&quot;: &quot;red&quot;,
+  &quot;g&quot;: &quot;green&quot;,
+  &quot;b&quot;: &quot;blue&quot;
+}
+</code></pre>
+<p>All property names have to be surrounded by double quotes, and only simple data expressions are allowed—no function calls, bindings, or anything that involves actual computation. Comments are not allowed in JSON.</p>
+<p>Review how to access object items with the <a href="/lectures/07-javascript/#data-types">JavaScript — Data Types</a>, or read more on <a href="https://eloquentjavascript.net/04_data.html#h_cqg63Sxe3o">Eloquent Javascript</a>.</p>
+<h3>How to implement JSON</h3>
+<p>First, be sure to setup a <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server">local server</a> at the root of your web folder to properly load JSON.</p>
+<p>To load JSON data using jQuery, use the <code>getJSON()</code> or <code>ajax()</code> method. The <code>jQuery.getJSON( )</code> method loads JSON data from the server using a GET HTTP request.</p>
+<pre><code class="language-HTML">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;How to implement jQuery&lt;/title&gt;
+  &lt;script src=&quot;/common/jquery-3.4.1.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script&gt;
+         $(document).ready(function() {
+            $(&quot;button&quot;).click(function(event){
+               $.getJSON('yourjson.json', function(mycolor) {
+                  $('#color').html('&lt;p&gt;Red:' + mycolor.r+ '&lt;/p&gt;');
+                  $('#color').append('&lt;p&gt;Green:' + mycolor.g+ '&lt;/p&gt;');
+                  $('#color').append('&lt;p&gt;Blue:' + mycolor.b+ '&lt;/p&gt;');
+               });
+            });
+               
+         });
+      &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+      &lt;div id=&quot;color&quot;&gt;
+         Color
+      &lt;/div&gt;
+      &lt;button&gt;&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<ul>
+<li><a href="https://openweathermap.org/">Open Weather Map</a></li>
+<li><a href="https://rednoise.org/rita/">RiTa.js</a></li>
+<li><a href="https://www.data.gov/developers/apis">Data.gov APIs</a></li>
+<li><a href="https://apilist.fun/">API List</a></li>
+</ul>
+</p>
+	</article>
+	<aside>
+		<div class="notes">
+			
+			
+				<a href="/notes/webintro/">
+					The Internet
+				</a>
+			
+				<a href="/notes/01-html/">
+					HTML
+				</a>
+			
+				<a href="/notes/02-css/">
+					CSS Basics
+				</a>
+			
+				<a href="/notes/03-layouts/">
+					Layouts and Structure
+				</a>
+			
+				<a href="/notes/04-responsive/">
+					Responsive Design
+				</a>
+			
+			
+
+			
+			
+				<a href="/resources/html-terms/">
+					Glossary
+				</a>
+			
+				<a href="/resources/type-help/">
+					Type Resources
+				</a>
+			
+				<a href="/resources/web-help/">
+					Web Resources
+				</a>
+			
+				<a href="/resources/">
+					Troubleshooting
+				</a>
+			
+		</div>
+	</aside>
+</div>
+
+	</main>
+	<footer>
+	<ul>
+		<li>WEB TYPE (RISD GRAPH-2313-01)</li>
+		<li>Thursdays 1:10pm–6:10pm, DC 407</li>
+		<li>Sometimes on <a href="https://risd.zoom.us/j/97883162532" target="_blank">Zoom</a></li>
+	</ul>
+</footer>
+
+</div>
+</body>
+</html>

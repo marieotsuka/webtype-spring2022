@@ -1,0 +1,19 @@
+---
+title: "Notes"
+layout: page
+eleventyExcludeFromCollections: true
+---
+
+<div class="notes">
+	<p>
+		These are text-based notes of the <a href="https://drive.google.com/drive/folders/1f21gsrM7leOLwqET_ZrsLhG3KTlqQzBA" target="_blank">slides</a> and lectures presented throughout the course.
+	</p>
+	<div class="notecards">
+	{% assign notes = collections.note | sortByOrder %}
+	{% for n in notes %}
+		<a href="{{n.url}}" class="link-button">
+			{{n.data.title}}
+		</a>
+	{% endfor %}
+	</div>
+</div>

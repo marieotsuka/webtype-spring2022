@@ -1,0 +1,132 @@
+/*------------------
+MEDIA QUERIES
+-------------------*/
+
+@media only screen and (max-width: 1000px) {
+	.container{
+		max-width: 90%;
+	}
+	nav .home{
+		left: 5%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	body{
+		font-size: 18px;
+	}
+	.container{
+		max-width: 95%;
+	}
+	nav .home{
+		left: 2.5%;
+	}
+	.open .nav-links{
+		width: 80vw;
+	}
+	.index{
+		 h1{
+			font-size: 3rem;
+			margin-top: 0;
+		}
+		.week{
+			font-size: 1rem;
+		}
+	}
+
+	ul.links li{
+		font-size: 1rem;
+	}
+
+	.default article{
+		margin-left: 0;
+	}
+	th, td{
+		font-size: .9rem;
+		--wdth: 110;
+		--wght: 490;
+	}
+
+	h3{
+		--wght: 550;
+	}
+	#eval td:first-child, #eval th:first-child{
+		width: 30px;
+	}
+
+	.week-header{
+		flex-wrap: wrap;
+		.week-title{
+			flex: none;
+			width: 100%;
+		}
+	}
+	.index-list .accordion{
+		.assignments{
+			display: block;
+		}
+		h4{
+			font-size: .8rem;
+			padding-bottom: 0;
+		}
+	} 
+
+	code{
+		font-size: .8rem;
+	}
+
+}
+
+
+@media print{
+
+	header{
+		display: none;
+	}
+	body{
+		font-size: 15px;
+		line-height: 1.5;
+	}
+	.container{
+		max-width: 100%;
+	}
+	main{
+		margin-left: 0;
+		// columns: 2 auto;
+	}
+	time + ul{
+		margin-top: 1em;
+	}
+
+	article{
+
+		padding: 0;
+		// h1{
+		// 	margin-top: 0;
+		// }
+
+		h2{
+			margin-top: 1.5em;
+		}
+		h2, h3, h4, time { 
+			page-break-after: avoid;
+			break-after: avoid;
+		}
+		table{
+			// -webkit-column-break-inside: avoid;
+			// page-break-inside: avoid;
+			// break-inside: avoid;
+		}
+		ul{
+			max-width: 85%;
+		}
+		li{
+			-webkit-column-break-inside: avoid;
+			page-break-inside: avoid;
+			break-inside: avoid;
+		}
+	}
+	aside{
+		display: none;
+	}
+}

@@ -1,0 +1,17 @@
+---
+layout: default.liquid
+---
+
+<div class="schedule">
+	<h1>{{ title }}</h1>
+	<p>{{ content }}</p>
+	<ul class="index-list">
+		{% assign weeks = collections.schedule %}
+		{% for week in weeks %}
+		<li class="accordion {%if week.data.current %}open{%- endif -%}">
+			{% include "partials/week" w:week %}
+		</li>
+		{% endfor %}
+	</ul>
+</div>
+

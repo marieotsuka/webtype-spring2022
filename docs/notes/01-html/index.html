@@ -4,65 +4,57 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>HTML</title>
-	
-	
-
-	
-	<link rel="stylesheet" href="https://webtype.htmlkitchen.net/css/style.css">
-
+	<title>HTML — WebType</title>
+	<meta name="description" content="Class website for Web Type, Spring 2022 at RISD">
+	<meta name="author" content="Marie Otsuka">
+	<link rel=icon href=/assets/img/favicon.png type="image/png">
+	<link rel="stylesheet" href="/css/style.css">
 	<script
 	  src="https://code.jquery.com/jquery-3.4.1.min.js"
 	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 	  crossorigin="anonymous"></script>
-
-	
-	<script src='https://webtype.htmlkitchen.net/js/script.js'></script>
+	<script src="/assets/js/script.js"></script>
 </head>
 <body>
-	<div class="container">
-		<header>
-	
+<div class="container">
+	<header>
 	<nav>
-		<a href="https://webtype.htmlkitchen.net/" class="home">Web Type</a>
+		<a href="/" class="home">Web Type</a>
 		<div class="menu-icon">≡≡</div>
 		<div class="nav-links">
-			
-			
-				
-				<a href="/syllabus/" class="">Syllabus</a>
-			
-				
-				<a href="/schedule/" class="">Schedule</a>
-			
-				
-				<a href="/projects/" class="">Projects</a>
-			
-				
-				<a href="/notes/" class="active">Notes</a>
-			
-				
-				<a href="/resources/" class="">Resources</a>
-			
-				
-				<a href="/colophon/" class="">Colophon</a>
-			
+			<div class="meta">Web Type @ RISD</div>
+			<a href="/">index</a><br>
+			<a href="/syllabus/">syllabus</a><br>
+			<a href="/schedule/">schedule</a><br>
+			<a href="/projects/">projects</a><br>
+			<a href="/readings/">readings</a><br>
+			<a href="/resources/">resources</a><br>
+			<a href="/colophon/">colophon</a>
+			<br>
+			<br>
+			<div class="meta">Quick links</div>
+			<a href="https://risd.zoom.us/j/97883162532" target="_blank">zoom</a> &rarr;<br>
+			<a href="https://docs.google.com/spreadsheets/d/1pCrREKrOvXLRe-MtiWhGrCLuv4MRFct_YnuBqMec8KI/edit#gid=0" target="_blank">office hours</a> &rarr;<br>
+			<a href="https://github.com/risd-web/webtype-demos" target="_blank">demos repository</a> &rarr;
+			<a href="https://risd.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=fe7e0ae6-604e-44ec-a7d7-ae3f0033a340" target="_blank">tutorial videos</a> &rarr;	
+			<a href="https://drive.google.com/drive/folders/1f21gsrM7leOLwqET_ZrsLhG3KTlqQzBA?usp=sharing" target="_blank">technical slides</a> &rarr;	
 		</div>
 	</nav>
-	
 </header>
 
+	<main class="content">
 		
-	<main class='default'>
-		<article id="html" class="content">
-			<h1>HTML</h1><h2><a id="hypertext-markup-language" class="anchor" ariaLabel="Anchor"></a> HyperText Markup Language</h2>
+<div class="resources">
+	<article>
+		<h1>HTML</h1>
+		<p><h2>HyperText Markup Language</h2>
 <p>HTML is the language of web pages interpreted by web browsers.</p>
 <ul>
 <li>HTML = <em>H</em>yper<em>T</em>ext <em>M</em>arkup <em>L</em>anguage</li>
 <li>HTML defines web content by organizing text comprised of a series of nested tags</li>
 <li>HTML can be created with any simple text editor.</li>
 </ul>
-<h3><a id="layers-of-webpages" class="anchor" ariaLabel="Anchor"></a> Layers of Webpages</h3>
+<h3>Layers of Webpages</h3>
 <ul>
 <li><em>content, HTML</em></li>
 <li>form, CSS</li>
@@ -73,26 +65,27 @@
 <li>As code, in your text editor.</li>
 <li>As an webpage, in your browser.</li>
 </ol>
-<h2><a id="html-tag" class="anchor" ariaLabel="Anchor"></a> HTML Tag</h2>
+<h2>HTML Tag</h2>
 <p><strong>Tags</strong> are used to mark-up content in HTML. It is always between two angled brackets.</p>
 <p><code>&lt;p&gt;</code></p>
-<h3><a id="anatomy" class="anchor" ariaLabel="Anchor"></a> Anatomy</h3>
+<h3>Anatomy</h3>
 <ul>
 <li>Left-Angle Bracket <code>&lt;</code></li>
 <li>Tag name <code>p</code></li>
 <li>Right-Angle Bracket <code>&gt;</code></li>
 </ul>
-<h2><a id="html-element" class="anchor" ariaLabel="Anchor"></a> HTML Element</h2>
+<h2>HTML Element</h2>
 <p>All content is surrounded  between opening and closing tags. A closing tag is indicated with a forward slash <code>/</code>. Most forms of markup require both. (<a href="https://web.archive.org/web/20060314044545/http://www.sewingandembroiderywarehouse.com/embtrb.htm">Here’s</a> what happens when you don’t close tags.) A set of opening and closing tags form an html <strong>element</strong>. (Some special tags don’t require closing tags.)</p>
-<div class="highlight"><pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>headline<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>lorem ipsum ...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</code></pre></div><h3><a id="anatomy-1" class="anchor" ariaLabel="Anchor"></a> Anatomy</h3>
+<pre><code class="language-HTML">&lt;h1&gt;headline&lt;/h1&gt;
+&lt;p&gt;lorem ipsum ...&lt;/p&gt;
+</code></pre>
+<h3>Anatomy</h3>
 <ul>
 <li>opening tag <code>&lt;h1&gt;</code></li>
 <li>content <code>headline</code> — this is the actual text that will display</li>
 <li>closing tag <code>&lt;/h1&gt;</code></li>
 </ul>
-<h2><a id="semantic-markup" class="anchor" ariaLabel="Anchor"></a> Semantic Markup</h2>
+<h2>Semantic Markup</h2>
 <p>Semantic refers to how the elements relates to meaning in language or logic. <strong>Semantic markup</strong> establishes the hierarchy and structure of information. The latest version of html, html5, introduced several new elements (among other things) to improve how precisely a tag can describe the content it contains.</p>
 <ul>
 <li>Read more on how <a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML">Semantic Markup is important for Web Accessibility</a></li>
@@ -107,36 +100,39 @@
 <ul>
 <li>Inspect (⌘–Option–I or ⌘–Shift–C) displays the HTML structure and styles that the browser determined from the source file. You can also hover over elements to see what they correspond to on your screen. ** The inspector is your best tool when developing websites because it bridges the gap between your intentions with your code and how the browser renders it. **</li>
 </ul>
-<h2><a id="nested-structures" class="anchor" ariaLabel="Anchor"></a> Nested structures</h2>
+<h2>Nested structures</h2>
 <p>An element nested within another is called a <strong>child</strong> element. Conversely, an element containing another is called its <strong>parent</strong>. A child element must be closed before its parent element.</p>
 <p>This is incorrect syntax:</p>
-<div class="highlight"><pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>French Bakery<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
-	All goods must be eaten <span class="p">&lt;</span><span class="nt">em</span><span class="p">&gt;</span>today.
-<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">em</span><span class="p">&gt;</span>
+<pre><code class="language-HTML">&lt;h2&gt;French Bakery&lt;/h2&gt;
+&lt;p&gt;
+	All goods must be eaten &lt;em&gt;today.
+&lt;/p&gt;&lt;/em&gt;
 
-<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
-	<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Baguettes	
-	<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Croissants
-	<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Pastries<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
-</code></pre></div><p>These are examples of incorrect syntax:</p>
-<div class="highlight"><pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>French Bakery<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
-	All goods must be eaten <span class="p">&lt;</span><span class="nt">em</span><span class="p">&gt;</span>today<span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;</span>.
-<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
-	<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Baguettes<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>	
-	<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Croissants<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-	<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Pastries<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
-</code></pre></div><p>All HTML elements flow from the top to the bottom.
+&lt;ul&gt;
+	&lt;li&gt;Baguettes	
+	&lt;li&gt;Croissants
+	&lt;li&gt;Pastries&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<p>These are examples of incorrect syntax:</p>
+<pre><code class="language-HTML">&lt;h2&gt;French Bakery&lt;/h2&gt;
+&lt;p&gt;
+	All goods must be eaten &lt;em&gt;today&lt;/em&gt;.
+&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;Baguettes&lt;/li&gt;	
+	&lt;li&gt;Croissants&lt;/li&gt;
+	&lt;li&gt;Pastries&lt;/li&gt;
+&lt;ul&gt;
+</code></pre>
+<p>All HTML elements flow from the top to the bottom.
 Any whitespace (tabs or spaces) within the HTML file will have no effect on the rendered markdown; rather, it is a tool for writing readable code.
 Nested elements should be kept tabbed for readability: it will help you see where the opening and closing tags of elements.</p>
-<h2><a id="elements-and-attributes" class="anchor" ariaLabel="Anchor"></a> Elements and Attributes</h2>
+<h2>Elements and Attributes</h2>
 <p>Attributes provide additional information about the contents of an element appear with the opening tag of an element. They consist of an <strong>attribute name</strong> and a <strong>attribute value</strong>. Each element type has its own appropriate attributes.</p>
-<div class="highlight"><pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;index.html&#34;</span><span class="p">&gt;</span>home<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-</code></pre></div><h3><a id="anatomy-2" class="anchor" ariaLabel="Anchor"></a> Anatomy</h3>
+<pre><code class="language-HTML">&lt;a href=&quot;index.html&quot;&gt;home&lt;/a&gt;
+</code></pre>
+<h3>Anatomy</h3>
 <ul>
 <li>opening tag <code>&lt;a</code> (in this case, the anchor tag)</li>
 <li>attribute name <code>href</code> (the location / path to where the link takes you)</li>
@@ -148,18 +144,22 @@ Nested elements should be kept tabbed for readability: it will help you see wher
 </li>
 <li>content <code>home</code> (the text that the user clicks on)</li>
 </ul>
-<h2><a id="links" class="anchor" ariaLabel="Anchor"></a> Links</h2>
+<h2>Links</h2>
 <div class="terms" markup = "1">
 <p><strong>Local / Relative links</strong> Other pages in your site</p>
-<div class="highlight"><pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;about.html&#34;</span><span class="p">&gt;</span>learn more<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-</code></pre></div><p><strong>Anchor links</strong> Other locations within the same webpage</p>
-<div class="highlight"><pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#up&#34;</span><span class="p">&gt;</span>go back up<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-</code></pre></div><p><strong>Absolute links</strong> Other webpages outside your site</p>
-<div class="highlight"><pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https//www.google.com/&#34;</span><span class="p">&gt;</span>search stuff<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-</code></pre></div><p><strong>Download links</strong> Any non-html file for users to download</p>
-<div class="highlight"><pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;docs/resume.pdf&#34;</span><span class="p">&gt;</span>view a PDF<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-</code></pre></div></div>
-<h2><a id="inline-vs-block-elements" class="anchor" ariaLabel="Anchor"></a> Inline vs. Block elements</h2>
+<pre><code class="language-HTML">&lt;a href=&quot;about.html&quot;&gt;learn more&lt;/a&gt;
+</code></pre>
+<p><strong>Anchor links</strong> Other locations within the same webpage</p>
+<pre><code class="language-HTML">&lt;a href=&quot;#up&quot;&gt;go back up&lt;/a&gt;
+</code></pre>
+<p><strong>Absolute links</strong> Other webpages outside your site</p>
+<pre><code class="language-HTML">&lt;a href=&quot;https//www.google.com/&quot;&gt;search stuff&lt;/a&gt;
+</code></pre>
+<p><strong>Download links</strong> Any non-html file for users to download</p>
+<pre><code class="language-HTML">&lt;a href=&quot;docs/resume.pdf&quot;&gt;view a PDF&lt;/a&gt;
+</code></pre>
+</div>
+<h2>Inline vs. Block elements</h2>
 <p>There are two primary display formats for elements.</p>
 <div class="diagram">
 	<div class="line">
@@ -191,45 +191,93 @@ Nested elements should be kept tabbed for readability: it will help you see wher
 <li>to select in-line elements, such as text, we wrap them in a <code>span</code></li>
 <li>to group several elements together, we wrap them in a <code>div</code></li>
 </ul>
-<h2><a id="a-list-of-common-html-elements" class="anchor" ariaLabel="Anchor"></a> A list of common HTML elements</h2>
-<h3><a id="basic-elements" class="anchor" ariaLabel="Anchor"></a> Basic elements</h3>
+<h2>A list of common HTML elements</h2>
+<h3>Basic elements</h3>
 <p><code>&lt;html&gt; ... &lt;/html&gt;</code></p>
-<h3><a id="document-metadata" class="anchor" ariaLabel="Anchor"></a> Document metadata</h3>
+<h3>Document metadata</h3>
 <p><code>&lt;head&gt; ... &lt;/head&gt;</code></p>
 <p><code>&lt;title&gt; ... &lt;/title&gt;</code></p>
-<h3><a id="content-sectioning" class="anchor" ariaLabel="Anchor"></a> Content sectioning</h3>
+<h3>Content sectioning</h3>
 <p><code>&lt;header&gt; ... &lt;/header&gt;</code></p>
 <p><code>&lt;nav&gt; ... &lt;/nav&gt;</code></p>
 <p><code>&lt;section&gt; ... &lt;/section&gt;</code></p>
 <p><code>&lt;footer&gt; ... &lt;/footer&gt;</code></p>
 <p><code>&lt;h1&gt; ... &lt;/h1&gt;</code></p>
 <p><code>&lt;h2&gt; ... &lt;/h2&gt;</code></p>
-<h3><a id="text-content" class="anchor" ariaLabel="Anchor"></a> Text content</h3>
+<h3>Text content</h3>
 <p><code>&lt;ul&gt; ... &lt;/ul&gt;</code></p>
 <p><code>&lt;li&gt; ... &lt;/li&gt;</code></p>
 <p><code>&lt;p&gt; ... &lt;/p&gt;</code></p>
 <p><code>&lt;br /</code>*</p>
-<h3><a id="flow-content" class="anchor" ariaLabel="Anchor"></a> Flow content</h3>
+<h3>Flow content</h3>
 <p><code>&lt;img /&gt;</code>*</p>
-<h3><a id="inline-text-semantics" class="anchor" ariaLabel="Anchor"></a> Inline text semantics</h3>
+<h3>Inline text semantics</h3>
 <p><code>&lt;em&gt; ... &lt;/em&gt;</code></p>
 <p><code>&lt;strong&gt; ... &lt;/strong&gt; </code></p>
 <p>* these elements are self-closing and do not have opening/closing tag pairs. You may see them with or without the <code>/</code></p>
-<h2><a id="reference" class="anchor" ariaLabel="Anchor"></a> Reference</h2>
+<h2>Reference</h2>
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">A comprehensive list of HTML Elements</a></li>
 </ul>
-</article>
-	</main>
+</p>
+	</article>
+	<aside>
+		<div class="notes">
+			
+			
+				<a href="/notes/webintro/">
+					The Internet
+				</a>
+			
+				<a href="/notes/01-html/">
+					HTML
+				</a>
+			
+				<a href="/notes/02-css/">
+					CSS Basics
+				</a>
+			
+				<a href="/notes/03-layouts/">
+					Layouts and Structure
+				</a>
+			
+				<a href="/notes/04-responsive/">
+					Responsive Design
+				</a>
+			
+			
 
-		<footer>
+			
+			
+				<a href="/resources/html-terms/">
+					Glossary
+				</a>
+			
+				<a href="/resources/type-help/">
+					Type Resources
+				</a>
+			
+				<a href="/resources/web-help/">
+					Web Resources
+				</a>
+			
+				<a href="/resources/">
+					Troubleshooting
+				</a>
+			
+		</div>
+	</aside>
+</div>
+
+	</main>
+	<footer>
 	<ul>
 		<li>WEB TYPE (RISD GRAPH-2313-01)</li>
-		<li>Thursdays 1:10pm–6:10pm</li>
-		
+		<li>Thursdays 1:10pm–6:10pm, DC 407</li>
+		<li>Sometimes on <a href="https://risd.zoom.us/j/97883162532" target="_blank">Zoom</a></li>
 	</ul>
 </footer>
 
-	</div>
+</div>
 </body>
 </html>

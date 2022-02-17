@@ -1,0 +1,22 @@
+---
+title: "Projects"
+layout: default
+eleventyExlcudeFromCollections: true
+---
+
+<div class="projects">
+	<h1>{{ title }}</h1>
+	<p>
+		We will be exploring four project themes over the course of the semester. Unit 1: Responsive Typography <code>media query</code>, Unit 2: Variable Font Design <code>axis of variation</code>, Unit 3: The Type Specimen <code>input range</code>, Unit 4: Variable Systems <code>protocols</code>.
+	</p>
+
+	{% assign projects = collections.project | reverse %}
+	{% for p in projects %}
+		<a href="{{p.url}}" class="link-button">
+			<div class="project">
+				<div class="meta">Unit {{p.data.unit}}</div>
+				{{p.data.title}}
+			</div>
+		</a>
+	{% endfor %}
+</div>	

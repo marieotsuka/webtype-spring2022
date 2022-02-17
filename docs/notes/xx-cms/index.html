@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Content Management Systems — WebType</title>
+	<meta name="description" content="Class website for Web Type, Spring 2022 at RISD">
+	<meta name="author" content="Marie Otsuka">
+	<link rel=icon href=/assets/img/favicon.png type="image/png">
+	<link rel="stylesheet" href="/css/style.css">
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script>
+	<script src="/assets/js/script.js"></script>
+</head>
+<body>
+<div class="container">
+	<header>
+	<nav>
+		<a href="/" class="home">Web Type</a>
+		<div class="menu-icon">≡≡</div>
+		<div class="nav-links">
+			<div class="meta">Web Type @ RISD</div>
+			<a href="/">index</a><br>
+			<a href="/syllabus/">syllabus</a><br>
+			<a href="/schedule/">schedule</a><br>
+			<a href="/projects/">projects</a><br>
+			<a href="/readings/">readings</a><br>
+			<a href="/resources/">resources</a><br>
+			<a href="/colophon/">colophon</a>
+			<br>
+			<br>
+			<div class="meta">Quick links</div>
+			<a href="https://risd.zoom.us/j/97883162532" target="_blank">zoom</a> &rarr;<br>
+			<a href="https://docs.google.com/spreadsheets/d/1pCrREKrOvXLRe-MtiWhGrCLuv4MRFct_YnuBqMec8KI/edit#gid=0" target="_blank">office hours</a> &rarr;<br>
+			<a href="https://github.com/risd-web/webtype-demos" target="_blank">demos repository</a> &rarr;
+			<a href="https://risd.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=fe7e0ae6-604e-44ec-a7d7-ae3f0033a340" target="_blank">tutorial videos</a> &rarr;	
+			<a href="https://drive.google.com/drive/folders/1f21gsrM7leOLwqET_ZrsLhG3KTlqQzBA?usp=sharing" target="_blank">technical slides</a> &rarr;	
+		</div>
+	</nav>
+</header>
+
+	<main class="content">
+		
+<div class="resources">
+	<article>
+		<h1>Content Management Systems</h1>
+		<p><blockquote>
+<p>“... there's a fuzzy spectrum between graphic design, which might ask: ‘what does the interface look like?’, and software design, which asks: ‘what's the algorithm beneath the surface that's organizing the data.’”
+– Dan Michaelson</p>
+</blockquote>
+<p><a href="http://linkedbyair.net/balkin.pdf">Dan Michaelson interviewed by Jack Balkin: Sometimes it looks like a duck, sometimes it looks like a rabbit</a></p>
+<p>A Content Management System, or CMS, is a platform that allows you to generate websites without directly writing the HTML. Using a content management system allows several additional functionalities. It can:</p>
+<ul>
+<li>allow you to build a generative system for your website</li>
+<li>breakdown your pages into constants and variables: parts that remain the same, and parts that change according to the page</li>
+<li>manage collaborative authoring: ability for multiple editors to modify the website</li>
+</ul>
+<p>Some common CMSes include:</p>
+<ul>
+<li><a href="https://wordpress.org/">WordPress</a></li>
+<li><a href="https://www.squarespace.com/">Squarespace</a></li>
+<li><a href="https://cargo.site/">Cargo</a></li>
+<li><a href="https://persona.co/">Persona</a></li>
+<li><a href="http://getkirby.com/">Kirby</a></li>
+<li><a href="https://jekyllrb.com/">Jekyll</a></li>
+<li><a href="https://craftcms.com/">Craft</a></li>
+<li><a href="https://gohugo.io/">Hugo</a></li>
+<li><a href="https://getgrav.org/">Grav</a></li>
+<li><a href="http://docs.getpelican.com/en/stable/">Pelican</a></li>
+<li><a href="https://ghost.org/">Ghost</a></li>
+</ul>
+<p>There is a large variety of CMSes with a wide range of features; however, <em>there is no perfect CMS.</em> Because a CMS handles the <em>process</em> of how to creat a website, it does not necessarily impact the output or design. Since the workflow and flexibility with which you might need to create a website differs according to project, it is important that you understand these parameters before selecting a CMS.</p>
+<p>Every CMS consists of three main components.</p>
+<h2>Generator / Back-end language</h2>
+<p>Building with a CMS entails breaking down your website into components; so
+every CMS needs a script that runs and compiles the parts into a website.
+There are different models on how these components are organized (in a database vs. folders, or flat files) and how these are accessed (<code>php</code>, <code>ruby</code>, <code>python</code>, <code>js</code>).</p>
+<p><a href="https://wordpress.org/">WordPress</a>, for example, stores the content into a database and uses <code>php</code> to compile them.</p>
+<h2>Templating Engine</h2>
+<p>A CMS divides your website into 2 parts: 1. theme and 2. content.</p>
+<h3>1. Theme</h3>
+<p>The theme consists of different templates for each type of layout you will have on your website: for example, you might have a template for the <code>hompage</code>, <code>pages</code>(general pages, such as the about page), <code>posts</code> (ordered content), or other <code>custom content types</code>. (The exact terminology will differ according to your system.)</p>
+<p>How you define your templates depends on the CMS.</p>
+<p>Some common templating frameworks include:</p>
+<ul>
+<li><a href="https://twig.symfony.com/doc/2.x/templates.html">Twig</a> for <code>php</code></li>
+<li><a href="https://shopify.github.io/liquid/">Liquid</a> for <code>ruby</code></li>
+<li><a href="https://handlebarsjs.com/guide/">Handlebars</a> (for various programming languages)</li>
+</ul>
+<h3>2. Content</h3>
+<p>The content is the “variable” part of, such as the actual text content, or images, etc.</p>
+<p>A common format to store textual content is <a href="https://www.markdownguide.org/getting-started/">markdown</a>. You can create a markdown file with your text editor in the same way as you would an <code>html</code> file, with a <code>.md</code> extension instead. Markdown allows you to write documents in plain text; the CMS then renders this into HTML.</p>
+<p>Often, at the top of these markdown files are file <strong>frontmatter</strong>, or <strong>metadata</strong> that tells the CMS how to handle compiling this webpage. It’s important that the syntax used here does not have any typos and strictly follows the requirements of the CMS.</p>
+<p>Often, required metadata includes <code>title</code>, <code>date</code>; <code>categories</code>, <code>tags</code>.</p>
+<h3>Taxonomy</h3>
+<p>Category and tags are organizational keywords. While different CMSes treat them slightly differently, in general, <code>category</code> is a larger, hierarchical or ordered level of grouping content, whereas a <code>tag</code> is a keyword or attribute associated with the content — an article often has a single category, but has multiple tags. The classification structure for your website is called its <em>taxonomy</em>, and is an important part of defining the information architecture of your website. Having a well-defined taxonomy helps visitors form a better mental model of the organization of the site, and how to navigate it. It (among other things) also plays a role in SEO (search engine optimization.)</p>
+<h2>Aesthetics &amp; Governance</h2>
+<p>As you develop a CMS, especially for clients, you’ll find that a key decision you will be making is how flexible your system will be. What the norms, or the &quot;default&quot; is for your platform.</p>
+<ul>
+<li>How modular are your templates?</li>
+<li>What stylistic choices do you allow the user to change? (fonts, colors, images, layout placement, etc)</li>
+<li>Is there a word limit? (See: <a href="https://twitter.com/">Twitter</a>)</li>
+</ul>
+<h2>Demo: using Jekyll</h2>
+<p>Jekyll is a content management system that generates a static website (that does not require a server to dynamically compile your files) and works well with Github Pages.</p>
+<p>When you push Jekyll files onto Github, Github automatically compiles your site. Read more about <a href="https://jekyllrb.com/docs/github-pages/#deploying-jekyll-to-github-pages">deploying your jekyll site to Github</a>.</p>
+<ol>
+<li>
+<p>Follow instructions to <a href="https://jekyllrb.com/docs/installation/macos/">install Jekyll</a> via the Terminal</p>
+</li>
+<li>
+<p>Follow the <a href="https://jekyllrb.com/docs/step-by-step/01-setup/">step-by-step tutorial</a></p>
+</li>
+</ol>
+<p>After installing Jekyll, open your Terminal, then navigate to your desired Finder folder.
+You can do this by typing in <code>cd </code> (be sure to include the space) then drag-and-drop the folder into the Terminal.</p>
+<ul>
+<li>To create a new jekyll site, enter</li>
+</ul>
+<pre><code>jekyll new demo --blank
+</code></pre>
+<p>and substitute  <code>demo</code> with your custom folder name.</p>
+<ul>
+<li>Then navigate to it:</li>
+</ul>
+<pre><code>cd demo
+</code></pre>
+<ul>
+<li>Run Jekyll to compile</li>
+</ul>
+<pre><code>jekyll serve --watch
+</code></pre>
+<p>Navigate to the local server</p>
+<pre><code>http://localhost:4000/
+</code></pre>
+</p>
+	</article>
+	<aside>
+		<div class="notes">
+			
+			
+				<a href="/notes/webintro/">
+					The Internet
+				</a>
+			
+				<a href="/notes/01-html/">
+					HTML
+				</a>
+			
+				<a href="/notes/02-css/">
+					CSS Basics
+				</a>
+			
+				<a href="/notes/03-layouts/">
+					Layouts and Structure
+				</a>
+			
+				<a href="/notes/04-responsive/">
+					Responsive Design
+				</a>
+			
+			
+
+			
+			
+				<a href="/resources/html-terms/">
+					Glossary
+				</a>
+			
+				<a href="/resources/type-help/">
+					Type Resources
+				</a>
+			
+				<a href="/resources/web-help/">
+					Web Resources
+				</a>
+			
+				<a href="/resources/">
+					Troubleshooting
+				</a>
+			
+		</div>
+	</aside>
+</div>
+
+	</main>
+	<footer>
+	<ul>
+		<li>WEB TYPE (RISD GRAPH-2313-01)</li>
+		<li>Thursdays 1:10pm–6:10pm, DC 407</li>
+		<li>Sometimes on <a href="https://risd.zoom.us/j/97883162532" target="_blank">Zoom</a></li>
+	</ul>
+</footer>
+
+</div>
+</body>
+</html>

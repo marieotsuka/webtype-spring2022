@@ -1,0 +1,11 @@
+---
+layout: default.liquid
+---
+
+<div class="index">
+	{% for week in collections.schedule %}
+	  {% if week.data.current %}
+	  {% include "partials/week" w:week %}
+	  {% endif %}
+	{% endfor %}
+</div>
