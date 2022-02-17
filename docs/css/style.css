@@ -342,6 +342,7 @@ HOME INDEX
   text-transform: none;
   --slnt: 100;
   --wght: 120;
+  --wdth: 75;
 }
 .index time, .index .mode {
   display: inline-block;
@@ -513,6 +514,7 @@ h2.project {
   text-transform: none;
   --slnt: 100;
   --wght: 120;
+  --wdth: 75;
   --slnt: 0;
 }
 

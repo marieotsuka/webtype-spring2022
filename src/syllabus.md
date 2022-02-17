@@ -59,7 +59,7 @@ Over the course of the semester, will explore various ways to engage with typogr
 During our crits, we will review your project based on the evaluation criteria outlined below. Projects should be “live” and working on the web with no missing assets — you should try accessing the URL from a different computer / device prior to the class. Be prepared to describe your design process. While we can raise technical questions here, critique time should not be used for troubleshooting; these should be addressed prior to the crit either by consulting your classmates or via office hours.
 
 ### Readings
-[Readings](/readings/) will be dispersed throughout the semester to inform and contextualize our work with each project. Be prepared to respond to the reading in the slack channel, raise questions, and discuss the text during class.
+[Readings](/readings/) will be dispersed throughout the semester to inform and contextualize our work. Be prepared to respond to the reading in the relevant slack channel, raise questions, and discuss the text.
 
 ### Presentation & Discussion
 In addition to reading discussions and class critiques, we will be sharing resources with each other, and supporting each other through technical challenges.
