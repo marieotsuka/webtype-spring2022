@@ -2,10 +2,18 @@
 layout: default.liquid
 ---
 
-<div class="index">
+<section class="index">
 	{% for week in collections.schedule %}
 	  {% if week.data.current %}
 	  {% include "partials/week" w:week %}
 	  {% endif %}
 	{% endfor %}
-</div>
+</section>
+
+<section>
+	<div class="students link-list">
+		{% for s in students %}
+			<a href="{{s.link}}" target="_blank" class="link-button">{{s.name}}</a>
+		{% endfor %}
+	</div>
+</section>

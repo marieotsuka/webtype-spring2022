@@ -20,7 +20,7 @@ Every block-level element appears on a new line, causing each item to appear low
 </p>
 ```
 
-- This depends on the default `display` property of each element. Review: Inline vs. Block Elements.
+- This depends on the default `display` property of each element. 
 
 
 ## Change the Display properity
@@ -31,9 +31,125 @@ For example, `<div>` elements by default have the property `display: block;`, fo
 
 - `inline` displays an element as an inline element (ex. `li{ display: inline; }`)
 - `block` displays an element as a block element (ex. `img{ display: block; }`)
-- `inline-block` displays an element as an inline-level block container. The inside of this block is formatted as block-level box, and the element itself is formatted as an inline-level box (ex. `div.columns{ display: inline-block; }`) and allows you to define a width and height. 
+- `inline-block` displays an element as an inline-level block container. The inside of this block is formatted as block-level box, and the element itself is formatted as an inline-level box (ex. `.columns{ display: inline-block; }`) and allows you to define a width and height. 
   - Note: Because it is an inline element, white spaces between elements are treated in the same way as white spaces between words of text. You may get unwanted gaps appearing between elements.
 - There are [other possible properties](https://developer.mozilla.org/en-US/docs/Web/CSS/display) for `display`. 
+
+
+## Grids and Columns
+
+### CSS Grid
+CSS Grid allows you to define the column-row structure for all of your content. By declaring  `display: grid` on a container element, child elements need to be defined where they align to on the grid.
+- [Learn CSS Grid](https://learncssgrid.com/)
+- Read more on [CSS Grid properties](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- Tutorial: [CSS Grid Garden](https://cssgridgarden.com/)
+
+```HTML
+<div class="container">
+  <div class="cell item">
+    .item
+  </div>
+  <div class="cell">
+  </div>
+  <div class="cell">
+  </div>
+  <div class="cell">
+  </div>
+  <div class="cell">
+  </div>
+  <div class="cell">
+  </div>
+</div>
+```
+
+```CSS
+.container {
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2fr 1fr;
+  column-gap: .5em;
+  height: 200px;
+}
+ 
+.item {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+```
+
+<div class="diagram" style="display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: 2fr 1fr; column-gap: .5em; height: 200px;" >
+  <div class="line" style="height: auto; grid-column-start: 1; grid-column-end: 4;"> .item
+  </div>
+  <div class="line" style="height: auto;">
+    
+  </div>
+  <div class="line" style="height: auto;">
+    
+  </div>
+  <div class="line" style="height: auto;">
+    
+  </div>
+  <div class="line" style="height: auto;">
+    
+  </div>
+  <div class="line" style="height: auto;">
+    
+  </div>
+</div>
+
+### Flexbox model
+Flex box is a popular method for creating “flexible” columns of containers. By declaring `display: flex` on a container element, child elements could be made to shrink or expand according to specified properties. 
+
+- See [how it works](http://learnlayout.com/flexbox.html)
+- Read more on [flex-box properties](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- A starting point for a [responsive flex grid](https://css-tricks.com/dont-overthink-flexbox-grids/)
+- Tutorial: [Flexbox Froggy](https://flexboxfroggy.com/)
+
+```HTML
+<div class="container">
+  <div class="col">
+    stuff
+  </div>
+  <div class="col">
+    stuff
+  </div>
+  <div class="col">
+    stuff
+  </div>
+</div>
+```
+
+```CSS
+.container{
+  display: flex; 
+  column-gap: .5em;
+}
+
+.col{
+  flex: 1;
+}
+
+```
+
+<div class="diagram" style="display: flex; column-gap: .5em;">
+  <div class="line" style="flex: 1; margin-right: 0.5em;">
+    stuff
+  </div>
+  <div class="line" style="flex: 1; margin-right: 0.5em;">
+    stuff
+  </div>
+  <div class="line" style="flex: 1">
+    stuff
+  </div>
+</div>
+
+- container element still is set to fill the entire document width and has the property `display: flex; `
+- elements within the container will automatically scale to fit the available width, unless specified
+- advantage: you can combine a fixed-width column and a responsive, scalable column (instead of having both be percentage-based)
+
+### Grid vs. Flexbox
+- CSS Grid is better used for defining larger content areas
+- CSS Flexbox is better suited for organizing chunks within those areas
 
 # Positioning
 
@@ -209,139 +325,4 @@ Overflow accounts for when your content doesn’t fit within the container and s
 </div>
 
 
-# Hierarchy & Structure
 
-Visual hierarchy is the order in which the eye perceives what it sees. This order is created by visual contrast between forms in a perceptual field.
-
-- Read more about typography and visual hierarchy with [Ellen Lupton: Thinking with Type](http://thinkingwithtype.com/text/#line-spacing)
-
-### Content Types
-*Structure within a chunk of content:* the typographic organization of repeating groups of text. In order to structure your typography, we can begin to identify what categories of content there are.
-
-- What types of content tend to be chunked together?
-- What "metadata" is important?
-- How can this pattern be abstracted and reused?
-- Read more about [Content Display Patterns](https://superfriendlydesign.systems/articles/content-display-patterns/)
-
-### Wireframes
-*Structure within a page:* the visual organization of display patterns laid out within a webpage. Different types of pages will have diffent skeletons.
-
-### Sitemap
-*Structure within a website:* the organization of sections of content within a website. 
-
-- All of these structures will inform your HTML markup, or how the elements are nested within another.
-
-## Grids and Columns
-
-### CSS Grid
-CSS Grid allows you to define the column-row structure for all of your content. By declaring  `display: grid` on a container element, child elements need to be defined where they align to on the grid.
-- [Learn CSS Grid](https://learncssgrid.com/)
-- Read more on [CSS Grid properties](https://css-tricks.com/snippets/css/complete-guide-grid/)
-- Tutorial: [CSS Grid Garden](https://cssgridgarden.com/)
-
-```HTML
-<div class="container">
-  <div class="cell item">
-    .item
-  </div>
-  <div class="cell">
-  </div>
-  <div class="cell">
-  </div>
-  <div class="cell">
-  </div>
-  <div class="cell">
-  </div>
-  <div class="cell">
-  </div>
-</div>
-```
-
-```CSS
-.container {
-  display: grid; 
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 2fr 1fr;
-  column-gap: .5em;
-  height: 200px;
-}
- 
-.item {
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-```
-
-<div class="diagram" style="display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: 2fr 1fr; column-gap: .5em; height: 200px;" >
-  <div class="line" style="height: auto; grid-column-start: 1; grid-column-end: 4;"> .item
-  </div>
-  <div class="line" style="height: auto;">
-    
-  </div>
-  <div class="line" style="height: auto;">
-    
-  </div>
-  <div class="line" style="height: auto;">
-    
-  </div>
-  <div class="line" style="height: auto;">
-    
-  </div>
-  <div class="line" style="height: auto;">
-    
-  </div>
-</div>
-
-### Flexbox model
-Flex box is a popular method for creating “flexible” columns of containers. By declaring `display: flex` on a container element, child elements could be made to shrink or expand according to specified properties. 
-
-- See [how it works](http://learnlayout.com/flexbox.html)
-- Read more on [flex-box properties](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-- A starting point for a [responsive flex grid](https://css-tricks.com/dont-overthink-flexbox-grids/)
-- Tutorial: [Flexbox Froggy](https://flexboxfroggy.com/)
-
-```HTML
-<div class="container">
-  <div class="col">
-    stuff
-  </div>
-  <div class="col">
-    stuff
-  </div>
-  <div class="col">
-    stuff
-  </div>
-</div>
-```
-
-```CSS
-.container{
-  display: flex; 
-  column-gap: .5em;
-}
-
-.col{
-  flex: 1;
-}
-
-```
-
-<div class="diagram" style="display: flex; column-gap: .5em;">
-  <div class="line" style="flex: 1; margin-right: 0.5em;">
-    stuff
-  </div>
-  <div class="line" style="flex: 1; margin-right: 0.5em;">
-    stuff
-  </div>
-  <div class="line" style="flex: 1">
-    stuff
-  </div>
-</div>
-
-- container element still is set to fill the entire document width and has the property `display: flex; `
-- elements within the container will automatically scale to fit the available width, unless specified
-- advantage: you can combine a fixed-width column and a responsive, scalable column (instead of having both be percentage-based)
-
-### Grid vs. Flexbox
-- CSS Grid is better used for defining larger content areas
-- CSS Flexbox is better suited for organizing chunks within those areas

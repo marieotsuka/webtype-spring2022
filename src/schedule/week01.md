@@ -1,7 +1,7 @@
 ---
 title: Website as Medium
 date: 2022-02-17
-current: true
+current: false
 mode: in-person
 project: project1
 exercise: 0-getting-started

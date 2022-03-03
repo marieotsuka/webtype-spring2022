@@ -204,12 +204,12 @@ nav {
   --slnt: 0;
   --wght: 300;
   --wdth: 75;
+  --ss03: 0;
   font-size: 30px;
 }
 nav .home {
   display: block;
   padding-top: 0.5em;
-  --ss03: 0;
   --slnt: 0;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -227,8 +227,15 @@ nav .nav-links {
   padding: 0.8em 0 0 2em;
   color: white;
 }
-nav .nav-links h4, nav .nav-links a {
+nav .nav-links a {
+  display: block;
   color: white;
+}
+nav .nav-links a:hover {
+  --ss03: 1;
+}
+nav .nav-links a[target=_blank]::after {
+  content: "→";
 }
 nav.open .nav-links {
   display: block;
@@ -337,7 +344,7 @@ HOME INDEX
   margin-bottom: 3rem;
 }
 .index h2 {
-  font-size: 5rem;
+  font-size: 4.8rem;
   letter-spacing: -0.03em;
   text-transform: none;
   --slnt: 100;
@@ -349,6 +356,9 @@ HOME INDEX
   --slnt: 0;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+.index .mode {
+  --ss03: 0;
 }
 .index .row {
   display: flex;
@@ -369,6 +379,18 @@ HOME INDEX
 }
 .index ul li::before {
   content: "";
+}
+
+.link-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.student-list .link-button {
+  width: 130px;
+  height: 70px;
+  border-color: transparent;
+  border-radius: 50%;
 }
 
 /*------------------
@@ -427,6 +449,7 @@ SCHEDULE
 }
 .content .index-list .mode {
   text-align: right;
+  --ss03: 0;
 }
 .content .index-list dd {
   display: none;
@@ -509,7 +532,7 @@ PROJECTS
 }
 
 h2.project {
-  font-size: 5rem;
+  font-size: 4.8rem;
   letter-spacing: -0.03em;
   text-transform: none;
   --slnt: 100;
@@ -522,6 +545,59 @@ figcaption {
   text-align: left;
   font-size: 1rem;
   margin-bottom: 2rem;
+}
+
+/*------------------
+Exercises
+-------------------*/
+.layouts {
+  display: flex;
+}
+.layouts .mockup {
+  width: 240px;
+  position: relative;
+  padding-top: 50px;
+  margin: 50px;
+}
+.layouts .mockup figcaption {
+  position: absolute;
+  top: 0;
+}
+
+.block {
+  border: 1px solid;
+  padding: 5px;
+}
+
+.image-block {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.text-block {
+  width: 100px;
+}
+
+.layout1 .text-block {
+  margin: auto;
+  height: auto;
+}
+
+.layout2 {
+  display: flex;
+}
+.layout2 .text-block {
+  margin-right: 10px;
+}
+
+.layout3 {
+  display: flex;
+  height: 200px;
+}
+.layout3 .text-block {
+  height: 150px;
+  overflow: scroll;
 }
 
 /*------------------
@@ -546,6 +622,7 @@ RESOURCES
 }
 .resources aside .notes a {
   display: block;
+  margin-bottom: 0.5em;
 }
 
 .link-button {

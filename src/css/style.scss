@@ -79,7 +79,7 @@ a:hover{
 }
 
 @mixin largetext{
-	font-size: 5rem;
+	font-size: 4.8rem;
 	letter-spacing: -0.03em;
 	text-transform: none;
 	--slnt: 100;
@@ -245,16 +245,15 @@ nav{
 	--slnt: 0;
 	--wght: 300;
 	--wdth: 75;
+	--ss03: 0;
 	font-size: 30px;
 
 	.home{
 		display: block;
 		padding-top: .5em;
-		--ss03: 0;
 		@include heading;
 		height: 80px;
 	}
-
 
 	.nav-links{
 		display: none;
@@ -267,8 +266,15 @@ nav{
 		z-index: 200;
 		padding: .8em 0 0 2em;
 		color: white;
-		h4,a{
+		a{
+			display: block;
 			color: white;
+			&:hover{
+				--ss03: 1;
+			}
+		}
+		a[target=_blank]::after{
+			content: '\2192';
 		}
 	}
 	&.open {
@@ -406,6 +412,10 @@ HOME INDEX
 		@include heading;
 	}
 
+	.mode{
+		--ss03: 0;
+	}
+
 	.row{
 		display: flex;
 		margin-top: 1em;
@@ -428,6 +438,18 @@ HOME INDEX
 	}
 }
 
+.link-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+.student-list{
+	.link-button{
+		width: 130px;
+		height: 70px;
+		border-color: transparent;
+    border-radius: 50%;
+	}
+}
 
 /*------------------
 SYLLABUS
@@ -489,6 +511,7 @@ SCHEDULE
 
 	.mode{
 		text-align: right;
+		--ss03: 0;
 	}
 
 
@@ -579,6 +602,62 @@ figcaption{
 	margin-bottom: 2rem;
 }
 
+
+/*------------------
+Exercises
+-------------------*/
+
+.layouts{
+	display: flex;
+	.mockup{
+		width: 240px;
+		position: relative;
+		padding-top: 50px;
+		figcaption{
+			position: absolute;
+			top: 0;
+		}
+		margin: 50px;
+	}
+}
+
+.block{
+	border: 1px solid;
+	padding: 5px;
+}
+
+.image-block{
+		width: 80px;
+		height: 80px;
+		margin-right: 10px;
+}
+
+.text-block{
+		width: 100px;
+}
+
+.layout1{
+	.text-block{
+		margin: auto;
+		height: auto;
+	}
+}
+.layout2{
+	display: flex;
+	.text-block{
+		margin-right: 10px;
+	}
+}
+.layout3{
+	display: flex;
+	height: 200px;
+	.text-block{
+		height: 150px;
+		overflow: scroll;
+	}
+}
+
+
 /*------------------
 RESOURCES
 -------------------*/
@@ -599,6 +678,7 @@ RESOURCES
 		margin-left: 2em;
 		.notes a{
 			display: block;
+			margin-bottom: 0.5em;
 		}
 	}
 }

@@ -106,6 +106,8 @@ Note: nested brackets
 
 
 ## Reference
+- [Ethan Marcotte: Responsive Web Design](https://alistapart.com/article/responsive-web-design/)
+- [Smashing Magazine: Responsive Web Design](https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/)
 - [Nick Sherman: Variable Fonts for Responsive Design](https://alistapart.com/blog/post/variable-fonts-for-responsive-design/)
 - [Andrew Johnson: Live Interpolation on the Web](https://alistapart.com/article/live-font-interpolation-on-the-web/)
 - [Scott Kellum: Fluid typography and the creation of Typetura](https://typetura.scottkellum.com/)

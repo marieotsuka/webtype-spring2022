@@ -41,7 +41,7 @@ Below are links to some resources for typefaces and typography.
 - [Occupant Fonts](http://www.occupantfonts.com/)
 
 ## Type technology
-- [Using @font-face](https://css-tricks.com/snippets/css/using-font-face/)
+- [Using @font-face](https://css-tricks.com/snippets/css/using-font-face-in-css/)
 - [A Variable Fonts Primer](https://variablefonts.io/)
 - [typetura.js](https://github.com/typetura/typetura.js)
 - [Variable Fonts](https://v-fonts.com/)

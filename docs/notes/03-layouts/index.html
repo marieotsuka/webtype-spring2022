@@ -23,21 +23,22 @@
 		<div class="menu-icon">≡≡</div>
 		<div class="nav-links">
 			<div class="meta">Web Type @ RISD</div>
-			<a href="/">index</a><br>
-			<a href="/syllabus/">syllabus</a><br>
-			<a href="/schedule/">schedule</a><br>
-			<a href="/projects/">projects</a><br>
-			<a href="/readings/">readings</a><br>
-			<a href="/resources/">resources</a><br>
+			<a href="/">index</a>
+			<a href="/syllabus/">syllabus</a>
+			<a href="/schedule/">schedule</a>
+			<a href="/projects/">projects</a>
+			<a href="/readings/">readings</a>
+			<a href="/resources/">resources</a>
 			<a href="/colophon/">colophon</a>
+			
 			<br>
 			<br>
 			<div class="meta">Quick links</div>
-			<a href="https://risd.zoom.us/j/97883162532" target="_blank">zoom</a> &rarr;<br>
-			<a href="https://docs.google.com/spreadsheets/d/1pCrREKrOvXLRe-MtiWhGrCLuv4MRFct_YnuBqMec8KI/edit#gid=0" target="_blank">office hours</a> &rarr;<br>
-			<a href="https://github.com/risd-web/webtype-demos" target="_blank">demos repository</a> &rarr;
-			<a href="https://risd.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=fe7e0ae6-604e-44ec-a7d7-ae3f0033a340" target="_blank">tutorial videos</a> &rarr;	
-			<a href="https://drive.google.com/drive/folders/1f21gsrM7leOLwqET_ZrsLhG3KTlqQzBA?usp=sharing" target="_blank">technical slides</a> &rarr;	
+			<a href="https://risd.zoom.us/j/97883162532" target="_blank">zoom</a>
+			<a href="https://docs.google.com/spreadsheets/d/1pCrREKrOvXLRe-MtiWhGrCLuv4MRFct_YnuBqMec8KI/edit#gid=0" target="_blank">office hours</a>
+			<a href="https://github.com/risd-web/webtype-demos" target="_blank">demos repository</a>
+			<a href="https://risd.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=fe7e0ae6-604e-44ec-a7d7-ae3f0033a340" target="_blank">tutorial videos</a>	
+			<a href="https://drive.google.com/drive/folders/1f21gsrM7leOLwqET_ZrsLhG3KTlqQzBA?usp=sharing" target="_blank">technical slides</a>	
 		</div>
 	</nav>
 </header>
@@ -59,7 +60,7 @@
 &lt;/p&gt;
 </code></pre>
 <ul>
-<li>This depends on the default <code>display</code> property of each element. Review: Inline vs. Block Elements.</li>
+<li>This depends on the default <code>display</code> property of each element.</li>
 </ul>
 <h2>Change the Display properity</h2>
 <p>Any element’s display property can be changed by overriding the default behavior with CSS.</p>
@@ -67,170 +68,12 @@
 <ul>
 <li><code>inline</code> displays an element as an inline element (ex. <code>li{ display: inline; }</code>)</li>
 <li><code>block</code> displays an element as a block element (ex. <code>img{ display: block; }</code>)</li>
-<li><code>inline-block</code> displays an element as an inline-level block container. The inside of this block is formatted as block-level box, and the element itself is formatted as an inline-level box (ex. <code>div.columns{ display: inline-block; }</code>) and allows you to define a width and height.
+<li><code>inline-block</code> displays an element as an inline-level block container. The inside of this block is formatted as block-level box, and the element itself is formatted as an inline-level box (ex. <code>.columns{ display: inline-block; }</code>) and allows you to define a width and height.
 <ul>
 <li>Note: Because it is an inline element, white spaces between elements are treated in the same way as white spaces between words of text. You may get unwanted gaps appearing between elements.</li>
 </ul>
 </li>
 <li>There are <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">other possible properties</a> for <code>display</code>.</li>
-</ul>
-<h1>Positioning</h1>
-<p><code>static | relative | absolute | fixed</code></p>
-<p>Positioning allows you to control the layout of a page using the position property. Positioning allows you to establish elements independent of the normal flow. By default, all elements have a <code>position: static</code> CSS property which gives them their normal flow.</p>
-<h2>Relative Positioning</h2>
-<p>This offsets an element from the position it would be in normal flow, shifting it to the top, right, bottom, or left of where it would have been placed. This does not affect the position of surrounding elements; they stay in the position they would be in in normal flow.</p>
-<pre><code class="language-HTML">&lt;div&gt;...&lt;/div&gt;
-&lt;div class=&quot;example&quot;&gt;...&lt;/div&gt;
-&lt;div&gt;...&lt;/div&gt;
-</code></pre>
-<pre><code class="language-CSS">.example {
-  background: blue;
-  position: relative; 
-  top: -15px;
-  left: 100px;
-}
-</code></pre>
-<div class="diagram">
-  <div class="line"></div>
-  <div class="line marked" style=" position: relative;
-  top: -15px;
-  left: 100px;"></div>
-  <div class="line"></div>
-</div>
-<h2>Absolute Positioning</h2>
-<p>The element’s box is completely removed from the flow of the document and positioned with respect to its <a href="#the-container">containing block</a>, which may be another element in the document or the initial containing block. Whatever space the element might have occupied in the normal document flow is closed up, as though the element did not exist.</p>
-<pre><code class="language-HTML">&lt;div&gt;...&lt;/div&gt;
-&lt;div class=&quot;example&quot;&gt;...&lt;/div&gt;
-&lt;div&gt;...&lt;/div&gt;
-</code></pre>
-<pre><code class="language-CSS">.example {
-  background: red;
-  position: absolute; 
-  top: 0; 
-  right: 0;
-  width: 60%;
-}
-</code></pre>
-<div class="diagram">
-  <div class="line"></div>
-  <div class="line marked" style="background: red; position: absolute; top: 0;
-  right: 0;
-  width: 60%; "></div>
-  <div class="line"></div>
-</div>
-<h2>Fixed Positioning</h2>
-<p>The element’s box behaves as though it were set to absolute, but its containing block is the viewport.
-Viewport refers to the boundaries of browser window. This means that fixed position elements don’t move when the page is scrolled, because it is always relative to the window (instead of the document.)</p>
-<pre><code class="language-HTML">&lt;div&gt;...&lt;/div&gt;
-&lt;div class=&quot;example&quot;&gt;...&lt;/div&gt;
-&lt;div&gt;...&lt;/div&gt;
-</code></pre>
-<pre><code class="language-CSS">.example {
-  background: blue;
-  position: fixed; 
-  bottom: 0;
-  right: 0;
-  width: 40px;
-}
-</code></pre>
-<div class="diagram">
-  <div class="line"></div>
-  <div class="line" style="background: grey; position: fixed; bottom: 0;
-  right: 0;
-  width: 40px; "></div>
-  <div class="line"></div>
-</div>
-<h3>Z-index</h3>
-<p>The <code>z-index</code> value specifies the stack order of an element for any non-standard positioned elements. This is similar to how layers work in Photoshop.</p>
-<p>An element with a bigger number is always in front of an element with a smaller number.</p>
-<p>The default is 0. It is good to use intervals of 10 in case additional elements need to be placed in between.</p>
-<pre><code class="language-HTML">&lt;div class=&quot;square&quot;&gt;...&lt;/div&gt;
-&lt;div class=&quot;square&quot;&gt;...&lt;/div&gt;
-&lt;div class=&quot;square&quot; &gt;...&lt;/div&gt;
-</code></pre>
-<pre><code class="language-CSS">.square{
-  width: 80px;
-  height: 80px;
-  background: grey;
-  display: inline-block;
-}
-
-.square:nth-child(2) {
-  background: blue;
-  z-index: 10; 
-  position: relative;
-  top: 40px;
-  left: -40px;
-}
-
-.square:nth-child(3) {
-  position: relative;
-  top: 80px;
-  left: -80px;
-}
-</code></pre>
-<div class="diagram" style="height: 200px;">
-  <div class="square" style="display: inline-block;"></div>
-  <div class="square marked" style="display: inline-block; position: relative; top: 40px; left:-40px; z-index: 10;"></div>
-  <div class="square" style="display: inline-block; position: relative; top: 80px; left:-80px;"></div>
-</div>
-<h2>The Container</h2>
-<p>When positioining elements, the containing block / parent is your positioning context or reference point.</p>
-<ul>
-<li>Elements can be visually positioned outside of their containing block, but still operate with the same parent-childe relationship.</li>
-<li>For relatively positioned elements, the containing block is formed by the content edge of the nearest <code>block</code>-level, <code>tablecell</code>, or <code>inline-block</code> parent. The reference point is the position the block would take if it were not moved.</li>
-<li>For absolutely positioned elements the containing block is set to the nearest ancestor (of any kind) that has a position value other than static (which is the default.)
-<ul>
-<li>Note: ancestor, not necessarily parent (since parent may have static positioning)</li>
-<li>If the ancestor is <code>block</code>-level, the containing block is set to that element’s padding edge; in other words, the area that would be bounded by a border.</li>
-<li>If the ancestor is <code>inline</code>-level, the containing block is set to the content edge of the ancestor.</li>
-</ul>
-</li>
-</ul>
-<h2>Overflow</h2>
-<p><code>visible | hidden | scroll | auto | inherit</code></p>
-<p>Overflow accounts for when your content doesn’t fit within the container and specifies how the text overflows.</p>
-<pre><code class="language-HTML">&lt;div class=&quot;container&quot;&gt;
-  &lt;div class=&quot;line&quot;&gt;...&lt;/div&gt;
-  &lt;div class=&quot;line&quot;&gt;...&lt;/div&gt;
-  &lt;div class=&quot;line&quot;&gt;...&lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-<pre><code class="language-CSS">.container {
-  overflow: hidden; 
-  height: 80px;
-}
-
-.line {
-  height: 1.5em;
-  background: #e6e6e6;
-  margin-bottom: .5em;
-}
-</code></pre>
-<div class="diagram" style="overflow: hidden; height: 80px;">
-  <div class="line"></div>
-  <div class="line"></div>
-  <div class="line"></div>
-</div>
-<h1>Hierarchy &amp; Structure</h1>
-<p>Visual hierarchy is the order in which the eye perceives what it sees. This order is created by visual contrast between forms in a perceptual field.</p>
-<ul>
-<li>Read more about typography and visual hierarchy with <a href="http://thinkingwithtype.com/text/#line-spacing">Ellen Lupton: Thinking with Type</a></li>
-</ul>
-<h3>Content Types</h3>
-<p><em>Structure within a chunk of content:</em> the typographic organization of repeating groups of text. In order to structure your typography, we can begin to identify what categories of content there are.</p>
-<ul>
-<li>What types of content tend to be chunked together?</li>
-<li>What &quot;metadata&quot; is important?</li>
-<li>How can this pattern be abstracted and reused?</li>
-<li>Read more about <a href="https://superfriendlydesign.systems/articles/content-display-patterns/">Content Display Patterns</a></li>
-</ul>
-<h3>Wireframes</h3>
-<p><em>Structure within a page:</em> the visual organization of display patterns laid out within a webpage. Different types of pages will have diffent skeletons.</p>
-<h3>Sitemap</h3>
-<p><em>Structure within a website:</em> the organization of sections of content within a website.</p>
-<ul>
-<li>All of these structures will inform your HTML markup, or how the elements are nested within another.</li>
 </ul>
 <h2>Grids and Columns</h2>
 <h3>CSS Grid</h3>
@@ -334,6 +177,144 @@ Viewport refers to the boundaries of browser window. This means that fixed posit
 <li>CSS Grid is better used for defining larger content areas</li>
 <li>CSS Flexbox is better suited for organizing chunks within those areas</li>
 </ul>
+<h1>Positioning</h1>
+<p><code>static | relative | absolute | fixed</code></p>
+<p>Positioning allows you to control the layout of a page using the position property. Positioning allows you to establish elements independent of the normal flow. By default, all elements have a <code>position: static</code> CSS property which gives them their normal flow.</p>
+<h2>Relative Positioning</h2>
+<p>This offsets an element from the position it would be in normal flow, shifting it to the top, right, bottom, or left of where it would have been placed. This does not affect the position of surrounding elements; they stay in the position they would be in in normal flow.</p>
+<pre><code class="language-HTML">&lt;div&gt;...&lt;/div&gt;
+&lt;div class=&quot;example&quot;&gt;...&lt;/div&gt;
+&lt;div&gt;...&lt;/div&gt;
+</code></pre>
+<pre><code class="language-CSS">.example {
+  background: blue;
+  position: relative; 
+  top: -15px;
+  left: 100px;
+}
+</code></pre>
+<div class="diagram">
+  <div class="line"></div>
+  <div class="line marked" style=" position: relative;
+  top: -15px;
+  left: 100px;"></div>
+  <div class="line"></div>
+</div>
+<h2>Absolute Positioning</h2>
+<p>The element’s box is completely removed from the flow of the document and positioned with respect to its <a href="#the-container">containing block</a>, which may be another element in the document or the initial containing block. Whatever space the element might have occupied in the normal document flow is closed up, as though the element did not exist.</p>
+<pre><code class="language-HTML">&lt;div&gt;...&lt;/div&gt;
+&lt;div class=&quot;example&quot;&gt;...&lt;/div&gt;
+&lt;div&gt;...&lt;/div&gt;
+</code></pre>
+<pre><code class="language-CSS">.example {
+  background: red;
+  position: absolute; 
+  top: 0; 
+  right: 0;
+  width: 60%;
+}
+</code></pre>
+<div class="diagram">
+  <div class="line"></div>
+  <div class="line marked" style="background: red; position: absolute; top: 0;
+  right: 0;
+  width: 60%; "></div>
+  <div class="line"></div>
+</div>
+<h2>Fixed Positioning</h2>
+<p>The element’s box behaves as though it were set to absolute, but its containing block is the viewport.<br>
+Viewport refers to the boundaries of browser window. This means that fixed position elements don’t move when the page is scrolled, because it is always relative to the window (instead of the document.)</p>
+<pre><code class="language-HTML">&lt;div&gt;...&lt;/div&gt;
+&lt;div class=&quot;example&quot;&gt;...&lt;/div&gt;
+&lt;div&gt;...&lt;/div&gt;
+</code></pre>
+<pre><code class="language-CSS">.example {
+  background: blue;
+  position: fixed; 
+  bottom: 0;
+  right: 0;
+  width: 40px;
+}
+</code></pre>
+<div class="diagram">
+  <div class="line"></div>
+  <div class="line" style="background: grey; position: fixed; bottom: 0;
+  right: 0;
+  width: 40px; "></div>
+  <div class="line"></div>
+</div>
+<h3>Z-index</h3>
+<p>The <code>z-index</code> value specifies the stack order of an element for any non-standard positioned elements. This is similar to how layers work in Photoshop.</p>
+<p>An element with a bigger number is always in front of an element with a smaller number.</p>
+<p>The default is 0. It is good to use intervals of 10 in case additional elements need to be placed in between.</p>
+<pre><code class="language-HTML">&lt;div class=&quot;square&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;square&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;square&quot; &gt;...&lt;/div&gt;
+</code></pre>
+<pre><code class="language-CSS">.square{
+  width: 80px;
+  height: 80px;
+  background: grey;
+  display: inline-block;
+}
+
+.square:nth-child(2) {
+  background: blue;
+  z-index: 10; 
+  position: relative;
+  top: 40px;
+  left: -40px;
+}
+
+.square:nth-child(3) {
+  position: relative;
+  top: 80px;
+  left: -80px;
+}
+</code></pre>
+<div class="diagram" style="height: 200px;">
+  <div class="square" style="display: inline-block;"></div>
+  <div class="square marked" style="display: inline-block; position: relative; top: 40px; left:-40px; z-index: 10;"></div>
+  <div class="square" style="display: inline-block; position: relative; top: 80px; left:-80px;"></div>
+</div>
+<h2>The Container</h2>
+<p>When positioining elements, the containing block / parent is your positioning context or reference point.</p>
+<ul>
+<li>Elements can be visually positioned outside of their containing block, but still operate with the same parent-childe relationship.</li>
+<li>For relatively positioned elements, the containing block is formed by the content edge of the nearest <code>block</code>-level, <code>tablecell</code>, or <code>inline-block</code> parent. The reference point is the position the block would take if it were not moved.</li>
+<li>For absolutely positioned elements the containing block is set to the nearest ancestor (of any kind) that has a position value other than static (which is the default.)
+<ul>
+<li>Note: ancestor, not necessarily parent (since parent may have static positioning)</li>
+<li>If the ancestor is <code>block</code>-level, the containing block is set to that element’s padding edge; in other words, the area that would be bounded by a border.</li>
+<li>If the ancestor is <code>inline</code>-level, the containing block is set to the content edge of the ancestor.</li>
+</ul>
+</li>
+</ul>
+<h2>Overflow</h2>
+<p><code>visible | hidden | scroll | auto | inherit</code></p>
+<p>Overflow accounts for when your content doesn’t fit within the container and specifies how the text overflows.</p>
+<pre><code class="language-HTML">&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;line&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;line&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;line&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<pre><code class="language-CSS">.container {
+  overflow: hidden; 
+  height: 80px;
+}
+
+.line {
+  height: 1.5em;
+  background: #e6e6e6;
+  margin-bottom: .5em;
+}
+</code></pre>
+<div class="diagram" style="overflow: hidden; height: 80px;">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+</div>
 </p>
 	</article>
 	<aside>
@@ -358,6 +339,10 @@ Viewport refers to the boundaries of browser window. This means that fixed posit
 			
 				<a href="/notes/04-responsive/">
 					Responsive Design
+				</a>
+			
+				<a href="/notes/05-images/">
+					Image Optimization
 				</a>
 			
 			

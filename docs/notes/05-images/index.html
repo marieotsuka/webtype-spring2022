@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>The 5Es Experience Framework — WebType</title>
+	<title>Image Optimization — WebType</title>
 	<meta name="description" content="Class website for Web Type, Spring 2022 at RISD">
 	<meta name="author" content="Marie Otsuka">
 	<link rel=icon href=/assets/img/favicon.png type="image/png">
@@ -47,43 +47,33 @@
 		
 <div class="resources">
 	<article>
-		<h1>The 5Es Experience Framework</h1>
-		<p><p>The “5Es of Experience Design” provides a framework to curate and design experiential work. It helps us consider some guiding questions:</p>
+		<h1>Image Optimization</h1>
+		<p><h2>Image formats</h2>
+<p>In order keep file sizes to a minimum but retain the quality needed, make sure you are saving your images in the right image format.</p>
+<h3>Raster / Bitmap</h3>
+<p>A raster graphics image, or bitmap, is a dot matrix data structure representing a generally rectangular grid of pixels, or points of color, viewable via a monitor, paper, or other display medium. Raster graphics are resolution dependent. They cannot scale up without loss of quality. (<code>.jpg</code>, <code>.gif</code>, <code>.png</code>, <code>.webp</code>)</p>
+<p>Main file formats for raster images on the web: PNG, GIF, and JPG.</p>
 <ul>
-<li>How would you like people to move through the experience?</li>
-<li>How can you attract them and keep them engaged?</li>
+<li>JPG best for photography and detailed line art with subtle shifts in tonal range.</li>
+<li>PNG is best suited for logos and shapes with a few number of colors. PNGs allow for transparency.</li>
+<li>GIF is best for solid blocks of color. Is similar to PNG and allows for transparency, but has animation capabilities.</li>
+<li>WEBP is intended to substitute all of the above with better compression, developed by Google. It is not supported in older browsers.</li>
 </ul>
-<ol>
-<li>Entice
+<h3>Vector</h3>
+<p>Use geometrical primitives like points, lines, curves and shapes that can be mathematically expressed to represent them in a graphic. Thus vector graphics are not resolution dependent. They can scale up or down without loss in quality. (i.e. <code>.svg</code>, and font files)</p>
 <ul>
-<li>How are visitors invited to participate?</li>
-<li>How are they invited to the space in the first place?</li>
+<li>SVGs are a great way to display outline / vector-based graphics. You can even style SVGs in your stylesheet if you embed the SVG code itself (instead of loading it in via an <code>&lt;img&gt;</code> tag.)</li>
 </ul>
-</li>
-<li>Enter
+<p>You can always use <a href="https://css-tricks.com/the-shapes-of-css/">CSS shapes</a> for simple color blocks.</p>
+<h2>Compression</h2>
+<p>Image compression algorithms seek to eliminate or reduce redundancy in the image data in order to be able to store or transmit data efficiently.</p>
+<p>Photoshop’s <em>Save for Web</em> function helps you determine optimal compression.</p>
+<h2>Reference</h2>
 <ul>
-<li>What is the threshold moment where a visitor transitions from their world to yours?</li>
+<li><a href="https://web.dev/fast/#optimize-your-images">Web.dev: Optimize your Images</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types">MDN: Image file type and format guide</a></li>
+<li><a href="https://alistapart.com/article/using-responsive-images-now/">Chen Hui Jing: Using Responsive Images Now</a></li>
 </ul>
-</li>
-<li>Engage
-<ul>
-<li>How do visitors interact? How do they know how to interact?</li>
-<li>How do they engage with one another?</li>
-</ul>
-</li>
-<li>Exit
-<ul>
-<li>How do visitors know when they are done?</li>
-</ul>
-</li>
-<li>Extend
-<ul>
-<li>How do guests continue to participate?</li>
-<li>Is there a take-home or social opportunity?</li>
-</ul>
-</li>
-</ol>
-<p><em>Closing the circle</em>: This cycle can span an entire event, a whole space, or just a single piece of an interaction.</p>
 </p>
 	</article>
 	<aside>

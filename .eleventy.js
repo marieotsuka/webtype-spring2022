@@ -3,10 +3,15 @@ const sass = require("sass");
 const path = require("path");
 const { DateTime } = require("luxon");
 
-const markdown = require("markdown-it")({
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
+const markdownItAttrs = require('markdown-it-attrs');
+const options = {
   html: true,
+  breaks: true,
   linkify: true
-});
+};
+const markdownLib = markdownIt(options).use(markdownItAttrs);
 
 const isDevEnv = process.env.ELEVENTY_ENV === 'development';
 
@@ -33,8 +38,13 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('MMMM dd');
   });
 
+
+  //markdown processing
+
+  eleventyConfig.setLibrary("md", markdownLib);
+  //md filter
   eleventyConfig.addFilter('markdown', value => {
-    return markdown.render(value)
+    return markdownIt(options).render(value)
   });
 
 

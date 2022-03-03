@@ -23,21 +23,22 @@
 		<div class="menu-icon">≡≡</div>
 		<div class="nav-links">
 			<div class="meta">Web Type @ RISD</div>
-			<a href="/">index</a><br>
-			<a href="/syllabus/">syllabus</a><br>
-			<a href="/schedule/">schedule</a><br>
-			<a href="/projects/">projects</a><br>
-			<a href="/readings/">readings</a><br>
-			<a href="/resources/">resources</a><br>
+			<a href="/">index</a>
+			<a href="/syllabus/">syllabus</a>
+			<a href="/schedule/">schedule</a>
+			<a href="/projects/">projects</a>
+			<a href="/readings/">readings</a>
+			<a href="/resources/">resources</a>
 			<a href="/colophon/">colophon</a>
+			
 			<br>
 			<br>
 			<div class="meta">Quick links</div>
-			<a href="https://risd.zoom.us/j/97883162532" target="_blank">zoom</a> &rarr;<br>
-			<a href="https://docs.google.com/spreadsheets/d/1pCrREKrOvXLRe-MtiWhGrCLuv4MRFct_YnuBqMec8KI/edit#gid=0" target="_blank">office hours</a> &rarr;<br>
-			<a href="https://github.com/risd-web/webtype-demos" target="_blank">demos repository</a> &rarr;
-			<a href="https://risd.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=fe7e0ae6-604e-44ec-a7d7-ae3f0033a340" target="_blank">tutorial videos</a> &rarr;	
-			<a href="https://drive.google.com/drive/folders/1f21gsrM7leOLwqET_ZrsLhG3KTlqQzBA?usp=sharing" target="_blank">technical slides</a> &rarr;	
+			<a href="https://risd.zoom.us/j/97883162532" target="_blank">zoom</a>
+			<a href="https://docs.google.com/spreadsheets/d/1pCrREKrOvXLRe-MtiWhGrCLuv4MRFct_YnuBqMec8KI/edit#gid=0" target="_blank">office hours</a>
+			<a href="https://github.com/risd-web/webtype-demos" target="_blank">demos repository</a>
+			<a href="https://risd.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=fe7e0ae6-604e-44ec-a7d7-ae3f0033a340" target="_blank">tutorial videos</a>	
+			<a href="https://drive.google.com/drive/folders/1f21gsrM7leOLwqET_ZrsLhG3KTlqQzBA?usp=sharing" target="_blank">technical slides</a>	
 		</div>
 	</nav>
 </header>
@@ -57,23 +58,23 @@
 <li>See also <a href="https://glyphsapp.com/learn/pixelfont">pixel font tutorial</a></li>
 </ul>
 <h2>Terms</h2>
-<p><strong>Design Space</strong>
+<p><strong>Design Space</strong><br>
 The range of design variations belonging to one type family.</p>
-<p><strong>Master</strong>
+<p><strong>Master</strong><br>
 A set of drawn characters. Every typeface needs to have at least one master. When drawing a typeface, you are usually drawing a master.</p>
 <ul>
-<li>The number of masters will determine the <strong>design space</strong>
+<li>The number of masters will determine the <strong>design space</strong><br>
 of the typeface.</li>
 </ul>
-<p><strong>Instance</strong>
+<p><strong>Instance</strong><br>
 A specified slice within the design space of the typeface.</p>
 <ul>
 <li>Masters are usually also instances, but not necessarily.</li>
 <li>The type designer determines how many instances will be interpolated from the given masters.</li>
 </ul>
-<p><strong>Interpolation</strong>
+<p><strong>Interpolation</strong><br>
 The process of programmatically generating instances in-between masters.</p>
-<p><strong>Node</strong>
+<p><strong>Node</strong><br>
 Any specified point of your glyph. Nodes can be either on-curve or off-curve.</p>
 <ul>
 <li>A node along the path is called an <strong>Oncurve</strong> point</li>
@@ -81,17 +82,17 @@ Any specified point of your glyph. Nodes can be either on-curve or off-curve.</p
 </ul>
 <h2>Interpolation</h2>
 <p>In order for a glyph to interpolate across masters, it needs <a href="https://glyphsapp.com/tutorials/multiple-masters-part-2-keeping-your-outlines-compatible">compatible outlines</a>, which means satisfying the following conditions.</p>
-<p><strong>number of paths</strong>
+<p><strong>number of paths</strong><br>
 all masters have the same amount of paths, nodes and handles, as well as components</p>
-<p><strong>path order</strong>
+<p><strong>path order</strong><br>
 all components, paths, nodes and handles are in the same order across all masters.</p>
-<p><strong>within a path</strong>
+<p><strong>within a path</strong><br>
 Make sure the <em>triangular node</em>, which marks the first node, is in the same location for each path across masters. I recommend choosing a specific corner to be consistent (for example, the node that is that the bottom left of the glyph.) To change the first node, right click the node and select <em>Make Node First</em>.</p>
-<p><strong>within a glyph</strong>
+<p><strong>within a glyph</strong><br>
 Make sure the order of the paths are in the same order. Go to <em>Filter</em> &gt; <em>Fix compatibility</em> to view the order of your shapes.</p>
-<p><strong>anchors</strong>
+<p><strong>anchors</strong><br>
 all masters have the same set of anchors (Anchors are used to generate diacritic marks. We will not be using anchors for the scope of our project.)</p>
-<p><strong>off-curve compatibility</strong>
+<p><strong>off-curve compatibility</strong><br>
 avoid off-curves that intersect with each other: keep in mind the invisible triangle formed by your point structures</p>
 <h2>Variable Fonts</h2>
 <p>A single font file contains many different variations of a typeface, instead of having a separate font file for every width, weight, or style. This format was developed in collaboration by Adobe, Apple, Google, and Microsoft.</p>
@@ -218,6 +219,10 @@ p{
 			
 				<a href="/notes/04-responsive/">
 					Responsive Design
+				</a>
+			
+				<a href="/notes/05-images/">
+					Image Optimization
 				</a>
 			
 			

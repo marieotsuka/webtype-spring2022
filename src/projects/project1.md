@@ -13,7 +13,7 @@ In this project, you develop a “query” into a typographic medium of your cho
 
 ## Project Details
 
-### [Content] Possible Research Topics
+### Possible Research Topics
 Use this opportunity to dig deeper into an existing topic of interest around typography and technology. Be sure to take note and cite your sources. The minimum requirement is that your text is at least 500 words.
 
 Please post your [topic here](https://docs.google.com/spreadsheets/d/1QXocofQNNG38kJWQWjjZe7wv4ikc8Ffnzg_6qoxGSqY/edit?usp=sharing) by *Monday, February 21.* If you are having trouble choosing a topic, please reach out and I can help brainstorm. While we will be dedicating the first few weeks to develop this site, you will be presenting this over the course of the semester per the schedule above, as a way for us to familarize ourselves with interesting topics around digital typography and text.
@@ -35,7 +35,7 @@ Some topics presented in the past include:
 * A range of bitmap fonts, from icons to pens
 * Evolution of color fonts
 
-### [Composition] Design Questions
+### Design Questions
 
 * How does the typography respond to the constraints of its displaying device?
 * How do you architect a reading experience?
@@ -51,9 +51,9 @@ You will be developing a design for two main viewing environments: 1. your brows
 - images and captions `<figure>, <img>, <figcaption>`
 - footnotes and source links `<sup>, <a>`
 
-* For this project, aim for considered simplicity — a single, consistently structured page of text (and some images), with careful attention to typographic detail. We will have the chance to explore more experimental layouts and interactivity later in the course. *
+* For this project, aim for considered simplicity — a single, consistently structured page of text (and some images), with careful attention to typographic detail. We will have the chance to explore more experimental layouts and interactivity later in the course.
 
-### [Code] Technical Learnings
+### Technical Learnings
 * Understand the range and use of semantic `html` tags
 * Experiment and expand the range of typographic expression through `css`, including scale variation, typefaces choice, hover-states
 * Gain fluency in typographic control and laying out of text content
@@ -62,21 +62,23 @@ You will be developing a design for two main viewing environments: 1. your brows
 
 ## Project Schedule
 
-### Week 1: Prepare content, initial design sketches
+### Week 1: Prepare content, initial design sketches {#week-1}
 
 First, let’s collect the content for your site. Prepare your text and images files, and organize your research.  
 
 Begin designing your content for 2 viewing modes: desktop and mobile. Prepare at least two design approaches. You may not need to typset your entire text; however, we should see the main content types styled. Consider how your are organizing your information — is it sequential, historical, hierarchical, freeform? How do you express your point of view through the way you present this content? Post your design sketches in Figma to the `project-1` channel in Slack.
 
-### Week 2: Prototype in Code, default device
+### Week 2: Prototype in Code, default device {#week-2}
 
-Prototype your content for desktop with HTML & CSS, with careful attention to the way you structure and “chunk” together your code as you anticipate how things transform. You may find that you will need to simplify your design in this process. Upload your code as a working webpage prior to class. You must have a live, working link.
+Prototype your content for desktop with HTML & CSS, with careful attention to the way you structure and “chunk” together your code as you anticipate how things transform. You may find that you will need to simplify your design in this process. Pay careful attention to your typography.
 
-### Week 3: Add responsivity and mobile support
+Upload your code as a working webpage, and provide a link to it from your class site.
 
-Design and code your second breakpoint using `media queries`. Upload your code as a working webpage prior to class. You must have a working link.
+### Week 3: Add responsivity and mobile support {#week-3}
 
-**Due: March 10, 2022** (presented via the schedule above)
+Continue developing your website in code, adding your second breakpoint using `media queries`. Upload your code as a working webpage prior to class. You must have a working link.
+
+**Due: March 17, 2022** (presented via the sign up chedule)
 
 ## Resources
 ### Open Source Fonts
@@ -101,6 +103,7 @@ Design and code your second breakpoint using `media queries`. Upload your code a
 
 #### ※ you can see [class resources here](/resources/).
 * Typewolf’s [Typographic Cheat Sheet](https://www.typewolf.com/cheatsheet)
+* Matthew Butterick’s [Typography for Lawyers](https://typographyforlawyers.com/)
 * @fontface on [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face) 
 * @fontface on [W3Schools](https://www.w3schools.com/cssref/css3_pr_font-face_rule.asp)
 * How to use [Adobe Fonts](https://helpx.adobe.com/fonts/using/add-fonts-website.html)
