@@ -1,0 +1,22 @@
+---
+title: "Exercises"
+layout: page
+eleventyExcludeFromCollections: true
+---
+
+<div class="exercises">
+	<p>
+		These are in-class activities that are technical exercises to help support you in your project work.
+	</p>
+	<section class="link-list">
+	{% assign exercises = collections.exercise | reverse %}
+	{% for e in exercises %}
+		<a href="{{e.url}}" target="_blank" class="link-button">
+			<div class="reading">
+				<div class="meta">Week {{ forloop.length | minus:forloop.index0 }}</div>
+				{{e.data.title}}
+			</div>
+		</a>
+	{% endfor %}
+	</section>
+</div>

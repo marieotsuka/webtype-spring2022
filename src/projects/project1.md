@@ -76,9 +76,23 @@ Upload your code as a working webpage, and provide a link to it from your class 
 
 ### Week 3: Add responsivity and mobile support {#week-3}
 
-Continue developing your website in code, adding your second breakpoint using `media queries`. Upload your code as a working webpage prior to class. You must have a working link.
+Continue developing your website in code, adding your second breakpoint using `media queries`. Upload your code as a working webpage prior to class. You must have a working link from your class site. Continue using your inspector to fine-tune your typography and layout.
 
-**Due: March 17, 2022** (presented via the sign up chedule)
+As you refine your mobile site, be sure to test out your site on your phone. Try testing out your site on your friend’s phones. 
+
+### Refinement
+
+Pay careful attention to your typographic details — including punctuation, type hierarchy, the spacing between them and around the page. Make sure the scale of your fonts are optimized both for your mobile and desktop layouts. 
+
+Your topic and final website will be presented via the<br>[presentation schedule](https://docs.google.com/spreadsheets/d/1QXocofQNNG38kJWQWjjZe7wv4ikc8Ffnzg_6qoxGSqY/edit#gid=0)
+
+## Requirements
+- Specify a typeface, either imported via Adobe Fonts / Google Fonts or self-hosted via the `@font-face` method
+- Use `@media` queries to adapt layouts for different devices
+- Have well-defined semantic HTML
+- Have appropriate CSS selectors and classes
+
+
 
 ## Resources
 ### Open Source Fonts

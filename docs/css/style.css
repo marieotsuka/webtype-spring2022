@@ -55,7 +55,7 @@ a:hover {
   text-transform: uppercase;
   --wght: 520;
   --wdth: 90;
-  font-size: 16px;
+  font-size: 0.8em;
 }
 
 /*------------------
@@ -76,13 +76,11 @@ h1 {
   margin-top: 1em;
   margin-bottom: 0.25em;
   color: var(--secondcolor);
-  border-top: 2px solid var(--secondcolor);
   padding-top: 0.5em;
 }
 
 h1:first-child {
   margin-top: 0;
-  border-top: none;
 }
 
 h2, h3, h4 {
@@ -220,11 +218,11 @@ nav .nav-links {
   position: fixed;
   top: 0;
   right: 0;
-  width: 30vw;
+  width: 40vw;
   height: 100vh;
   background: var(--secondcolor);
   z-index: 200;
-  padding: 0.8em 0 0 2em;
+  padding: 15px 0 0 2em;
   color: white;
 }
 nav .nav-links a {
@@ -236,6 +234,11 @@ nav .nav-links a:hover {
 }
 nav .nav-links a[target=_blank]::after {
   content: "→";
+  position: relative;
+  left: 0.5em;
+}
+nav .nav-links .meta {
+  --wght: 450;
 }
 nav.open .nav-links {
   display: block;
@@ -292,7 +295,7 @@ section {
 
 article h2 {
   color: var(--secondcolor);
-  border-top: 2px solid;
+  border-top: 1px solid;
   padding-top: 0.5em;
   margin-top: 2em;
   margin-bottom: 1.5em;
@@ -350,6 +353,10 @@ HOME INDEX
   --slnt: 100;
   --wght: 120;
   --wdth: 75;
+  text-indent: -0.1em;
+  max-width: none;
+  line-height: 0.9;
+  margin-bottom: 15px;
 }
 .index time, .index .mode {
   display: inline-block;
@@ -369,6 +376,7 @@ HOME INDEX
 }
 .index h4 {
   width: 140px;
+  flex: none;
 }
 .index ul {
   margin-bottom: 0;
@@ -386,11 +394,13 @@ HOME INDEX
   flex-wrap: wrap;
 }
 
-.student-list .link-button {
-  width: 130px;
-  height: 70px;
-  border-color: transparent;
-  border-radius: 50%;
+.students .link-button {
+  width: calc(33% - 1em);
+}
+@media screen and (min-width: 1000px) {
+  .students .link-button {
+    width: calc(20% - 1em);
+  }
 }
 
 /*------------------
@@ -443,7 +453,7 @@ SCHEDULE
   text-transform: uppercase;
   --wght: 520;
   --wdth: 90;
-  font-size: 16px;
+  font-size: 0.8em;
   width: 140px;
   margin-top: 5px;
 }
@@ -470,7 +480,7 @@ SCHEDULE
 .content .index-list .accordion h4, .content .index-list .accordion .item {
   --wght: 520;
   --wdth: 90;
-  font-size: 16px;
+  font-size: 0.8em;
   padding: 0.5em 1em 0.5em 0;
   box-sizing: border-box;
   vertical-align: top;
@@ -491,7 +501,7 @@ th {
 th, td {
   --wght: 520;
   --wdth: 90;
-  font-size: 16px;
+  font-size: 0.8em;
   padding: 0.5em 1em 0.5em 0;
   box-sizing: border-box;
   vertical-align: top;
@@ -515,7 +525,7 @@ th, td {
   background: var(--code-bgcolor);
   padding: 15px;
   line-height: 1;
-  box-shadow: inset 2px 1px 3px var(--thirdcolor);
+  box-shadow: inset 1px 1px 3px var(--thirdcolor);
   z-index: 100;
   border-radius: 50%;
 }
@@ -538,6 +548,7 @@ h2.project {
   --slnt: 100;
   --wght: 120;
   --wdth: 75;
+  text-indent: -0.1em;
   --slnt: 0;
 }
 
@@ -616,7 +627,7 @@ RESOURCES
   top: 6em;
   right: var(--margin);
   width: 220px;
-  border-left: 2px dotted var(--thirdcolor);
+  border-left: 1px dotted var(--thirdcolor);
   padding-left: 2em;
   margin-left: 2em;
 }
@@ -635,8 +646,10 @@ RESOURCES
   align-items: center;
   justify-content: center;
   text-align: center;
-  border: 2px solid;
+  border: 1px solid;
   margin: 0 1em 1em 0;
+  line-height: 1.2;
+  font-size: 0.9em;
 }
 .link-button:hover {
   border-style: dashed;
@@ -669,8 +682,8 @@ footer {
   text-transform: uppercase;
   --wght: 520;
   --wdth: 90;
-  font-size: 16px;
-  border-top: 2px solid;
+  font-size: 0.8em;
+  border-top: 1px solid;
   padding-top: 0.5rem;
   height: var(--footerheight);
 }
@@ -773,5 +786,120 @@ DIAGRAMS
   }
   100% {
     background-color: green;
+  }
+}
+/*------------------
+MEDIA QUERIES
+-------------------*/
+@media only screen and (max-width: 1000px) {
+  .container {
+    max-width: 90%;
+  }
+
+  :root {
+    font-size: 11px;
+  }
+
+  .open .nav-links {
+    width: 50vw;
+  }
+
+  nav {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    max-width: 92%;
+  }
+
+  :root {
+    font-size: 11px;
+    --base: 16px;
+    --footerheight: 150px;
+  }
+
+  nav {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+
+  .open .nav-links {
+    width: 100vw;
+  }
+
+  th, td {
+    font-size: 0.9em;
+    --wght: 500;
+  }
+
+  h3, h4, h5, h6, .content ul {
+    padding-left: 2em;
+  }
+
+  .link-button {
+    height: 100px;
+  }
+
+  code {
+    font-size: 0.8rem;
+  }
+
+  .index .row {
+    display: block;
+  }
+
+  .index h2 {
+    font-size: 3.5rem;
+    --wght: 200;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+}
+@media print {
+  header {
+    display: none;
+  }
+
+  body {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  main {
+    margin-left: 0;
+  }
+
+  time + ul {
+    margin-top: 1em;
+  }
+
+  article {
+    padding: 0;
+  }
+  article h2 {
+    margin-top: 1.5em;
+  }
+  article h2, article h3, article h4, article time {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+  article ul {
+    max-width: 85%;
+  }
+  article li {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  aside {
+    display: none;
   }
 }

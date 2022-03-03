@@ -2,9 +2,6 @@
 title: "HTML"
 summary: "Semantic markup"
 order: 1
-reference:
- - title: "Embroidery Trouble Shooting Page"
-   link: "https://web.archive.org/web/20060314044545/http://www.sewingandembroiderywarehouse.com/embtrb.htm"
 ---
 
 ## HyperText Markup Language

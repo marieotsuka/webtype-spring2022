@@ -40,6 +40,7 @@ The following CSS relative units may be useful for scalable designs.
 |vw|1% of viewport’s width| `width: 100vw;`|
 |vh |1% viewport’s height| `height: 100vh;`|
 
+*For an example of relative units gone wrong: [Embroidery Trouble Shooting Page](https://web.archive.org/web/20060314044545/http://www.sewingandembroiderywarehouse.com/embtrb.htm)*
 
 ## Fluid Images
 Any embedded assets, such as images, videos, etc will need to scale appropriately. 
@@ -108,6 +109,7 @@ Note: nested brackets
 ## Reference
 - [Ethan Marcotte: Responsive Web Design](https://alistapart.com/article/responsive-web-design/)
 - [Smashing Magazine: Responsive Web Design](https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/)
+- [Collection of examples](https://mediaqueri.es/)
 - [Nick Sherman: Variable Fonts for Responsive Design](https://alistapart.com/blog/post/variable-fonts-for-responsive-design/)
 - [Andrew Johnson: Live Interpolation on the Web](https://alistapart.com/article/live-font-interpolation-on-the-web/)
 - [Scott Kellum: Fluid typography and the creation of Typetura](https://typetura.scottkellum.com/)

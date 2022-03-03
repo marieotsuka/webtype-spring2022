@@ -1,16 +1,6 @@
----
-title: "CSS Basics"
+--["CSS Basics]
 summary: "Basic syntax, inheritance, the cascade, and selectors"
 order: 2
-reference: 
- - title: "The Cascade"
-   link: "https://miro.medium.com/max/1000/1*X8t46W-iH2VGgYOB5aG1nA.jpeg"
- - title: "Color names"
-   link: "http://www.colors.commutercreative.com/grid/"
- - title: "Box Model"
-   link: "https://css-tricks.com/the-css-box-model/"
- - title: "Collapsing Margins"
-   link: "https://css-tricks.com/what-you-should-know-about-collapsing-margins/"
 ---
 
 
@@ -86,7 +76,7 @@ Selectors apply to *all instances of elements in all webpages that use the same 
 Inheritance refers to how children take on css properties of their parents if they don’t have that property specified. Not all css declarations are inherited.  
 
 
-```CSS
+<!-- ```CSS
 div {
   color: blue;
   border: 1px solid gray;
@@ -95,10 +85,8 @@ div {
 span {
   color: red;
 }
-```
+``` -->
 
-
-<h1>Cascading <span>Style</span> Sheets</h1>
 
 ## The Cascade 
 
@@ -346,3 +334,8 @@ p.note::before {
 ```
 - More on pseudo-elements and [things you can do with them](https://css-tricks.com/pseudo-element-roundup/).
 
+## Reference
+- [The Cascade](https://miro.medium.com/max/1000/1*X8t46W-iH2VGgYOB5aG1nA.jpeg)
+- [Color names](http://www.colors.commutercreative.com/grid/)
+- [Box Model](https://css-tricks.com/the-css-box-model/)
+- [Collapsing Margins](https://css-tricks.com/what-you-should-know-about-collapsing-margins/)

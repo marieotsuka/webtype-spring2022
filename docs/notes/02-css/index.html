@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CSS Basics — WebType</title>
+	<title> — WebType</title>
 	<meta name="description" content="Class website for Web Type, Spring 2022 at RISD">
 	<meta name="author" content="Marie Otsuka">
 	<link rel=icon href=/assets/img/favicon.png type="image/png">
@@ -27,6 +27,7 @@
 			<a href="/syllabus/">syllabus</a>
 			<a href="/schedule/">schedule</a>
 			<a href="/projects/">projects</a>
+			<a href="/exercises/">exercises</a>
 			<a href="/readings/">readings</a>
 			<a href="/resources/">resources</a>
 			<a href="/colophon/">colophon</a>
@@ -36,6 +37,7 @@
 			<div class="meta">Quick links</div>
 			<a href="https://risd.zoom.us/j/97883162532" target="_blank">zoom</a>
 			<a href="https://docs.google.com/spreadsheets/d/1pCrREKrOvXLRe-MtiWhGrCLuv4MRFct_YnuBqMec8KI/edit#gid=0" target="_blank">office hours</a>
+			<a href="https://docs.google.com/spreadsheets/d/1QXocofQNNG38kJWQWjjZe7wv4ikc8Ffnzg_6qoxGSqY/edit#gid=0" target="_blank">presentations</a>
 			<a href="https://github.com/risd-web/webtype-demos" target="_blank">demos repository</a>
 			<a href="https://risd.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=fe7e0ae6-604e-44ec-a7d7-ae3f0033a340" target="_blank">tutorial videos</a>	
 			<a href="https://drive.google.com/drive/folders/1f21gsrM7leOLwqET_ZrsLhG3KTlqQzBA?usp=sharing" target="_blank">technical slides</a>	
@@ -47,8 +49,11 @@
 		
 <div class="resources">
 	<article>
-		<h1>CSS Basics</h1>
-		<p><p>CSS is the language determining the look and feel of HTML elements.<br>
+		<h1></h1>
+		<p><h2>--[&quot;CSS Basics]<br>
+summary: &quot;Basic syntax, inheritance, the cascade, and selectors&quot;<br>
+order: 2</h2>
+<p>CSS is the language determining the look and feel of HTML elements.<br>
 Every element in web design is a rectangular box styled with CSS.</p>
 <ul>
 <li>content, HTML</li>
@@ -103,7 +108,8 @@ Second paragraph text.
 <p>Selectors apply to <em>all instances of elements in all webpages that use the same stylesheet</em>. This method is the ideal method of formatting your site, since it ensures consistency across pages. It also keeps things flexible: by changing one property in the external stylesheet, all instances could be easily changed.</p>
 <h2>Inheritance</h2>
 <p>Inheritance refers to how children take on css properties of their parents if they don’t have that property specified. Not all css declarations are inherited.</p>
-<pre><code class="language-CSS">div {
+<!-- ```CSS
+div {
   color: blue;
   border: 1px solid gray;
 }
@@ -111,8 +117,7 @@ Second paragraph text.
 span {
   color: red;
 }
-</code></pre>
-<h1>Cascading <span>Style</span> Sheets</h1>
+``` -->
 <h2>The Cascade</h2>
 <p>Cascade refers to the way the stylesheet processes and assigns weights to rules that apply to the same element, ultimately determining which properties will modify a given element.</p>
 <h3>Origin</h3>
@@ -446,22 +451,29 @@ a:active {
 <ul>
 <li>More on pseudo-elements and <a href="https://css-tricks.com/pseudo-element-roundup/">things you can do with them</a>.</li>
 </ul>
+<h2>Reference</h2>
+<ul>
+<li><a href="https://miro.medium.com/max/1000/1*X8t46W-iH2VGgYOB5aG1nA.jpeg">The Cascade</a></li>
+<li><a href="http://www.colors.commutercreative.com/grid/">Color names</a></li>
+<li><a href="https://css-tricks.com/the-css-box-model/">Box Model</a></li>
+<li><a href="https://css-tricks.com/what-you-should-know-about-collapsing-margins/">Collapsing Margins</a></li>
+</ul>
 </p>
 	</article>
 	<aside>
 		<div class="notes">
 			
 			
-				<a href="/notes/webintro/">
-					The Internet
-				</a>
-			
 				<a href="/notes/01-html/">
 					HTML
 				</a>
 			
 				<a href="/notes/02-css/">
-					CSS Basics
+					
+				</a>
+			
+				<a href="/notes/webintro/">
+					The Internet
 				</a>
 			
 				<a href="/notes/03-layouts/">

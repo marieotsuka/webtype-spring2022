@@ -8,7 +8,7 @@ weight: 1
 ### Web Type (RISD GRAPH-2313-01, 3 credits), Spring 2022
 * Thursdays 1:10–6:10pm, Design Center 407 / [Zoom](https://risd.zoom.us/j/97883162532) (We will be running a hybrid model of in-person and remote meetings. See [schedule](/schedule/) for details.)
 * Instructor: Marie Otsuka (Reach me at [motsuka@risd.edu](mailto:motsuka@risd.edu))
-* Office Hours: Fridays 11:00am–1:00pm on Zoom. [Sign up](https://docs.google.com/spreadsheets/d/1pCrREKrOvXLRe-MtiWhGrCLuv4MRFct_YnuBqMec8KI/edit#gid=0) for a slot. Extra help is also available through Code Lab, Wednesdays 5:00pm–7:00pm (more info to come!)
+* Office Hours: Fridays 11:00am–1:00pm on Zoom. [Sign up](https://docs.google.com/spreadsheets/d/1pCrREKrOvXLRe-MtiWhGrCLuv4MRFct_YnuBqMec8KI/edit#gid=0) for a slot. Extra help is also available through [Code Lab](http://risdcodelab.org/), Wednesdays 5:00pm–7:00pm.
 
 ## Course Description
 This course explores the intersection of typography and web design as a creative medium. By engaging with type that activates the capacities of browsers, we will push beyond “resonsive design” as a layout-based exercise and question what typography can “respond to” — whether user input, network conditions, or the physical environment. All projects will involve hand-coding web pages, using the browser for experimental research and engagement. Critique and discussions will broadly examine the sociocultural implications of publishing on the internet; technical instruction will include web languages such as HTML, CSS, and JavaScript, as well as type design technology such as variable fonts. A basic background in coding is recommended, but not required.

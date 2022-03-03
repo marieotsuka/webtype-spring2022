@@ -1,16 +1,18 @@
 ---
-title: Variation as Expression
+title: Variation as Response
 date: 2022-03-03
+current: true
 mode: in-person
-project: "project1"
+project: project1
+exercise: 02-responsive
+reading: reading3
+tutorials:
+- "MDN: [Responsive Design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design) and [Beginner’s Guide to Media Queries](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries)"
+- "CSS Tricks: [A Complete Guide to CSS Media Queries](https://css-tricks.com/a-complete-guide-to-css-media-queries/#aa-anatomy-of-a-media-query)"
 ---
 
-<!-- - Show & tell / share
-- Review Inspector Exercises
-- Introduce CSS letter exercise
-- Review Project 1 Prototypes in the Browser
-exercise: "2-css-letter.md"
-reading: "Bo Doub: [Community Memory: Precedents In Social Media And Movements](https://computerhistory.org/blog/community-memory-precedents-in-social-media-and-movements/) and Omar Mohammad: [Tools for Cultural Production: Archiving Voice, Culture, and Community](https://staging.are.na/blog/tools-for-cultural-production-the-practice-of-preserving-voice-culture-and)"
-tutorials: "Codecademy: [CSS Layout with Flexbox](https://www.codecademy.com/courses/learn-css/lessons/learn-flexbox-l/resume), [CSS Grid](https://www.codecademy.com/courses/learn-css/lessons/css-grid-i/resume), [CSS Transitions](https://www.codecademy.com/courses/learn-css/lessons/animation-transitions)"
-lectures: "[CSS Tutorials](https://risd.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?embedded=0#folderID=%2209ae1348-8de3-4af1-bf4b-ace100dd2803%22&view=0&sortColumn=0&sortAscending=true)"
---- -->
+- Discusssion: The Web’s Grain
+- Review [Project 1](/projects/project1/#week-3) next steps
+- Introduce in-class exercise, media query demo
+- Project 1 progress, [small groups](https://docs.google.com/spreadsheets/d/1WBiTwb1RcQhzgnds9JFp6vzfvYRPa4FVqLqSqKIMdIo/edit#gid=1990426172) review
+- (optional) In-class exercise review: responsive layouts

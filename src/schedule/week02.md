@@ -1,7 +1,7 @@
 ---
 title: Container as Content
 date: 2022-02-24
-current: true
+current: false
 mode: '<a href="https://risd.zoom.us/j/97883162532" target="_blank">remote</a>'
 project: project1
 exercise: 01-layouts-positioning
