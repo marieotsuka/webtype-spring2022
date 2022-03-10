@@ -1,14 +1,14 @@
 ---
 title: "Variable Fonts"
-date: 2021-03-25
+date: 2022-03-10
 summary: "Type Design Basics and Variable Fonts"
+order: 6
 category: "terms"
-draft: true
 ---
 
 > “By writing directly into a mechanical form rather than a manuscript (as we’re doing right now) the writer would be working closer to the nature of the multiplied result, and through an increasing awareness and gradual mastery of the form’s new limitations and possibilities \*the writing itself would evolve;\* the shorter the distance between the raw material of words and their processed output, the more entwined the content and form from the outset. This line of thinking was more famously expounded by Benjamin in his 1936 essay ‘The Work of Art in the Age of Mechanical Reproduction,’ which more broadly argues that an authentic, pertinent art is the result of engagement with the latest technological innovations.” — [Dexter Sinister: Letter & Spirit](http://www.servinglibrary.org/journal/3/letter-and-spirit)
 
-For our variable font project, we will be using [Glyphs 2](https://glyphsapp.com/), since RISD provides a site license for this software. Glyphs has some robust [tutorials](https://glyphsapp.com/tutorials) as well as an active [forum](https://forum.glyphsapp.com/), which may be useful in your research.
+For our variable font project, we will be using [Glyphs](https://glyphsapp.com/), since RISD provides a site license for this software. Glyphs has some robust [tutorials](https://glyphsapp.com/tutorials) as well as an active [forum](https://forum.glyphsapp.com/), which may be useful in your research.
 
 Below are some key terms we will be using in type design.
 

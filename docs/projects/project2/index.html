@@ -1,166 +1,118 @@
-<blockquote>
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Axis of Variation — WebType</title>
+	<meta name="description" content="Class website for Web Type, Spring 2022 at RISD">
+	<meta name="author" content="Marie Otsuka">
+	<link rel=icon href=/assets/img/favicon.png type="image/png">
+	<link rel="stylesheet" href="/css/style.css">
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script>
+	<script src="/assets/js/script.js"></script>
+</head>
+<body>
+<div class="container">
+	<header>
+	<nav>
+		<a href="/" class="home">Web Type</a>
+		<div class="menu-icon">≡≡</div>
+		<div class="nav-links">
+			<div class="meta">Web Type @ RISD</div>
+			<a href="/">index</a>
+			<a href="/syllabus/">syllabus</a>
+			<a href="/schedule/">schedule</a>
+			<a href="/projects/">projects</a>
+			<a href="/exercises/">exercises</a>
+			<a href="/readings/">readings</a>
+			<a href="/resources/">resources</a>
+			<a href="/colophon/">colophon</a>
+			
+			<br>
+			<br>
+			<div class="meta">Quick links</div>
+			<a href="https://risd.zoom.us/j/97883162532" target="_blank">zoom</a>
+			<a href="https://docs.google.com/spreadsheets/d/1pCrREKrOvXLRe-MtiWhGrCLuv4MRFct_YnuBqMec8KI/edit#gid=0" target="_blank">office hours</a>
+			<a href="https://docs.google.com/spreadsheets/d/1QXocofQNNG38kJWQWjjZe7wv4ikc8Ffnzg_6qoxGSqY/edit#gid=0" target="_blank">presentations</a>
+			<a href="https://github.com/risd-web/webtype-demos" target="_blank">demos repository</a>
+			<a href="https://risd.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=fe7e0ae6-604e-44ec-a7d7-ae3f0033a340" target="_blank">tutorial videos</a>	
+			<a href="https://drive.google.com/drive/folders/1f21gsrM7leOLwqET_ZrsLhG3KTlqQzBA?usp=sharing" target="_blank">technical slides</a>	
+		</div>
+	</nav>
+</header>
+
+	<main class="content">
+		
+<article class="content">
+	<h1>Axis of Variation</h1>
+	<blockquote>
 <p>“ ... in any context, large or small, designing the medium is managing the potentials and relationships between objects, the activity or disposition immanent in their organization.” – Keller Eastering</p>
 </blockquote>
-<p>In this project, you will create a variable font, considering the axes of variation as a medium. You are not only designing the visual instances of letterforms — you are designing the relationship with the typographer (or anyone who uses the font.) What power and possibilities are you granting with your variable font? If you can choose <a href="https://v-fonts.com/">any kind of axes</a> for variation, what is the significance of that choice?</p>
-<p>You will then create a type specimen as a website that showcases your concept behind your variable font, using HTML, CSS, and JavaScript.</p>
+<p>In this project, you will create a variable font, considering the axes of variation as a medium. You are not only designing the visual instances of letterforms — you are designing the relationship of the typographer to the typeface. What power and possibilities are you granting with your variable font? If you can choose <a href="https://v-fonts.com/">any kind of axes</a> for variation, what is the significance of that choice?</p>
+<p>Note — this typeface does not necessarily need to have a modular construction, composed of components, but I recommend this method, especially if you are new to glyphs.</p>
+<p>(In our following project, you will then create a type specimen as a website that showcases your concept behind your variable font, using HTML, CSS, and JavaScript.)</p>
+<h2>Project Details</h2>
+<p>Consider the design of transforming letterforms to be a tool for expressing a point of view, a medium for communication in and of itself.</p>
+<h3>Technical Learnings</h3>
 <ul>
-<li>How does the typography and interactive states express the theme of the events and the spirit of the community?</li>
-<li>What information might be important to include for its audience?</li>
+<li>What is the basic process of designing letters?</li>
+<li>In what ways can drawing type help us understand the way vector curves work?</li>
+<li>How might the font take advantage of its mode of construction?</li>
+<li>How do we refine the craft of our drawings?</li>
 </ul>
-<h3>Learning Outcomes</h3>
+<h3>Design Questions</h3>
 <ul>
-<li>Experiment with prototyping fonts containing variation axes</li>
-<li>Understand how to work with variable fonts on the web</li>
-<li>Consider how interactivity and participation in the design process</li>
-<li>Leverage the digital nature of the typeface to produce a generative design</li>
-<li>Introduction to JavaScript</li>
+<li>How can we establish a system of rules, and where they can be broken?</li>
+<li>How do the shapes and spaces within and around letters form a pattern, a texture?</li>
+<li>How do you we articulate the characteristics of letterforms?</li>
+<li>How can your typeface demonstrate a commentary; a point of view?</li>
+<li>How can the way these shapes <em>vary</em> become a means for embedding concepts?</li>
+<li>How does a specific use of for the web affect the design of our letters?</li>
 </ul>
-<h3>Requirements</h3>
-<ul>
-<li>You must have a complete alphabet of either lowercase and uppercase, with punctuation indicated below.</li>
-<li>You must have 2 masters</li>
-</ul>
-<pre><code>ABCDEFGHIJKLMNOPQRSTUVWXYZ or
-abcdefghijklmnopqrstuvwxyz
-
-“”.!?,-
-</code></pre>
 <h2>Project Schedule</h2>
-<h3>Step 1: Propose a concept</h3>
+<h3 id="week-1">Week 1: Prepare design concept and initial sketches</h3>
 <ul>
-<li>define your typographic concept(s) — roughly sketch 3 different approaches</li>
-<li>determine the scope of your font
-<ul>
-<li>you might work from an existing design — something you’ve designed in the past</li>
-<li>if starting a new design, consider a modular approach</li>
+<li>Define your typographic concept(s)</li>
+<li>In Glyphs, roughly sketch out 2 different design directions with a few letters</li>
+<li>Begin with the control characters: <code>H</code>, <code>O</code>, <code>D</code>, and/or <code>n</code>, <code>o</code>, <code>p</code>. (These characters provide the “DNA” of a typeface: its straight shapes, its curved shapes, and the combination of the two.) Continue with other related letters. (You should have enough letters to spell out several words.)</li>
+<li>Articulate the <em>axis for variation</em> and your intended design space. (You might draw a few of the “varied” version of the letters in glyphs. Begin with a copy of the letter.)</li>
+<li>Familiarize yourself with the Glyphs App interface.</li>
 </ul>
-</li>
-<li>articulate the <em>axis for variation</em> as an intentional design space</li>
-<li>begin with the control characters: H, O, D, n, o, p.
+<h3 id="week-2">Week 2: Drawing and Design</h3>
 <ul>
-<li>These characters provide the “DNA” of a typeface: its straight shapes, its curved shapes, and the combination of the two.</li>
+<li>Flesh out your alphabet for one master, refining your shapes.</li>
+<li>Begin drafting your second master and test out your interpolation.</li>
+<li>Pay careful attention to keep your <a href="https://glyphsapp.com/learn/multiple-masters-part-2-keeping-your-outlines-compatible">outlines compatible</a>.</li>
 </ul>
-</li>
-</ul>
-<h3>Step 2: Drawing</h3>
+<h3 id="week-3">Week 3: Drawing Refinement, Production </h3>
 <ul>
-<li>begin drawing one of your variable font concepts in Glyphs</li>
-<li>flesh out the basic alphabet for one master</li>
-<li>begin drafting your second master and test out your interpolation</li>
+<li>Refine your drawing and complete both the character sets for both of your masters, making sure they interpolate.</li>
+<li>Begin testing your typeface on your class site.</li>
 </ul>
-<h3>Step 3: Drawing Refinement, Design planning</h3>
+<h2>Requirements</h2>
 <ul>
-<li>refine your drawing and complete both the character sets for both of your masters, making sure they interpolate</li>
-<li>begin rough concept sketches in Figma for your font-in-use website specimen</li>
-<li>consider the following questions for your <em>typeface</em>:
-<ul>
-<li>how does the font take advantage of its mode of construction?</li>
-<li>how can not only the shapes of the letters, but the actual transformation itself become part of your concept?</li>
-<li>how can your typeface demonstrate a commentary; a point of view?</li>
+<li>You must have a complete alphabet of either uppercase and/or, with punctuation (<code>ABCDEFGHIJKLMNOPQRSTUVWXYZ “”.!?,- </code> <em>and/or</em> <code>abcdefghijklmnopqrstuvwxyz “”.!?,-</code>)</li>
+<li>You must have 2 interpolating masters</li>
 </ul>
-</li>
-<li>consider the following questions for your <em>website specimen</em>:
+<h2>Resources</h2>
+<h3>Previous Student Work</h3>
 <ul>
-<li>how is your axis of variation activated by the web?</li>
-<li>what should it respond to?
+<li><a href="https://tdingsun.github.io/web-type/chancery/">Tiger Dingsun: Cross Chancery</a></li>
+<li><a href="https://corinneang.github.io/webtype/winder.html">Corinne Ang: Winder</a></li>
+<li><a href="https://nkim16.github.io/webtype/variable_type/">Nayeon Kim: Polar</a></li>
+<li><a href="https://wmianecki.github.io/Type-Specimen/">William Mianecki: Pegasus</a></li>
+<li><a href="https://fsumm.github.io/Project2/project2.html">Felix Summ: Cybercon</a></li>
+</ul>
+<h3>Variable Fonts</h3>
 <ul>
-<li>is it user input? a browser width change? external data? time? sound?</li>
-<li>what is the significance of this “response” in combination with the text that we see?</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3>Step 4: Prototype Development</h3>
-<ul>
-<li>refine and finalize typeface</li>
-<li>prototype your website specimen
-<ul>
-<li>what is the journey created through the website?</li>
-<li>how can you showcase different components of your typeface?</li>
-<li>if your typeface is a display face, consider pairing another typeface for captions and small text</li>
-</ul>
-</li>
-<li>begin experimenting with JavaScript
-<ul>
-<li>how does the interactive experience align with the concept of the site?</li>
-</ul>
-</li>
-</ul>
-<h3>Step 5: Prototype Refinement</h3>
-<ul>
-<li>refine website specimen
-<ul>
-<li>what kind of experience are you taking your visitor through with your website?</li>
-<li>how does each design choice — typesize, color, motion — align with the concept?</li>
-<li>finalize interactivity of the website — what is intuitive vs. what requires instructions?</li>
-<li>finalize typographic details</li>
-</ul>
-</li>
-<li>design the responsive version
-<ul>
-<li>use <code>@media</code> queries to make a mobile-friendly version</li>
-<li>how does your typography adapt to the smaller screen?</li>
-</ul>
-</li>
-<li>consider a page or footer that contextualizes the project (&quot;about section&quot;)</li>
-<li>optional: consider expanding what and how you’re curating your content: use JavaScript, JSON and / or APIs to enhance the experience of your typeface on the web</li>
-</ul>
-<h3>Calendar</h3>
-<pre><code>Week 4
-Concept exploration
-
-Week 5
-Draft Variable Font in Glyphs
-
-Week 6
-Refine VF
-Explore type specimen designs
-
-Week 7
-Refine type specimen
-Begin integrating VF into browser type
-Begin experimenting with JavaScript
-
-Week 8
-Refine craft and functionality
-Make responsive
-
-Week 9
-Final Crit
-Due
-</code></pre>
-<h3>Glyphs Links</h3>
-<ul>
-<li><a href="https://glyphsapp.com/tutorials/creating-a-variable-font">Glyphs: Creating a Variable Font</a></li>
-<li><a href="https://glyphsapp.com/learn/pixelfont">Glyphs: Creating a Pixel Font</a></li>
-<li><a href="https://glyphsapp.com/tutorials">Glyphs App</a></li>
-<li><a href="https://forum.glyphsapp.com/">Glyphs Forum</a></li>
-</ul>
-<h3>Testing</h3>
-<ul>
-<li><a href="https://github.com/justvanrossum/fontgoggles/releases/tag/v1.1">Font Goggles</a></li>
-<li><a href="https://www.axis-praxis.org/specimens/__DEFAULT__%22">Axis Praxis</a></li>
-<li><a href="https://dinamodarkroom.com/gauntlet/">Dinamo Gauntlet</a></li>
-</ul>
-<h3>Implementing Variable Fonts on Websites</h3>
-<ul>
-<li><a href="https://variablefonts.io/">A Variable Fonts Primer</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide">MDN Variable Fonts Guide</a></li>
-<li><a href="https://css-tricks.com/one-file-many-options-using-variable-fonts-web/">One File, Many Options: Using Variable Fonts on the Web</a></li>
-<li><a href="https://24ways.org/2019/interactivity-and-animation-with-variable-fonts/">Interactivity and Animation with Variable Fonts</a></li>
-</ul>
-<h3>Supporting Tutorials</h3>
-<ul>
-<li><a href="https://www.codecademy.com/learn/introduction-to-javascript">Codecademy JavaScript</a></li>
-<li><a href="https://www.codecademy.com/learn/learn-jquery">Codecademy jQuery</a></li>
-<li><a href="https://eloquentjavascript.net/">Eloquent Javascript</a></li>
-</ul>
-<h3>Reference</h3>
-<ul>
+<li><a href="https://v-fonts.com/">v-fonts.com</a></li>
+<li><a href="https://vf.typenetwork.com/">Type Network Variable Font Collection</a></li>
 <li><a href="https://djr.com/fit/">DJR: Fit</a></li>
 <li><a href="https://v-fonts.com/fonts/cheee-variable">Oh no Type: Chee</a></li>
-<li><a href="https://v-fonts.com/">v-fonts.com</a></li>
 <li><a href="https://www.typenetwork.com/brochure/decovar-a-decorative-variable-font-by-david-berlow#?skelID=SA&amp;skel=0.82&amp;termID=TA&amp;term=1">David Berlow: Decovar</a></li>
 <li><a href="https://www.recursive.design/">Arrow Type: Recursive</a></li>
 <li><a href="https://www.typemedia2018.com/gen">Gen Ramirez: Entorno</a></li>
@@ -173,20 +125,66 @@ Due
 <li><a href="http://mgmtdesign.com/digressions/home/type-and-gender/hypothetical-hack/">Sarah Gephart: Hypothetical Hack</a></li>
 <li><a href="https://www.emitakahashi.ca/kachibuwa#0">Emi Takahashi: KachiBuwa</a>
 <ul>
-<li>see also: <a href="https://en.wikipedia.org/wiki/Bouba/kiki_effect">Bouba/Kiki effect</a> and <a href="https://www.youtube.com/watch?v=L3D0JEA1Jdc&amp;ab_channel=StrangeLoopConference">Allison Parish</a> see around <code>29:00</code></li>
+<li>see also: <a href="https://en.wikipedia.org/wiki/Bouba/kiki_effect">Bouba/Kiki effect</a></li>
 </ul>
 </li>
 <li><a href="https://kampanjat.hs.fi/climatefont/index.html">Climate Crisis Font</a></li>
 <li><a href="https://www.typotheque.com/fonts/wind/about">Typotheque: Wind</a></li>
-<li><a href="https://risd-web.github.io/webtype-spring2020/students/">Webtype Student Work</a></li>
 </ul>
-<h3>Modular Type</h3>
+<!-- - prototype your website specimen
+  - what is the journey created through the website?
+  - how can you showcase different components of your typeface?
+  - if your typeface is a display face, consider pairing another typeface for captions and small text
+- begin experimenting with JavaScript
+  - how does the interactive experience align with the concept of the site?
+
+
+### Step 5: Prototype Refinement
+* refine website specimen
+  - what kind of experience are you taking your visitor through with your website?
+  - how does each design choice — typesize, color, motion — align with the concept?
+  - finalize interactivity of the website — what is intuitive vs. what requires instructions?
+  - finalize typographic details
+* design the responsive version
+  - use `@media` queries to make a mobile-friendly version
+  - how does your typography adapt to the smaller screen?
+* consider a page or footer that contextualizes the project ("about section")
+* optional: consider expanding what and how you’re curating your content: use JavaScript, JSON and / or APIs to enhance the experience of your typeface on the web
+ -->
+<h3>Technical Resources</h3>
+<h3>Glyphs Links</h3>
 <ul>
-<li><a href="https://walkerart.org/minnesotabydesign/objects/walker">Matthew Carter: Walker</a> and some <a href="https://walkerart.org/magazine/matthew-carter">notes</a>.</li>
-<li><a href="https://www.emigre.com/Fonts/Modula">Zuzana Licko: Modula</a></li>
-<li><a href="https://www.typotheque.com/blog/calcula_a_geometrical_layering_display_typeface_with_thousands_of_ligatures">Shiva Nallaperumal: Calcula</a></li>
-<li><a href="https://apeloig.com/type/typographie/">Philippe Apeloig</a></li>
-<li><a href="http://nontsikelelomutiti.com/2017/03/04/the-digital-in-black-hair-aesthetics/">Nontsikelelo Mutiti: Thread</a></li>
-<li><a href="https://eyeondesign.aiga.org/peter-bilaks-playful-buildable-type-system-q-is-the-lego-of-typefaces/">Peter Bilak: Q</a></li>
-<li><a href="https://bitcount.typenetwork.com/">Peter van Blockland: Bitcount </a></li>
+<li><a href="https://glyphsapp.com/tutorials">Glyphs App</a></li>
+<li><a href="https://forum.glyphsapp.com/">Glyphs Forum</a></li>
+<li><a href="https://glyphsapp.com/tutorials/creating-a-variable-font">Glyphs: Creating a Variable Font</a></li>
+<li><a href="https://glyphsapp.com/learn/pixelfont">Glyphs: Creating a Pixel Font</a></li>
 </ul>
+<h3>Glyphs Plugins</h3>
+<p>You can install these through the Plugin Manager within the Glyphs app.<br>
+Before doing so, you must install the <strong>Modules</strong> (<code>FontTools</code> <code>Python</code> <code>RoboFab</code> <code>Vanilla</code>). Then, double-check your Glyphs App Python version after restarting.</p>
+<ul>
+<li>Word-o-Mat</li>
+<li>Show Angled Handles</li>
+<li>Show Tops and Bottoms</li>
+</ul>
+<h3>Testing</h3>
+<ul>
+<li><a href="https://github.com/justvanrossum/fontgoggles/releases/tag/v1.1">Font Goggles</a></li>
+<li><a href="https://www.axis-praxis.org/specimens/__DEFAULT__%22">Axis Praxis</a></li>
+<li><a href="https://www.axis-praxis.org/samsa/">Samsa</a></li>
+<li><a href="https://dinamodarkroom.com/gauntlet/">Dinamo Gauntlet</a></li>
+</ul>
+
+</article>
+	</main>
+	<footer>
+	<ul>
+		<li>WEB TYPE (RISD GRAPH-2313-01)</li>
+		<li>Thursdays 1:10pm–6:10pm, DC 407</li>
+		<li>Sometimes on <a href="https://risd.zoom.us/j/97883162532" target="_blank">Zoom</a></li>
+	</ul>
+</footer>
+
+</div>
+</body>
+</html>

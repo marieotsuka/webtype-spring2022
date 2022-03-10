@@ -1,18 +1,19 @@
 ---
-draft: false
 title: Typeface as Programme
 date: 2022-03-10
-mode: remote
+current: true
+mode: '<a href="https://risd.zoom.us/j/97883162532" target="_blank">remote</a>'
+project: project2
+exercise: 03-modular
+reading: reading4
+tutorials:
+ - "[Variable Fonts Basics](/notes/06-variable-fonts/)"
+ - "[A Variable Fonts Primer](https://variablefonts.io/)"
 ---
-<!-- 
-project: "project1.md"
-exercise: "n/a"
-reading: "[Jürg Lehni: Typeface as Programme Interview Series](https://www.typotheque.com/articles/typeface_as_programme)"
-tutorials: "Glyphs App: [Creating a Variable Font](https://glyphsapp.com/learn/creating-a-variable-font)"
-lectures: "In-class: [Type and Tools](http://motsuka.com/webtype-lectures/type-tools/index.html#1)"
-- Show & tell / share
-- Review CSS Type / Composition Exercises
-- Presentation: Amy Choi
-- [Type and Tools](http://motsuka.com/webtype-lectures/type-tools/index.html#1) Lecture
-- Introduce [Project 2](/projects/project2.md)
-- Review Project 1 Progress -->
+
+- Discussion: On the Letterform of the Age
+- Exercise: Modular Letters
+- Project 1 presentation: Gabriel and Valia
+- A talk on [Type & Tools](https://motsuka.com/webtype-lectures/type-tools/)
+- Introduce [Project 2](/projects/project2/)
+- Begin preparing project 2 proposal ideas and sketches

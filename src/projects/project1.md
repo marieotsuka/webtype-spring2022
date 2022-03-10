@@ -1,5 +1,4 @@
 ---
-draft: false
 title: "Querying Media"
 date: 2022-02-17
 tags: project
@@ -14,7 +13,7 @@ In this project, you develop a “query” into a typographic medium of your cho
 ## Project Details
 
 ### Possible Research Topics
-Use this opportunity to dig deeper into an existing topic of interest around typography and technology. Be sure to take note and cite your sources. The minimum requirement is that your text is at least 500 words.
+Use this opportunity to dig deeper into an existing topic of interest around typography and technology. Be sure to take note and cite your sources. The minimum requirement is that your text is at least 500 words, and your presentation should be about 15min.
 
 Please post your [topic here](https://docs.google.com/spreadsheets/d/1QXocofQNNG38kJWQWjjZe7wv4ikc8Ffnzg_6qoxGSqY/edit?usp=sharing) by *Monday, February 21.* If you are having trouble choosing a topic, please reach out and I can help brainstorm. While we will be dedicating the first few weeks to develop this site, you will be presenting this over the course of the semester per the schedule above, as a way for us to familarize ourselves with interesting topics around digital typography and text.
 

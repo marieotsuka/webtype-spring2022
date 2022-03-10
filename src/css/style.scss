@@ -678,11 +678,10 @@ RESOURCES
 	}
 	aside{
 		max-height: 90vh;
-		overflow-y: scroll;
 		position: fixed;
 		top: 6em;
 		right: var(--margin);
-		width: 220px;
+		width: 250px;
 		border-left: 1px dotted var(--thirdcolor);
 		padding-left: 2em;
 		margin-left: 2em;
@@ -903,9 +902,6 @@ MEDIA QUERIES
 	.link-button{
 		height: 100px;
 	}
-	code{
-		font-size: .8rem;
-	}
 
 	.index .row{
 		display: block;
@@ -915,6 +911,20 @@ MEDIA QUERIES
 		font-size: 3.5rem;
 		--wght: 200;
 	}
+
+
+	.content .index-list dt{
+		display: block;
+	}
+	.content .index-list time{
+		display: inline-block;
+	}
+
+	.content .index-list .mode{
+		display: inline-block;
+		text-align: left;
+	}
+	
 	footer{
 		font-size: 1rem;
 	}

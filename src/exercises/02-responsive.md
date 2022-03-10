@@ -24,4 +24,4 @@ For each of your layouts, apply the above principles to create a layout that ada
 
 Make a link to your mobile layouts from your class site.
 
-Bonus: Add a `@media print` query that specifies formatting for the printed website. Export this preview as a PDF and link from your class site.
+Bonus: Add a `@media print` query that specifies formatting for the printed website. Export this preview as a PDF and link it from your class site.

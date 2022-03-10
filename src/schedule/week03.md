@@ -1,7 +1,7 @@
 ---
 title: Variation as Response
 date: 2022-03-03
-current: true
+current: false
 mode: in-person
 project: project1
 exercise: 02-responsive
