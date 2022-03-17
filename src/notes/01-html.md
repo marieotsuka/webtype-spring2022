@@ -37,7 +37,7 @@ An `.html` file has 2 forms:
 
 All content is surrounded  between opening and closing tags. A closing tag is indicated with a forward slash `/`. Most forms of markup require both. ([Here’s](https://web.archive.org/web/20060314044545/http://www.sewingandembroiderywarehouse.com/embtrb.htm) what happens when you don’t close tags.) A set of opening and closing tags form an html **element**. (Some special tags don’t require closing tags.)
 
-```HTML
+```html
 <h1>headline</h1>
 <p>lorem ipsum ...</p>
 ```
@@ -66,7 +66,7 @@ You can see the HTML and structure of any webpage by opening your Inspector tool
 An element nested within another is called a **child** element. Conversely, an element containing another is called its **parent**. A child element must be closed before its parent element. 
 
 This is incorrect syntax:
-```HTML
+```html
 <h2>French Bakery</h2>
 <p>
 	All goods must be eaten <em>today.
@@ -80,7 +80,7 @@ This is incorrect syntax:
 ```
 
 These are examples of incorrect syntax:
-```HTML
+```html
 <h2>French Bakery</h2>
 <p>
 	All goods must be eaten <em>today</em>.
@@ -100,7 +100,7 @@ Nested elements should be kept tabbed for readability: it will help you see wher
 
 Attributes provide additional information about the contents of an element appear with the opening tag of an element. They consist of an **attribute name** and a **attribute value**. Each element type has its own appropriate attributes. 
 
-```HTML
+```html
 <a href="index.html">home</a>
 ```
 
@@ -117,25 +117,25 @@ Attributes provide additional information about the contents of an element appea
 <div class="terms" markup = "1">
 
 **Local / Relative links** Other pages in your site
-```HTML
+```html
 <a href="about.html">learn more</a>
 ```
 
 
 **Anchor links** Other locations within the same webpage 
-```HTML
+```html
 <a href="#up">go back up</a>
 ```
 
 
 **Absolute links** Other webpages outside your site 
-```HTML
+```html
 <a href="https//www.google.com/">search stuff</a>
 ```
 
 
 **Download links** Any non-html file for users to download
-```HTML
+```html
 <a href="docs/resume.pdf">view a PDF</a>
 ```
 </div>

@@ -66,32 +66,13 @@
 </ul>
 <h2>Setup</h2>
 <p>Like CSS, JavaScript can be included within the <code>&lt;head&gt;&lt;/head&gt;</code> your <code>html</code> file as well as linked as an external file. It can also be included at the bottom of your document, right before the closing <code>&lt;/body&gt;</code> tag.</p>
-<pre><code class="language-HTML">&lt;!-- Internal JavaScript --&gt;
-&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;
-  JavaScript code 
-&lt;/script&gt;
-
-
-&lt;!-- External JavaScript --&gt;
-&lt;script language=&quot;javascript&quot; src=&quot;js/filename.js&quot;&gt;&lt;/script&gt;
-</code></pre>
+<pre class="language-html"><code class="language-html"><span class="token comment">&lt;!-- Internal JavaScript --></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">language</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>javascript<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript"><br>  JavaScript code <br></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><br><br><br><span class="token comment">&lt;!-- External JavaScript --></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">language</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>javascript<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>js/filename.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre>
 <h2>Output</h2>
 <p>When you instruct Javascript to perform a task, it will usually give you some output, but it won’t automatically display it anywhere. You can verify your result by using the Console of your browser.</p>
-<pre><code class="language-JS">&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;
-	console.log(&quot;Hello World!&quot;);
-&lt;/script&gt;
-</code></pre>
+<pre class="language-js"><code class="language-js"><span class="token operator">&lt;</span>script language<span class="token operator">=</span><span class="token string">"javascript"</span> type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span><br>	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hello World!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code></pre>
 <h2>Comments</h2>
 <p>Comments are important to keep your code legible — they help you execute the program in your head.  They’re a great tool to keep track of the purpose of each line of your script. They also help future you (and others) read and understand your code.</p>
-<pre><code class="language-JS">&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;
-      
-      // ”//” starts a single line comment.
-
-      /* “/*” opens a multiline comment,
-         and “*/” closes it. */
-
-&lt;/script&gt;
-</code></pre>
+<pre class="language-js"><code class="language-js"><span class="token operator">&lt;</span>script language<span class="token operator">=</span><span class="token string">"javascript"</span> type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span><br>      <br>      <span class="token comment">// ”//” starts a single line comment.</span><br><br>      <span class="token comment">/* “/*” opens a multiline comment,<br>         and “*/</span>” closes it<span class="token punctuation">.</span> <span class="token operator">*</span><span class="token operator">/</span><br><br><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code></pre>
 <h2>Syntax</h2>
 <p>A script is a series of instructions that a computer can follow one-by-one. Each individual instruction or step is known as a <em>statement</em>. Statements should end with a semicolon (<code>;</code>) Statements are composed of <em>values</em>, <em>operators</em>, <em>expression</em>, <em>keywords</em>, and <em>comments</em>. Semicolons are not needed after curly brackets <code>}</code> (except when it is an expression.)</p>
 <table>
@@ -125,54 +106,20 @@
 </tr>
 </tbody>
 </table>
-<pre><code class="language-JS">&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;
-
-      alert(&quot;hi&quot;);
-
-      if (…) {
-       …
-      } else {
-       …
-      }
-
-      function foo() {
-        return true;
-      }
-
-      let foo = function() {
-        return true;
-      }; // this is an expression
-
-      for (let i=0; i &lt; 10; i++) {
-         // actions 
-      } 
-
-&lt;/script&gt;
-</code></pre>
+<pre class="language-js"><code class="language-js"><span class="token operator">&lt;</span>script language<span class="token operator">=</span><span class="token string">"javascript"</span> type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span><br><br>      <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"hi"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>      <span class="token keyword">if</span> <span class="token punctuation">(</span>…<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>       …<br>      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span><br>       …<br>      <span class="token punctuation">}</span><br><br>      <span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>        <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span><br>      <span class="token punctuation">}</span><br><br>      <span class="token keyword">let</span> <span class="token function-variable function">foo</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>        <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span><br>      <span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token comment">// this is an expression</span><br><br>      <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>         <span class="token comment">// actions </span><br>      <span class="token punctuation">}</span> <br><br><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code></pre>
 <h2>Data types</h2>
 <h3>Strings</h3>
 <p>In programming languages, any textual content that is not part of the programming instructions must be surrounded in single or double quotes (just make sure they match, and that they’re not curly quotes.)</p>
-<pre><code class="language-JS">&quot;Hello World&quot;;   // works
-'Hi';            // works
-&quot;This';         // won’t work
-</code></pre>
+<pre class="language-js"><code class="language-js"><span class="token string">"Hello World"</span><span class="token punctuation">;</span>   <span class="token comment">// works</span><br><span class="token string">'Hi'</span><span class="token punctuation">;</span>            <span class="token comment">// works</span><br>"This'<span class="token punctuation">;</span>         <span class="token comment">// won’t work</span></code></pre>
 <h3>Numbers</h3>
 <p>Numbers do not need to be surrounded in quotes <code>&quot;&quot;</code>.</p>
-<pre><code class="language-JS">1    // integers
-0.5  // non-integers with decimal digits are called floats
-</code></pre>
+<pre class="language-js"><code class="language-js"><span class="token number">1</span>    <span class="token comment">// integers</span><br><span class="token number">0.5</span>  <span class="token comment">// non-integers with decimal digits are called floats</span></code></pre>
 <h3>Boolean</h3>
 <p>A binary value of either <code>true</code> or <code>false</code>. These are useful for <a href="#conditionals">conditionals</a>.</p>
-<pre><code class="language-JS">let x = false;
-if (x) {
-  // this code is not executed
-}
-</code></pre>
+<pre class="language-js"><code class="language-js"><span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span><br><span class="token keyword">if</span> <span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token comment">// this code is not executed</span><br><span class="token punctuation">}</span></code></pre>
 <h3>Variables</h3>
 <p>A variable is a named location for storing a value. That way an unpredictable value can be accessed through a predetermined name; it can serve as a container for anything (numbers, strings, booleans, arrays, other variables.)</p>
-<pre><code class="language-JS">let x = 9;
-let school = &quot;RISD&quot;;
-</code></pre>
+<pre class="language-js"><code class="language-js"><span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">9</span><span class="token punctuation">;</span><br><span class="token keyword">let</span> school <span class="token operator">=</span> <span class="token string">"RISD"</span><span class="token punctuation">;</span></code></pre>
 <h3>Variable naming conventions</h3>
 <p>You can call a variable pretty much anything you like, but there are limitations. Generally, you should stick to just using Latin characters (0-9, a-z, A-Z) and the underscore character.</p>
 <ul>
@@ -185,39 +132,23 @@ let school = &quot;RISD&quot;;
 </ul>
 <h3>Arrays</h3>
 <p>An array is a data type that contains a group of values. This can be a list of anything—strings, integers, variables. An array is defined by a comma-separated list of items in square brackets <code>[]</code>.</p>
-<pre><code class="language-JS">let colors = [&quot;red&quot;,&quot;green&quot;,&quot;blue&quot;];
-</code></pre>
+<pre class="language-js"><code class="language-js"><span class="token keyword">let</span> colors <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"red"</span><span class="token punctuation">,</span><span class="token string">"green"</span><span class="token punctuation">,</span><span class="token string">"blue"</span><span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre>
 <p>You can access array items by their <em>index,</em> or numerical label, inserted between square brackets<code>[]</code>. The starting position is <code>0</code>, not <code>1.</code>  The <code>length</code> property will give you the number of items in an array.</p>
-<pre><code class="language-JS">colors[0] // red
-colors[1] // green
-colors.length // 3
-</code></pre>
+<pre class="language-js"><code class="language-js">colors<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token comment">// red</span><br>colors<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token comment">// green</span><br>colors<span class="token punctuation">.</span>length <span class="token comment">// 3</span></code></pre>
 <h3>Objects</h3>
 <p>An object is a collection of data, where each data in the collection has a unique name that identifies it. An object is defined by a comma-separated list of <code>key: value</code> pairs in curly brackets <code>{}</code>.</p>
-<pre><code class="language-JS">let numbers = {e: 2.7183, pi: 3.1416};
-</code></pre>
+<pre class="language-js"><code class="language-js"><span class="token keyword">let</span> numbers <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token literal-property property">e</span><span class="token operator">:</span> <span class="token number">2.7183</span><span class="token punctuation">,</span> <span class="token literal-property property">pi</span><span class="token operator">:</span> <span class="token number">3.1416</span><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
 <p>Each item in the object has a <em>key</em> and a <em>value.</em> You use the key to get at the value! You can access the value either by a <code>.</code> before the key or by inserting the key within square brackets <code>[]</code>. If using square brackets, make sure to surround the key in quotes <code>''</code>.</p>
-<pre><code class="language-JS">numbers.e // 2.7183
-numbers['pi'] // 3.1416
-</code></pre>
+<pre class="language-js"><code class="language-js">numbers<span class="token punctuation">.</span>e <span class="token comment">// 2.7183</span><br>numbers<span class="token punctuation">[</span><span class="token string">'pi'</span><span class="token punctuation">]</span> <span class="token comment">// 3.1416</span></code></pre>
 <h2>Operators</h2>
 <h3>Assignment operators</h3>
 <p>The assignment operator <code>=</code> assigns the right-hand value to the left-hand operand.</p>
-<pre><code class="language-JS">let name = &quot;Beatrice&quot;; // assigns Beatrice to the name variable
-name = &quot;Betty&quot;; // updates the value of name to Betty
-
-let count = 5; //assigns 5 to the variable count
-count = count + 3; // updates the count variable by adding 3 to itself. count is now 8. 
-</code></pre>
+<pre class="language-js"><code class="language-js"><span class="token keyword">let</span> name <span class="token operator">=</span> <span class="token string">"Beatrice"</span><span class="token punctuation">;</span> <span class="token comment">// assigns Beatrice to the name variable</span><br>name <span class="token operator">=</span> <span class="token string">"Betty"</span><span class="token punctuation">;</span> <span class="token comment">// updates the value of name to Betty</span><br><br><span class="token keyword">let</span> count <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span> <span class="token comment">//assigns 5 to the variable count</span><br>count <span class="token operator">=</span> count <span class="token operator">+</span> <span class="token number">3</span><span class="token punctuation">;</span> <span class="token comment">// updates the count variable by adding 3 to itself. count is now 8. </span></code></pre>
 <p>There is a shorthand for variables to cumulatively assign new values to itself.</p>
-<pre><code class="language-JS">count += 3; // same as count = count + 3
-count ++; // same as count += 1, or count = count + 1
-</code></pre>
+<pre class="language-js"><code class="language-js">count <span class="token operator">+=</span> <span class="token number">3</span><span class="token punctuation">;</span> <span class="token comment">// same as count = count + 3</span><br>count <span class="token operator">++</span><span class="token punctuation">;</span> <span class="token comment">// same as count += 1, or count = count + 1</span></code></pre>
 <h3>String operators</h3>
 <p>The concatenation operator (<code>+</code>) concatenates two string values together, returning another string that is the union of the two operand strings.</p>
-<pre><code class="language-JS">var mystring = &quot;alpha&quot;;
-mystring += &quot;bet&quot;; // evaluates to &quot;alphabet&quot; and assigns this value to mystring.
-</code></pre>
+<pre class="language-js"><code class="language-js"><span class="token keyword">var</span> mystring <span class="token operator">=</span> <span class="token string">"alpha"</span><span class="token punctuation">;</span><br>mystring <span class="token operator">+=</span> <span class="token string">"bet"</span><span class="token punctuation">;</span> <span class="token comment">// evaluates to "alphabet" and assigns this value to mystring.</span></code></pre>
 <h3>Comparison operators</h3>
 <p>Comparison evaluates an expression, returning a boolean, <code>true</code> or <code>false</code>.<br>
 Below are some examples — these are <strong>strict</strong> comparison formats, meaning they will check both the data type and the value.</p>
@@ -265,59 +196,20 @@ Below are some examples — these are <strong>strict</strong> comparison formats
 </table>
 <h2>Conditionals</h2>
 <p>Conditionals allow you to declare different actions based on different conditions. You can use If <code>if</code> / Then <code>else if</code> / Else <code>else</code> logic to define your scenarios.</p>
-<pre><code class="language-JS">let x = 2
-if (x === 2) {
-  console.log(&quot;x is 2&quot;);
-}
-else if (x === 3){
-  console.log(&quot;x is 3&quot;);
-}
-else {
-  console.log(&quot;x is neither 2 nor 3&quot;);
-}
-</code></pre>
+<pre class="language-js"><code class="language-js"><span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">2</span><br><span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">===</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"x is 2"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">===</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">{</span><br>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"x is 3"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token keyword">else</span> <span class="token punctuation">{</span><br>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"x is neither 2 nor 3"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
 <h2>Functions</h2>
 <p>A function is a set of actions to be performed. These can include built-in functions, like <code>console.log</code> or <code>alert</code>, or you can define your own function. Most functions are groups of other functions.</p>
 <p>After declaring a function, you can execute its statements by calling the function. While it’s possible to call a function before it’s declared, it’s best practice to declare your functions before you call them.</p>
-<pre><code class="language-JS">// define custom function we called sayHi. This only defines the function and does not execute it.
-function sayHi() { 		
-  console.log(&quot;Hi!&quot;);  // native function console.log
-  alert(&quot;Hi&quot;);  // native function alert
-}
-
-//call (execute) the sayHi function
-sayHi();			
-
-</code></pre>
+<pre class="language-js"><code class="language-js"><span class="token comment">// define custom function we called sayHi. This only defines the function and does not execute it.</span><br><span class="token keyword">function</span> <span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 		<br>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hi!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// native function console.log</span><br>  <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"Hi"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// native function alert</span><br><span class="token punctuation">}</span><br><br><span class="token comment">//call (execute) the sayHi function</span><br><span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>			<br></code></pre>
 <h3>Parameters and arguments</h3>
 <p>A function may need inputs to process its statements. These inputs are known as <em>parameters</em> and are used as variables in the function’s statements — you can give them whatever name is appropriate. <em>Arguments</em> are inputs passed into the function when it is called. When you expect a function to provide an answer or output, it’s know as the <em>return value</em>.</p>
 <p>The above function can be re-written to be more general.</p>
-<pre><code class="language-JS">//sets up &quot;something&quot; as a parameter.
-function saySomething(something) { 	
-  console.log(something);	
-  alert(something);					
-}
-
-//call saySomething function via the function name and parentheses (). 
-saySomething(&quot;Hi&quot;); // executes the same statements as above
-</code></pre>
+<pre class="language-js"><code class="language-js"><span class="token comment">//sets up "something" as a parameter.</span><br><span class="token keyword">function</span> <span class="token function">saySomething</span><span class="token punctuation">(</span><span class="token parameter">something</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 	<br>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>something<span class="token punctuation">)</span><span class="token punctuation">;</span>	<br>  <span class="token function">alert</span><span class="token punctuation">(</span>something<span class="token punctuation">)</span><span class="token punctuation">;</span>					<br><span class="token punctuation">}</span><br><br><span class="token comment">//call saySomething function via the function name and parentheses (). </span><br><span class="token function">saySomething</span><span class="token punctuation">(</span><span class="token string">"Hi"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// executes the same statements as above</span></code></pre>
 <p>You can also define multiple arguments</p>
-<pre><code class="language-JS">//define function with parameters width and height
-function getArea(width, height) {
-   return width*height;
-}
-
-//call getArea function with arguments 3 and 5
-getArea(3, 5); //returns 15
-
-</code></pre>
+<pre class="language-js"><code class="language-js"><span class="token comment">//define function with parameters width and height</span><br><span class="token keyword">function</span> <span class="token function">getArea</span><span class="token punctuation">(</span><span class="token parameter">width<span class="token punctuation">,</span> height</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>   <span class="token keyword">return</span> width<span class="token operator">*</span>height<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token comment">//call getArea function with arguments 3 and 5</span><br><span class="token function">getArea</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//returns 15</span><br></code></pre>
 <h2>Loops</h2>
 <p>For loops allow you to run a function by specifying the number of iterations you want it to repeat; it uses a counter as its condition to run.</p>
-<pre><code class="language-JS">// logs &quot;Hello&quot; in the console 5 times
-for(var i = 0; i &lt; 5; i++){ // i is the index, or the count value of the loop. It start at 0 and will increment (i++) every iteration, untill it’s no longer &lt; 10.
-	console.log(i, &quot;Hello&quot;); 
-}
-</code></pre>
+<pre class="language-js"><code class="language-js"><span class="token comment">// logs "Hello" in the console 5 times</span><br><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token comment">// i is the index, or the count value of the loop. It start at 0 and will increment (i++) every iteration, untill it’s no longer &lt; 10.</span><br>	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> <span class="token string">"Hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <br><span class="token punctuation">}</span></code></pre>
 <p>Expected output in Console</p>
 <pre><code>0 Hello
 1 Hello
@@ -360,15 +252,7 @@ for(var i = 0; i &lt; 5; i++){ // i is the index, or the count value of the loop
 </tr>
 </tbody>
 </table>
-<pre><code class="language-JS">// get a random integer between 2 numbers, including the min and max.
-function getRandomNumber(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min; 
-}
-
-getRandomNumber(0, 5); // returns a random number: 0, 1, 2, 3, 4, or 5.
-</code></pre>
+<pre class="language-js"><code class="language-js"><span class="token comment">// get a random integer between 2 numbers, including the min and max.</span><br><span class="token keyword">function</span> <span class="token function">getRandomNumber</span><span class="token punctuation">(</span><span class="token parameter">min<span class="token punctuation">,</span> max</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  min <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">ceil</span><span class="token punctuation">(</span>min<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  max <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>max<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token keyword">return</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span>max <span class="token operator">-</span> min <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span> min<span class="token punctuation">;</span> <br><span class="token punctuation">}</span><br><br><span class="token function">getRandomNumber</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// returns a random number: 0, 1, 2, 3, 4, or 5.</span></code></pre>
 </p>
 	</article>
 	<aside>
@@ -400,7 +284,11 @@ getRandomNumber(0, 5); // returns a random number: 0, 1, 2, 3, 4, or 5.
 				</a>
 			
 				<a href="/notes/06-variable-fonts/">
-					Variable Fonts
+					Variable Fonts and Interpolation
+				</a>
+			
+				<a href="/notes/07-transitions-animations/">
+					Tweening
 				</a>
 			
 			

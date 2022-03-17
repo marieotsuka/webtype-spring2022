@@ -15,7 +15,7 @@ The DOM represents the document as nodes and objects. In this way, programming l
 
 You can think a HTML document as a nested stracture of html as a tree of objects. Here’s an example document:
 
-```HTML
+```html
 <!doctype html>
 <html>
   <head>
@@ -35,7 +35,7 @@ You can either [download jQuery](https://jquery.com/download) or import it from 
 
 *Download*: Select the “compressed, production jQuery” package of the latest version. Locate the jQuery script you download into your project’s JavaScript folder, and link to it before including your own JavaScript files.
 
-```HTML
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -64,7 +64,7 @@ You can copy-paste the [jQuery CDN](https://code.jquery.com/) into the `<head></
 
 When you write JavaScript using jQuery, you should always wrap the JavaScript in a special jQuery function that waits to run the code until the rest of the document (DOM) has finished loading.
 
-```JS
+```js
 $(function() {
   // Your JavaScript goes here.
 });
@@ -110,7 +110,7 @@ First, be sure to setup a [local server](https://developer.mozilla.org/en-US/doc
 
 To load JSON data using jQuery, use the `getJSON()` or `ajax()` method. The `jQuery.getJSON( )` method loads JSON data from the server using a GET HTTP request.
 
-```HTML
+```html
 <!DOCTYPE html>
 <html>
 <head>

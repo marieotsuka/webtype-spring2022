@@ -156,6 +156,7 @@ blockquote {
 
 pre {
   background: var(--code-bgcolor);
+  color: var(--maincolor);
   padding: 8px;
   white-space: pre-wrap;
   font-size: 0.8em;
@@ -172,22 +173,19 @@ code {
   font-style: normal;
   background: var(--code-bgcolor);
 }
-code .p {
+code .punctuation {
   color: var(--thirdcolor);
 }
-code .nt {
-  color: var(--secondcolor);
-}
-code .kd, code .k {
-  color: var(--secondcolor);
-}
-code .o {
-  color: var(--thirdcolor);
-}
-code .s1, code .s2 {
+code .rule, code .selector {
   color: #555555;
 }
-code .c1 {
+code .property, code .tag {
+  color: var(--secondcolor);
+}
+code .string, code .attr-value {
+  color: var(--maincolor);
+}
+code .attr-name {
   color: #afa050;
 }
 

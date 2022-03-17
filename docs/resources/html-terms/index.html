@@ -58,11 +58,7 @@ An element is a part of a webpage. A typical element includes an opening tag wit
 An attribute extends a tag, changing its behavior or providing metadata. An attribute always has the form <code>name=value</code>, such as defining the link location (<code>&lt;a href=&quot;index.html&quot;&gt;Link&lt;/a&gt;</code>), setting the image path (<code>&lt;img src=&quot;path-to-image/image.png&quot; /&gt;</code>) or adding a class <code>&lt;h1 class=&quot;news&quot;&gt; Heading &lt;/h1&gt;</code>.</p>
 <p><strong>Parent</strong><br>
 In nested HTML structures, the parent refers to the element that contains another element. i.e. Below, <code>&lt;article&gt;</code> is the parent element for <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code>.</p>
-<pre><code class="language-html">&lt;article&gt;
-	&lt;h1&gt;This is a heading&lt;/h1&gt;
-	&lt;p&gt;This is a paragraph.&lt;/p&gt;
-&lt;/article&gt;
-</code></pre>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>article</span><span class="token punctuation">></span></span><br>	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>This is a heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><br>	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>This is a paragraph.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">></span></span></code></pre>
 <p><strong>Child</strong><br>
 In nested HTML structures, the child refers to an element contained (nested within) another element. i.e. Above, <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code> are children of the <code>&lt;article&gt;</code> element.</p>
 <p><strong>Inline Element</strong> Inline elements are those which only occupy the space bounded by the tags defining the element, instead of breaking the flow of the content. An inline element does not start on a new line and only takes up as much width as necessary. (i.e. <code>&lt;a&gt;, &lt;img&gt;, &lt;em&gt;, &lt;strong&gt;, &lt;span&gt;</code>)(Opposite of block level elements)</p>
@@ -70,19 +66,7 @@ In nested HTML structures, the child refers to an element contained (nested with
 <p><strong>BoxModel</strong> Every element within a document is structured as a rectangular box inside the document layout. The size and spacing around the box can be tweaked using some specific CSS properties such as <code>width</code>, <code>height</code>, <code>padding</code>, <code>border</code>, <code>margin</code>, <code>overflow</code> (depending on whether the element is <code>inline</code> or <code>block</code>)</p>
 <p><strong>CSS</strong><br>
 Cascading Style Sheets is a language that controls how webpages look in the browser. A style declaration consists of a selector (the targeted element, i.e. <code>p</code>), a property (what you're styling, i.e. <code>font-size</code>), and value (how you're styling it, i.e. <code>1em</code>)</p>
-<pre><code class="language-css">p { 
-	font-size: 1em;
-	color: blue;
-}
-
-.news {
-	font-weight: bold;
-}
-
-#intro {
-	font-style: italic;
-}
-</code></pre>
+<pre class="language-css"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">{</span> <br>	<span class="token property">font-size</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span><br>	<span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">.news</span> <span class="token punctuation">{</span><br>	<span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">#intro</span> <span class="token punctuation">{</span><br>	<span class="token property">font-style</span><span class="token punctuation">:</span> italic<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
 <p><strong>class</strong><br>
 Classes allows you to apply a set of styling rules to multiple elements. The CSS class selector matches HTML elements based on the contents of their <code>class</code> attribute (<code>&lt;h1 class=&quot;news&quot;&gt; Heading &lt;/h1&gt;</code>). In CSS, you add a period (<code>.</code>) before the class name to create a class selector (i.e. <code>.news</code>). You can appy multiple classes to an element by space-sparating them. (<code>&lt;h1 class=&quot;news special&quot;&gt; Heading &lt;/h1&gt;</code>).</p>
 <p><strong>id</strong><br>
@@ -119,7 +103,11 @@ IDs allows you to apply a set of styling rules to one specific element in the do
 				</a>
 			
 				<a href="/notes/06-variable-fonts/">
-					Variable Fonts
+					Variable Fonts and Interpolation
+				</a>
+			
+				<a href="/notes/07-transitions-animations/">
+					Tweening
 				</a>
 			
 			

@@ -22,7 +22,7 @@ Javascript can add interactivity to a page by manipulating the DOM (Document Obj
 ## Setup
 Like CSS, JavaScript can be included within the `<head></head>` your `html` file as well as linked as an external file. It can also be included at the bottom of your document, right before the closing `</body>` tag.
 
-```HTML
+```html
 <!-- Internal JavaScript -->
 <script language="javascript" type="text/javascript">
   JavaScript code 
@@ -35,7 +35,7 @@ Like CSS, JavaScript can be included within the `<head></head>` your `html` file
 
 ## Output
 When you instruct Javascript to perform a task, it will usually give you some output, but it won’t automatically display it anywhere. You can verify your result by using the Console of your browser.
-```JS
+```js
 <script language="javascript" type="text/javascript">
 	console.log("Hello World!");
 </script>
@@ -44,7 +44,7 @@ When you instruct Javascript to perform a task, it will usually give you some ou
 ## Comments
 Comments are important to keep your code legible — they help you execute the program in your head.  They’re a great tool to keep track of the purpose of each line of your script. They also help future you (and others) read and understand your code.
 
-```JS
+```js
 <script language="javascript" type="text/javascript">
       
       // ”//” starts a single line comment.
@@ -66,7 +66,7 @@ A script is a series of instructions that a computer can follow one-by-one. Each
 |keywords | Keywords are used to identify actions to be performed.| `let x = 5;`|
 
 
-```JS
+```js
 <script language="javascript" type="text/javascript">
 
       alert("hi");
@@ -97,7 +97,7 @@ A script is a series of instructions that a computer can follow one-by-one. Each
 ### Strings
 In programming languages, any textual content that is not part of the programming instructions must be surrounded in single or double quotes (just make sure they match, and that they’re not curly quotes.) 
 
-```JS
+```js
 "Hello World";   // works
 'Hi';            // works
 "This';         // won’t work
@@ -106,7 +106,7 @@ In programming languages, any textual content that is not part of the programmin
 ### Numbers
 Numbers do not need to be surrounded in quotes `""`. 
 
-```JS
+```js
 1    // integers
 0.5  // non-integers with decimal digits are called floats
 ```
@@ -114,7 +114,7 @@ Numbers do not need to be surrounded in quotes `""`.
 ### Boolean
 A binary value of either `true` or `false`. These are useful for [conditionals](#conditionals).
 
-```JS
+```js
 let x = false;
 if (x) {
   // this code is not executed
@@ -124,7 +124,7 @@ if (x) {
 ### Variables
 A variable is a named location for storing a value. That way an unpredictable value can be accessed through a predetermined name; it can serve as a container for anything (numbers, strings, booleans, arrays, other variables.)
 
-```JS
+```js
 let x = 9;
 let school = "RISD";
 ```
@@ -142,13 +142,13 @@ You can call a variable pretty much anything you like, but there are limitations
 ### Arrays
 An array is a data type that contains a group of values. This can be a list of anything—strings, integers, variables. An array is defined by a comma-separated list of items in square brackets `[]`.
 
-```JS
+```js
 let colors = ["red","green","blue"];
 ````
 
 You can access array items by their *index,* or numerical label, inserted between square brackets`[]`. The starting position is `0`, not `1.`  The `length` property will give you the number of items in an array. 
 
-```JS
+```js
 colors[0] // red
 colors[1] // green
 colors.length // 3
@@ -157,12 +157,12 @@ colors.length // 3
 ### Objects
 An object is a collection of data, where each data in the collection has a unique name that identifies it. An object is defined by a comma-separated list of `key: value` pairs in curly brackets `{}`.
 
-```JS
+```js
 let numbers = {e: 2.7183, pi: 3.1416};
 ```
 
 Each item in the object has a *key* and a *value.* You use the key to get at the value! You can access the value either by a `.` before the key or by inserting the key within square brackets `[]`. If using square brackets, make sure to surround the key in quotes `''`. 
-```JS
+```js
 numbers.e // 2.7183
 numbers['pi'] // 3.1416
 ```
@@ -170,7 +170,7 @@ numbers['pi'] // 3.1416
 ## Operators
 ### Assignment operators
 The assignment operator `=` assigns the right-hand value to the left-hand operand.
-```JS
+```js
 let name = "Beatrice"; // assigns Beatrice to the name variable
 name = "Betty"; // updates the value of name to Betty
 
@@ -179,14 +179,14 @@ count = count + 3; // updates the count variable by adding 3 to itself. count is
 ```
 
 There is a shorthand for variables to cumulatively assign new values to itself.
-```JS
+```js
 count += 3; // same as count = count + 3
 count ++; // same as count += 1, or count = count + 1
 ```
 
 ### String operators
 The concatenation operator (`+`) concatenates two string values together, returning another string that is the union of the two operand strings. 
-```JS
+```js
 var mystring = "alpha";
 mystring += "bet"; // evaluates to "alphabet" and assigns this value to mystring.
 ```
@@ -212,7 +212,7 @@ Logical operators combine multiple conditions
 
 ## Conditionals
 Conditionals allow you to declare different actions based on different conditions. You can use If `if` / Then `else if` / Else `else` logic to define your scenarios.
-```JS
+```js
 let x = 2
 if (x === 2) {
   console.log("x is 2");
@@ -230,7 +230,7 @@ A function is a set of actions to be performed. These can include built-in funct
 
 After declaring a function, you can execute its statements by calling the function. While it’s possible to call a function before it’s declared, it’s best practice to declare your functions before you call them.
 
-```JS
+```js
 // define custom function we called sayHi. This only defines the function and does not execute it.
 function sayHi() { 		
   console.log("Hi!");  // native function console.log
@@ -246,7 +246,7 @@ sayHi();
 A function may need inputs to process its statements. These inputs are known as *parameters* and are used as variables in the function’s statements — you can give them whatever name is appropriate. *Arguments* are inputs passed into the function when it is called. When you expect a function to provide an answer or output, it’s know as the *return value*. 
 
 The above function can be re-written to be more general.
-```JS
+```js
 //sets up "something" as a parameter.
 function saySomething(something) { 	
   console.log(something);	
@@ -258,7 +258,7 @@ saySomething("Hi"); // executes the same statements as above
 ```
 
 You can also define multiple arguments
-```JS
+```js
 //define function with parameters width and height
 function getArea(width, height) {
    return width*height;
@@ -272,7 +272,7 @@ getArea(3, 5); //returns 15
 ## Loops
 For loops allow you to run a function by specifying the number of iterations you want it to repeat; it uses a counter as its condition to run.
 
-```JS
+```js
 // logs "Hello" in the console 5 times
 for(var i = 0; i < 5; i++){ // i is the index, or the count value of the loop. It start at 0 and will increment (i++) every iteration, untill it’s no longer < 10.
 	console.log(i, "Hello"); 
@@ -313,7 +313,7 @@ There is a `Math` object in JavaScript can be used to work with numbers, and it 
 |`parseInt()`|converts its first argument to a string, parses it, and returns an integer or NaN (not a number.)|
 
 
-```JS
+```js
 // get a random integer between 2 numbers, including the min and max.
 function getRandomNumber(min, max) {
   min = Math.ceil(min);

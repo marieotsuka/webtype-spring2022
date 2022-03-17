@@ -79,9 +79,7 @@
 </ul>
 <h2>HTML Element</h2>
 <p>All content is surrounded  between opening and closing tags. A closing tag is indicated with a forward slash <code>/</code>. Most forms of markup require both. (<a href="https://web.archive.org/web/20060314044545/http://www.sewingandembroiderywarehouse.com/embtrb.htm">Here’s</a> what happens when you don’t close tags.) A set of opening and closing tags form an html <strong>element</strong>. (Some special tags don’t require closing tags.)</p>
-<pre><code class="language-HTML">&lt;h1&gt;headline&lt;/h1&gt;
-&lt;p&gt;lorem ipsum ...&lt;/p&gt;
-</code></pre>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>headline<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>lorem ipsum ...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span></code></pre>
 <h3>Anatomy</h3>
 <ul>
 <li>opening tag <code>&lt;h1&gt;</code></li>
@@ -106,35 +104,15 @@
 <h2>Nested structures</h2>
 <p>An element nested within another is called a <strong>child</strong> element. Conversely, an element containing another is called its <strong>parent</strong>. A child element must be closed before its parent element.</p>
 <p>This is incorrect syntax:</p>
-<pre><code class="language-HTML">&lt;h2&gt;French Bakery&lt;/h2&gt;
-&lt;p&gt;
-	All goods must be eaten &lt;em&gt;today.
-&lt;/p&gt;&lt;/em&gt;
-
-&lt;ul&gt;
-	&lt;li&gt;Baguettes	
-	&lt;li&gt;Croissants
-	&lt;li&gt;Pastries&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>French Bakery<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><br>	All goods must be eaten <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span><span class="token punctuation">></span></span>today.<br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span><br><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span><br>	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>Baguettes	<br>	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>Croissants<br>	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>Pastries<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span></code></pre>
 <p>These are examples of incorrect syntax:</p>
-<pre><code class="language-HTML">&lt;h2&gt;French Bakery&lt;/h2&gt;
-&lt;p&gt;
-	All goods must be eaten &lt;em&gt;today&lt;/em&gt;.
-&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;Baguettes&lt;/li&gt;	
-	&lt;li&gt;Croissants&lt;/li&gt;
-	&lt;li&gt;Pastries&lt;/li&gt;
-&lt;ul&gt;
-</code></pre>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>French Bakery<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><br>	All goods must be eaten <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span><span class="token punctuation">></span></span>today<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span>.<br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span><br>	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>Baguettes<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>	<br>	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>Croissants<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span><br>	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>Pastries<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span></code></pre>
 <p>All HTML elements flow from the top to the bottom.<br>
 Any whitespace (tabs or spaces) within the HTML file will have no effect on the rendered markdown; rather, it is a tool for writing readable code.<br>
 Nested elements should be kept tabbed for readability: it will help you see where the opening and closing tags of elements.</p>
 <h2>Elements and Attributes</h2>
 <p>Attributes provide additional information about the contents of an element appear with the opening tag of an element. They consist of an <strong>attribute name</strong> and a <strong>attribute value</strong>. Each element type has its own appropriate attributes.</p>
-<pre><code class="language-HTML">&lt;a href=&quot;index.html&quot;&gt;home&lt;/a&gt;
-</code></pre>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>index.html<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>home<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span></code></pre>
 <h3>Anatomy</h3>
 <ul>
 <li>opening tag <code>&lt;a</code> (in this case, the anchor tag)</li>
@@ -150,17 +128,13 @@ Nested elements should be kept tabbed for readability: it will help you see wher
 <h2>Links</h2>
 <div class="terms" markup = "1">
 <p><strong>Local / Relative links</strong> Other pages in your site</p>
-<pre><code class="language-HTML">&lt;a href=&quot;about.html&quot;&gt;learn more&lt;/a&gt;
-</code></pre>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>about.html<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>learn more<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span></code></pre>
 <p><strong>Anchor links</strong> Other locations within the same webpage</p>
-<pre><code class="language-HTML">&lt;a href=&quot;#up&quot;&gt;go back up&lt;/a&gt;
-</code></pre>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#up<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>go back up<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span></code></pre>
 <p><strong>Absolute links</strong> Other webpages outside your site</p>
-<pre><code class="language-HTML">&lt;a href=&quot;https//www.google.com/&quot;&gt;search stuff&lt;/a&gt;
-</code></pre>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https//www.google.com/<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>search stuff<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span></code></pre>
 <p><strong>Download links</strong> Any non-html file for users to download</p>
-<pre><code class="language-HTML">&lt;a href=&quot;docs/resume.pdf&quot;&gt;view a PDF&lt;/a&gt;
-</code></pre>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>docs/resume.pdf<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>view a PDF<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span></code></pre>
 </div>
 <h2>Inline vs. Block elements</h2>
 <p>There are two primary display formats for elements.</p>
@@ -253,7 +227,11 @@ Nested elements should be kept tabbed for readability: it will help you see wher
 				</a>
 			
 				<a href="/notes/06-variable-fonts/">
-					Variable Fonts
+					Variable Fonts and Interpolation
+				</a>
+			
+				<a href="/notes/07-transitions-animations/">
+					Tweening
 				</a>
 			
 			

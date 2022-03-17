@@ -48,14 +48,13 @@ Consider the design of transforming letterforms to be a tool for expressing a po
 
 ### Week 3: Drawing Refinement, Production  {#week-3}
 
-- Refine your drawing and complete both the character sets for both of your masters, making sure they interpolate.
-- Begin testing your typeface on your class site.
+- Refine your drawing and complete the character sets for both of your masters
+- Export your font and begin testing your typeface on your class site.
 
 ## Requirements
 
-- You must have a complete alphabet of either uppercase and/or, with punctuation (`ABCDEFGHIJKLMNOPQRSTUVWXYZ “”.!?,- ` *and/or* `abcdefghijklmnopqrstuvwxyz “”.!?,-`)
+- You must have a complete alphabet of uppercase and/or lowercase, with punctuation (`ABCDEFGHIJKLMNOPQRSTUVWXYZ “”.!?,- ` / `abcdefghijklmnopqrstuvwxyz “”.!?,-`)
 - You must have 2 interpolating masters
-
 
 ## Resources
 

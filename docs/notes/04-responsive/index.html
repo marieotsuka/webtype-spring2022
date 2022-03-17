@@ -108,18 +108,8 @@ This ensures that the browser will register the physical width of the device’s
 <h2>Fluid Images</h2>
 <p>Any embedded assets, such as images, videos, etc will need to scale appropriately.</p>
 <p>Usually, the image container has defined width. The image itself then has <code>max-width: 100%;</code> to scale down if its container resizes, but would never scale up to be larger than its original size.</p>
-<pre><code class="language-HTML">&lt;div class=&quot;container&quot;&gt;
-  &lt;img src=&quot;image.png&quot;&gt;
-&lt;/div&gt;
-</code></pre>
-<pre><code class="language-CSS">.container {
-  width: 33%;
-}
-
-.figure img {
-  width: 100%;
-}
-</code></pre>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>image.png<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<pre class="language-css"><code class="language-css"><span class="token selector">.container</span> <span class="token punctuation">{</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> 33%<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">.figure img</span> <span class="token punctuation">{</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
 <h3>Retina displays</h3>
 <ul>
 <li>72dpi (dots  / inch, in this case pixels) used to be the standard for screen resolutions. But now with the introduction of mobile devices and retina screens, screen resolutions may be much higher.</li>
@@ -143,12 +133,7 @@ This ensures that the browser will register the physical width of the device’s
 <li>Some text may be shortened or omitted on the mobile website</li>
 <li>See an example of <a href="https://codepen.io/chriscoyier/pen/yCeax">flexbox and media queries</a></li>
 </ul>
-<pre><code class="language-CSS">@media screen and (max-width: 480px){ 
-  .container{
-    width: 100%;
-  }
-} 
-</code></pre>
+<pre class="language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@media</span> screen <span class="token keyword">and</span> <span class="token punctuation">(</span><span class="token property">max-width</span><span class="token punctuation">:</span> 480px<span class="token punctuation">)</span></span><span class="token punctuation">{</span> <br>  <span class="token selector">.container</span><span class="token punctuation">{</span><br>    <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span> </code></pre>
 <p>Note: nested brackets</p>
 <h2>Common Responsive Layout Techniques</h2>
 <ul>
@@ -200,7 +185,11 @@ This ensures that the browser will register the physical width of the device’s
 				</a>
 			
 				<a href="/notes/06-variable-fonts/">
-					Variable Fonts
+					Variable Fonts and Interpolation
+				</a>
+			
+				<a href="/notes/07-transitions-animations/">
+					Tweening
 				</a>
 			
 			

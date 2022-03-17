@@ -10,7 +10,7 @@ With HTML, the normal flow is a top-to-bottom rendering of the elements.
 
 Every block-level element appears on a new line, causing each item to appear lower down the page than the previous one. *Inline elements appear adjacent to each other.* 
 
-```HTML
+```html
 <h1>Normal Flow</h1>
 <p>
   With HTML, the normal flow is a top-to-bottom rendering of the html file.
@@ -44,7 +44,7 @@ CSS Grid allows you to define the column-row structure for all of your content. 
 - Read more on [CSS Grid properties](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - Tutorial: [CSS Grid Garden](https://cssgridgarden.com/)
 
-```HTML
+```html
 <div class="container">
   <div class="cell item">
     .item
@@ -62,7 +62,7 @@ CSS Grid allows you to define the column-row structure for all of your content. 
 </div>
 ```
 
-```CSS
+```css
 .container {
   display: grid; 
   grid-template-columns: repeat(4, 1fr);
@@ -105,7 +105,7 @@ Flex box is a popular method for creating “flexible” columns of containers. 
 - A starting point for a [responsive flex grid](https://css-tricks.com/dont-overthink-flexbox-grids/)
 - Tutorial: [Flexbox Froggy](https://flexboxfroggy.com/)
 
-```HTML
+```html
 <div class="container">
   <div class="col">
     stuff
@@ -119,7 +119,7 @@ Flex box is a popular method for creating “flexible” columns of containers. 
 </div>
 ```
 
-```CSS
+```css
 .container{
   display: flex; 
   column-gap: .5em;
@@ -160,13 +160,13 @@ Positioning allows you to control the layout of a page using the position proper
 ## Relative Positioning
 This offsets an element from the position it would be in normal flow, shifting it to the top, right, bottom, or left of where it would have been placed. This does not affect the position of surrounding elements; they stay in the position they would be in in normal flow.
 
-```HTML
+```html
 <div>...</div>
 <div class="example">...</div>
 <div>...</div>
 ```
 
-```CSS
+```css
 .example {
   background: blue;
   position: relative; 
@@ -186,13 +186,13 @@ This offsets an element from the position it would be in normal flow, shifting i
 ## Absolute Positioning
 The element’s box is completely removed from the flow of the document and positioned with respect to its [containing block](#the-container), which may be another element in the document or the initial containing block. Whatever space the element might have occupied in the normal document flow is closed up, as though the element did not exist. 
 
-```HTML
+```html
 <div>...</div>
 <div class="example">...</div>
 <div>...</div>
 ```
 
-```CSS
+```css
 .example {
   background: red;
   position: absolute; 
@@ -214,13 +214,13 @@ The element’s box is completely removed from the flow of the document and posi
 The element’s box behaves as though it were set to absolute, but its containing block is the viewport.
 Viewport refers to the boundaries of browser window. This means that fixed position elements don’t move when the page is scrolled, because it is always relative to the window (instead of the document.)
 
-```HTML
+```html
 <div>...</div>
 <div class="example">...</div>
 <div>...</div>
 ```
 
-```CSS
+```css
 .example {
   background: blue;
   position: fixed; 
@@ -247,13 +247,13 @@ An element with a bigger number is always in front of an element with a smaller 
 The default is 0. It is good to use intervals of 10 in case additional elements need to be placed in between.
 
 
-```HTML
+```html
 <div class="square">...</div>
 <div class="square">...</div>
 <div class="square" >...</div>
 ```
 
-```CSS
+```css
 .square{
   width: 80px;
   height: 80px;
@@ -297,7 +297,7 @@ When positioining elements, the containing block / parent is your positioning co
 
 Overflow accounts for when your content doesn’t fit within the container and specifies how the text overflows.
 
-```HTML
+```html
 <div class="container">
   <div class="line">...</div>
   <div class="line">...</div>
@@ -305,7 +305,7 @@ Overflow accounts for when your content doesn’t fit within the container and s
 </div>
 ```
 
-```CSS
+```css
 .container {
   overflow: hidden; 
   height: 80px;

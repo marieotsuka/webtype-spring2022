@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Variable Fonts — WebType</title>
+	<title>Variable Fonts and Interpolation — WebType</title>
 	<meta name="description" content="Class website for Web Type, Spring 2022 at RISD">
 	<meta name="author" content="Marie Otsuka">
 	<link rel=icon href=/assets/img/favicon.png type="image/png">
@@ -49,11 +49,8 @@
 		
 <div class="resources">
 	<article>
-		<h1>Variable Fonts</h1>
-		<p><blockquote>
-<p>“By writing directly into a mechanical form rather than a manuscript (as we’re doing right now) the writer would be working closer to the nature of the multiplied result, and through an increasing awareness and gradual mastery of the form’s new limitations and possibilities *the writing itself would evolve;* the shorter the distance between the raw material of words and their processed output, the more entwined the content and form from the outset. This line of thinking was more famously expounded by Benjamin in his 1936 essay ‘The Work of Art in the Age of Mechanical Reproduction,’ which more broadly argues that an authentic, pertinent art is the result of engagement with the latest technological innovations.” — <a href="http://www.servinglibrary.org/journal/3/letter-and-spirit">Dexter Sinister: Letter &amp; Spirit</a></p>
-</blockquote>
-<p>For our variable font project, we will be using <a href="https://glyphsapp.com/">Glyphs</a>, since RISD provides a site license for this software. Glyphs has some robust <a href="https://glyphsapp.com/tutorials">tutorials</a> as well as an active <a href="https://forum.glyphsapp.com/">forum</a>, which may be useful in your research.</p>
+		<h1>Variable Fonts and Interpolation</h1>
+		<p><p>For our variable font project, we will be using <a href="https://glyphsapp.com/">Glyphs</a>, since RISD provides a site license for this software. Glyphs has some robust <a href="https://glyphsapp.com/tutorials">tutorials</a> as well as an active <a href="https://forum.glyphsapp.com/">forum</a>, which may be useful in your research.</p>
 <p>Below are some key terms we will be using in type design.</p>
 <ul>
 <li>Begin with the Glyphs tutorial on <a href="https://glyphsapp.com/tutorials/multiple-masters-part-1-setting-up-masters">Multiple Masters</a>.</li>
@@ -83,6 +80,7 @@ Any specified point of your glyph. Nodes can be either on-curve or off-curve.</p
 <li>A node off the edge of a path, serving as an endpoint of a handle connected to an oncurve node is called an <strong>Offcurve</strong> point</li>
 </ul>
 <h2>Interpolation</h2>
+<p>The <a href="https://www.typeroom.eu/content/watch-erik-van-blokland-explain-how-noordzij-cube-revolutionized-typeface-design">Noordzij Cube</a> as an iconic visualization for interpolation and design space.</p>
 <p>In order for a glyph to interpolate across masters, it needs <a href="https://glyphsapp.com/tutorials/multiple-masters-part-2-keeping-your-outlines-compatible">compatible outlines</a>, which means satisfying the following conditions.</p>
 <p><strong>number of paths</strong><br>
 all masters have the same amount of paths, nodes and handles, as well as components</p>
@@ -116,16 +114,7 @@ avoid off-curves that intersect with each other: keep in mind the invisible tria
 </ul>
 <h2>Variable Fonts and CSS</h2>
 <p>The properties of variable fonts can be set by CSS, as with any other CSS property. You can serve a variable font in the same way <a href="/notes/02-css/#typefaces">as any other typeface</a>; although currently there are still few commercially available variable fonts.</p>
-<pre><code class="language-css">@font-face {
-  font-family: 'Magmatic';
-  src: url('../fonts/magmatic-vf.woff2') format('woff2-variations');
-}
-
-p{
-  font-family: 'Magmatic', sans-serif;
-  font-variation-settings: 'wght' 300,'wdth' 120, 'XHGT' 1; 👈
-}
-</code></pre>
+<pre class="language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@font-face</span></span> <span class="token punctuation">{</span><br>  <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'Magmatic'</span><span class="token punctuation">;</span><br>  <span class="token property">src</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">'../fonts/magmatic-vf.woff2'</span><span class="token punctuation">)</span></span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">'woff2-variations'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">p</span><span class="token punctuation">{</span><br>  <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'Magmatic'</span><span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span><br>  <span class="token property">font-variation-settings</span><span class="token punctuation">:</span> <span class="token string">'wght'</span> 300<span class="token punctuation">,</span><span class="token string">'wdth'</span> 120<span class="token punctuation">,</span> <span class="token string">'XHGT'</span> 100<span class="token punctuation">;</span> 👈<br><span class="token punctuation">}</span></code></pre>
 <p>The <code>font-variation-settings</code> is the CSS propety for variable fonts. - Values for multiple axes, are separated by <code>,</code></p>
 <ul>
 <li>Each axes is in in between <code>''</code>, with the value after it</li>
@@ -228,7 +217,11 @@ p{
 				</a>
 			
 				<a href="/notes/06-variable-fonts/">
-					Variable Fonts
+					Variable Fonts and Interpolation
+				</a>
+			
+				<a href="/notes/07-transitions-animations/">
+					Tweening
 				</a>
 			
 			

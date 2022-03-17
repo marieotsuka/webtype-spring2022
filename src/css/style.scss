@@ -206,6 +206,7 @@ blockquote {
 //syntax highlighting
 pre {
 	background: var(--code-bgcolor);
+	color: var(--maincolor);
 	padding: 8px;
 	white-space: pre-wrap;
 	font-size: .8em;
@@ -216,22 +217,20 @@ code{
 	@include codetext;
 	font-style: normal;
 	background: var(--code-bgcolor);
-	.p{
+
+	.punctuation{
 		color: var(--thirdcolor);
 	}
-	.nt{
-		color: var(--secondcolor);
-	}
-	.kd, .k{
-		color: var(--secondcolor);
-	}
-	.o{
-		color: var(--thirdcolor);
-	}
-	.s1, .s2{
+	.rule, .selector{
 		color: rgb(85,85,85);
 	}
-	.c1{
+	.property, .tag{
+		color: var(--secondcolor);
+	}
+	.string, .attr-value{
+		color: var(--maincolor);
+	}
+	.attr-name{
 		color: rgb(175, 160, 80);
 	}
 }

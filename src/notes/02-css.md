@@ -76,7 +76,7 @@ Selectors apply to *all instances of elements in all webpages that use the same 
 Inheritance refers to how children take on css properties of their parents if they don’t have that property specified. Not all css declarations are inherited.  
 
 
-<!-- ```CSS
+<!-- ```css
 div {
   color: blue;
   border: 1px solid gray;
@@ -113,7 +113,7 @@ By understanding inheritance and the cascade, we can write overarching rules tha
 ### Element selector
 We’ve already seen the type selector that matches element names. 
 
-```CSS
+```css
 h2 {
 	font-size: 3em;
 }
@@ -122,7 +122,7 @@ h2 {
 ### Multiple selection
 By separating selectors with commas, you can apply the same rule to multiple HTML elements.
 
-```CSS
+```css
 h2, .introduction {
 	font-size: 3em;
 }
@@ -133,7 +133,7 @@ h2, .introduction {
 By assigning a **class** to elements (with the `class` attribute) in your HTML, we can apply your rule to just elements that have that particular class. In your stylesheet, all class names are preceded by a period (`.`). 
 
 
-```CSS
+```css
 .highlight {
 	background: yellow;
 }
@@ -144,7 +144,7 @@ By assigning a **class** to elements (with the `class` attribute) in your HTML, 
 ```
 
 
-```HTML
+```html
 <p id="demo">This is Demo text </p>
 <p class="highlight"> Paragraph text 1 </p>
 <p> Paragraph text 2 </p>

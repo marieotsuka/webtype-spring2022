@@ -47,13 +47,13 @@ Any embedded assets, such as images, videos, etc will need to scale appropriatel
 
 Usually, the image container has defined width. The image itself then has `max-width: 100%;` to scale down if its container resizes, but would never scale up to be larger than its original size.
 
-```HTML
+```html
 <div class="container">
   <img src="image.png">
 </div>
 ```
 
-```CSS
+```css
 .container {
   width: 33%;
 }
@@ -84,7 +84,7 @@ You can approach this in two ways.
 - See an example of [flexbox and media queries](https://codepen.io/chriscoyier/pen/yCeax)
 
 
-```CSS
+```css
 @media screen and (max-width: 480px){ 
   .container{
     width: 100%;

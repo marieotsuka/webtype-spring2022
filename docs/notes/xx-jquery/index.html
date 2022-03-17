@@ -55,33 +55,11 @@
 <h3>Document Object Model</h3>
 <p>The DOM represents the document as nodes and objects. In this way, programming languages can connect to the page. When a web page is loaded, the browser builds up a model of the document’s structure and uses this model to draw the page on the screen.</p>
 <p>You can think a HTML document as a nested stracture of html as a tree of objects. Here’s an example document:</p>
-<pre><code class="language-HTML">&lt;!doctype html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;DOM tree example&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;Title goes here&lt;/h1&gt;
-    &lt;h2&gt;Subtitle goes here&lt;/h2&gt;
-    &lt;p&gt;Body goes here with a &lt;a&gt;link&lt;/a&gt;&lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+<pre class="language-html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">doctype</span> <span class="token name">html</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>DOM tree example<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>Title goes here<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>Subtitle goes here<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Body goes here with a <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span><span class="token punctuation">></span></span>link<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
 <h3>How to implement jQuery</h3>
 <p>You can either <a href="https://jquery.com/download">download jQuery</a> or import it from a CDN.</p>
 <p><em>Download</em>: Select the “compressed, production jQuery” package of the latest version. Locate the jQuery script you download into your project’s JavaScript folder, and link to it before including your own JavaScript files.</p>
-<pre><code class="language-HTML">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-  &lt;title&gt;How to implment jQuery&lt;/title&gt;
-  &lt;script src=&quot;js/jquery-3.4.1.min.js&quot;&gt;&lt;/script&gt;
-  &lt;script src=&quot;js/yourscript.js&quot;&gt;&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-...
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+<pre class="language-html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>How to implment jQuery<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>js/jquery-3.4.1.min.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>js/yourscript.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><br>...<br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
 <p>If you don’t want to download and host jQuery yourself, you can include it from a CDN (stands for Content Delivery Network). It means a system of computers that exist all over the world and cache files for users to access. CDNs can reduce the load time of a page by offering files at a higher bandwidth from a server that is physically closer to your visitor than your web server might be. The jQuery library will already be cached in the visitor’s browser if they visited another website that references the same jQuery library. In this case, the visitor won’t even have to download the jQuery library.</p>
 <p>You can copy-paste the <a href="https://code.jquery.com/">jQuery CDN</a> into the <code>&lt;head&gt;&lt;/head&gt;</code> of your document.</p>
 <pre><code>&lt;script
@@ -91,10 +69,7 @@
 </code></pre>
 <h3>How to use jQuery</h3>
 <p>When you write JavaScript using jQuery, you should always wrap the JavaScript in a special jQuery function that waits to run the code until the rest of the document (DOM) has finished loading.</p>
-<pre><code class="language-JS">$(function() {
-  // Your JavaScript goes here.
-});
-</code></pre>
+<pre class="language-js"><code class="language-js"><span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token comment">// Your JavaScript goes here.</span><br><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 <p>The jQuery basic syntax is <code>$(selector).action()</code>:</p>
 <ul>
 <li><code>$</code> sign define jQuery.</li>
@@ -123,32 +98,7 @@ You can:</p>
 <h3>How to implement JSON</h3>
 <p>First, be sure to setup a <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server">local server</a> at the root of your web folder to properly load JSON.</p>
 <p>To load JSON data using jQuery, use the <code>getJSON()</code> or <code>ajax()</code> method. The <code>jQuery.getJSON( )</code> method loads JSON data from the server using a GET HTTP request.</p>
-<pre><code class="language-HTML">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-  &lt;title&gt;How to implement jQuery&lt;/title&gt;
-  &lt;script src=&quot;/common/jquery-3.4.1.min.js&quot;&gt;&lt;/script&gt;
-  &lt;script&gt;
-         $(document).ready(function() {
-            $(&quot;button&quot;).click(function(event){
-               $.getJSON('yourjson.json', function(mycolor) {
-                  $('#color').html('&lt;p&gt;Red:' + mycolor.r+ '&lt;/p&gt;');
-                  $('#color').append('&lt;p&gt;Green:' + mycolor.g+ '&lt;/p&gt;');
-                  $('#color').append('&lt;p&gt;Blue:' + mycolor.b+ '&lt;/p&gt;');
-               });
-            });
-               
-         });
-      &lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-      &lt;div id=&quot;color&quot;&gt;
-         Color
-      &lt;/div&gt;
-      &lt;button&gt;&lt;/button&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+<pre class="language-html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>How to implement jQuery<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/common/jquery-3.4.1.min.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript"><br>         <span class="token function">$</span><span class="token punctuation">(</span>document<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">ready</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>            <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"button"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span><span class="token punctuation">{</span><br>               $<span class="token punctuation">.</span><span class="token function">getJSON</span><span class="token punctuation">(</span><span class="token string">'yourjson.json'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">mycolor</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>                  <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#color'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">html</span><span class="token punctuation">(</span><span class="token string">'&lt;p>Red:'</span> <span class="token operator">+</span> mycolor<span class="token punctuation">.</span>r<span class="token operator">+</span> <span class="token string">'&lt;/p>'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>                  <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#color'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">'&lt;p>Green:'</span> <span class="token operator">+</span> mycolor<span class="token punctuation">.</span>g<span class="token operator">+</span> <span class="token string">'&lt;/p>'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>                  <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#color'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">'&lt;p>Blue:'</span> <span class="token operator">+</span> mycolor<span class="token punctuation">.</span>b<span class="token operator">+</span> <span class="token string">'&lt;/p>'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>               <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>               <br>         <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>      </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>color<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>         Color<br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
 <ul>
 <li><a href="https://openweathermap.org/">Open Weather Map</a></li>
 <li><a href="https://rednoise.org/rita/">RiTa.js</a></li>
@@ -186,7 +136,11 @@ You can:</p>
 				</a>
 			
 				<a href="/notes/06-variable-fonts/">
-					Variable Fonts
+					Variable Fonts and Interpolation
+				</a>
+			
+				<a href="/notes/07-transitions-animations/">
+					Tweening
 				</a>
 			
 			

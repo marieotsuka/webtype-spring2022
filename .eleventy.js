@@ -15,6 +15,8 @@ const markdownLib = markdownIt(options).use(markdownItAttrs);
 
 const isDevEnv = process.env.ELEVENTY_ENV === 'development';
 
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+
 module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("src/assets");
@@ -47,8 +49,10 @@ module.exports = function(eleventyConfig) {
     return markdownIt(options).render(value)
   });
 
+  //syntax highlighting
+  eleventyConfig.addPlugin(syntaxHighlight);
 
-  // Create the filter function.
+  // Create the filter function
   function sortByOrder(values) {
    let vals = [...values]
    return vals.sort((a, b) => Math.sign(a.data.order - b.data.order))
