@@ -1,7 +1,7 @@
 ---
-title: Function as Narrative
+title: System as Architecture
 date: 2022-04-14
-mode: remote
+mode: in-person
 ---
 
 <!-- - Presentation: Ásta Þrastardóttir

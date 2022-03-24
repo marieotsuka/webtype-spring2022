@@ -1,70 +1,100 @@
-<blockquote>
-<p>“Technology inherits the politics of its authors, but almost all technology can be harnessed in ways that transcend these frameworks. Even in its harmful and chaotic state, it is still possible to marvel at the opportunities afforded to us through design.” – Cade Diem</p>
-</blockquote>
-<p>Over the course of the next few weeks, you will design and develop a simple tool that operates on the web: one that considers the values its built upon, and questions common expectations about how we behave.</p>
-<p>To return to <a href="%2200-webintro.md%22">Munari’s quote</a> from our first class, artists are equipped to harness technology and repurpose them for their own means. Whether it is the mechanics of the web browser, of variable fonts, or other tools, there are ways to harness these to challenge conventions and reimagine expected results.</p>
-<p>Digital tools today are often designed for a general purpose: maximum engagement and data extraction, driven by <a href="https://www.nytimes.com/2021/01/29/opinion/sunday/facebook-surveillance-society-technology.html">surveillance capitalism</a>.<br>
-For our project, however, we will design the a web-based tool with a focused purpose in mind — and curate our visual and interactive palette accordingly. This web tool may not necessarily be practical or functional; however, it should be driven by a specific context or point of view.</p>
-<ul>
-<li>Who is your audience?</li>
-<li>What matters to you? To your visitors?</li>
-<li>How can you encourage meaningful behavior?</li>
-<li>How do you design an experience?</li>
-<li>What options do we have? What are our defaults? What are our limits?</li>
-</ul>
-<p>You may find a way to incorporate your variable font in this project as well, if this site touches on a similar theme.</p>
-<h3>Learning Outcomes</h3>
-<ul>
-<li>Understand how platforms and tools operate on a set of assumptions</li>
-<li>Shape your visual voice in that aligns with the concept and purpose of the tool</li>
-<li>Focus on interactivity and your relationship with the website visitor as a curated experience</li>
-<li>Consider the context for your website visitor</li>
-</ul>
-<h3>Requirements</h3>
-<ul>
-<li>Consider the responsibility of the tool — what is it enabling?</li>
-<li>Pay careful attention to how your design and typography is navigating the user (or not)</li>
-<li>Incorporate JavaScript — there should be some form of input, whether user input (click/hover/scroll/drag/etc) and / or external data sources (whether live or static)</li>
-<li>It must be responsive (unless, in its concept, it must work only on desktop)</li>
-</ul>
-<h2>Timeline</h2>
-<pre><code>April 22
-Pseudo code, design, begin prototype
-- Write out your pseudo code: break down your tool scenario(s) into small steps. This will inform your JavaScript code.
-- Design the interface for interaction
-- Begin experimenting with your main interaction in code
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Type Specimen (P3) — WebType</title>
+	<meta name="description" content="Class website for Web Type, Spring 2022 at RISD">
+	<meta name="author" content="Marie Otsuka">
+	<link rel=icon href=/assets/img/favicon.png type="image/png">
+	<link rel="stylesheet" href="/css/style.css">
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script>
+	<script src="/assets/js/script.js"></script>
+</head>
+<body>
+<div class="container">
+	<header>
+	<nav>
+		<a href="/" class="home">Web Type</a>
+		<div class="menu-icon">≡≡</div>
+		<div class="nav-links">
+			<div class="meta">Web Type @ RISD</div>
+			<a href="/">index</a>
+			<a href="/syllabus/">syllabus</a>
+			<a href="/schedule/">schedule</a>
+			<a href="/projects/">projects</a>
+			<a href="/exercises/">exercises</a>
+			<a href="/readings/">readings</a>
+			<a href="/resources/">resources</a>
+			<a href="/colophon/">colophon</a>
+			
+			<br>
+			<br>
+			<div class="meta">Quick links</div>
+			<a href="https://risd.zoom.us/j/97883162532" target="_blank">zoom</a>
+			<a href="https://docs.google.com/spreadsheets/d/1pCrREKrOvXLRe-MtiWhGrCLuv4MRFct_YnuBqMec8KI/edit#gid=0" target="_blank">office hours</a>
+			<a href="https://docs.google.com/spreadsheets/d/1QXocofQNNG38kJWQWjjZe7wv4ikc8Ffnzg_6qoxGSqY/edit#gid=0" target="_blank">presentations</a>
+			<a href="https://github.com/risd-web/webtype-demos" target="_blank">demos repository</a>
+			<a href="https://risd.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=fe7e0ae6-604e-44ec-a7d7-ae3f0033a340" target="_blank">tutorial videos</a>	
+			<a href="https://drive.google.com/drive/folders/1f21gsrM7leOLwqET_ZrsLhG3KTlqQzBA?usp=sharing" target="_blank">technical slides</a>	
+		</div>
+	</nav>
+</header>
 
-April 29
-Develop full prototype
-- Complete develop your website as much as possible
-- Pay careful attention to the “affordances” of your design
-
-May 6
-Test and refine prototype
-- Collaborate with your group to provide detailed feedback
-- Refine your site behavior
-
-May 13
-Final Crit
-- Distribute your tool to the public
-</code></pre>
-<h3>Reference</h3>
+	<main class="content">
+		
+<article class="content">
+	<h1>Type Specimen (P3)</h1>
+	<p>With our functioning variable fonts, we’ll now create a specialized web page that highlights the features of the website. This website may not necessarily be <em>about</em> the typeface, but featuring content that is best expressed with your font and its axis of variation.</p>
+<h2>Project Details</h2>
+<p>Create a “type specimen” that creates a world for your typeface to live in.</p>
+<h3>Technical Learnings</h3>
 <ul>
-<li><a href="http://risdweb16.github.io/cem/projects/game/14_thegame/hello.html">Cem Eskinazi: Hello/환영</a></li>
-<li><a href="https://tdingsun.github.io/reading-machines/">Tiger Dingsun: Reading Machines</a></li>
-<li><a href="https://pointer.click/">Pointer Click</a></li>
-<li><a href="https://decentralise.somersethouse.org.uk/canvas">Decentralise</a></li>
-<li><a href="https://secousse.tv/">Secousse Radio</a></li>
-<li><a href="https://www.eff.org/pages/tools">Electronic Frontier Foundation</a></li>
-<li><a href="https://homebrewserver.club/">Homebrew Server</a></li>
-<li><a href="https://idratherbewriting.com/learnapidoc/assets/files/aeris-observations.html">Is it too windy to go on a bike ride?</a></li>
-<li><a href="http://isthebookdead.com/">Is the Book Dead?</a></li>
+<li>How do you use variable fonts on the web?</li>
+<li>How might you use CSS and JavaScript to activate them?</li>
+<li>How might we use animation capacities?</li>
 </ul>
-<h3>APIs</h3>
+<h3>Design Questions</h3>
 <ul>
-<li><a href="https://openweathermap.org/">Open Weather Map</a></li>
-<li><a href="https://rednoise.org/rita/">RiTa.js</a></li>
-<li><a href="https://developers.google.com/maps/documentation/javascript/overview">Google Maps JavaScript API</a></li>
-<li><a href="https://www.data.gov/developers/apis">Data.gov APIs</a></li>
-<li><a href="https://apilist.fun/">API List</a></li>
+<li>How can we design around axes of variation?</li>
+<li>How does a transformative</li>
 </ul>
+<h2>Project Schedule</h2>
+<h3 id="week-1">Week 1: Sketch out 2 directions for your type specimen</h3>
+<ul>
+<li>If your typeface is a display face, consider pairing another typeface for captions and small text</li>
+<li>What is the journey created through the website?</li>
+<li>How can you showcase different components of your typeface?</li>
+</ul>
+<h3 id="week-2">Week 2: Prototype</h3>
+<ul>
+<li>Begin experimenting with JavaScript</li>
+<li>How does the interactive experience align with the concept of the site?</li>
+</ul>
+<h3>Week 3: Refine</h3>
+<ul>
+<li>Make your specimen responsive: how does your typography adapt to the smaller screen?</li>
+<li>How does each design choice — typesize, color, motion — align with the concept?</li>
+<li>Consider the interactivity of the website — what is intuitive vs. what requires instructions?</li>
+<li>Refine typographic details</li>
+<li>If you don’t have one yet, consider a page, secction, or footer that contextualizes the project (&quot;about section&quot;)</li>
+<li>Consider expanding what and how you’re curating your content: use JavaScript, JSON and / or APIs to enhance the experience of your typeface on the web</li>
+</ul>
+
+</article>
+	</main>
+	<footer>
+	<ul>
+		<li>WEB TYPE (RISD GRAPH-2313-01)</li>
+		<li>Thursdays 1:10pm–6:10pm, DC 407</li>
+		<li>Sometimes on <a href="https://risd.zoom.us/j/97883162532" target="_blank">Zoom</a></li>
+	</ul>
+</footer>
+
+</div>
+</body>
+</html>

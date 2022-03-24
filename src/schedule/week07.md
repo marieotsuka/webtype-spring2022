@@ -1,7 +1,7 @@
 ---
-title: Systems as Architecture
+title: Function as Narrative
 date: 2022-04-07
-mode: in-person
+mode: '<a href="https://risd.zoom.us/j/97883162532" target="_blank">remote</a>'
 ---
 <!-- 
 exercise: "n/a"

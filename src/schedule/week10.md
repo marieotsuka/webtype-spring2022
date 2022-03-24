@@ -1,7 +1,7 @@
 ---
 title: Computation as Poetry
 date: 2022-04-28
-mode: remote
+mode: in-person
 ---
 
 <!-- project: "project3.md"

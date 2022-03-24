@@ -1,7 +1,7 @@
 ---
 title: Design as Responsibility
 date: 2022-04-21
-mode: in-person
+mode: '<a href="https://risd.zoom.us/j/97883162532" target="_blank">remote</a>'
 ---
 
 <!-- project: "project3.md"

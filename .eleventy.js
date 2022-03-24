@@ -11,6 +11,7 @@ const options = {
   breaks: true,
   linkify: true
 };
+
 const markdownLib = markdownIt(options).use(markdownItAttrs);
 
 const isDevEnv = process.env.ELEVENTY_ENV === 'development';

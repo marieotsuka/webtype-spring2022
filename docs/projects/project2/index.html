@@ -91,7 +91,9 @@
 <h3 id="week-3">Week 3: Drawing Refinement, Production </h3>
 <ul>
 <li>Refine your drawing and complete the character sets for both of your masters</li>
-<li>Export your font and begin testing your typeface on your class site.</li>
+<li>Test out the interpolation; is the rate of change consistent across your letters?</li>
+<li>Export your font and begin testing your typeface on your class website</li>
+<li>Begin thinking about the implementation of your typeface — how can it best be activated in the browser?</li>
 </ul>
 <h2>Requirements</h2>
 <ul>
@@ -131,27 +133,7 @@
 <li><a href="https://kampanjat.hs.fi/climatefont/index.html">Climate Crisis Font</a></li>
 <li><a href="https://www.typotheque.com/fonts/wind/about">Typotheque: Wind</a></li>
 </ul>
-<!-- - prototype your website specimen
-  - what is the journey created through the website?
-  - how can you showcase different components of your typeface?
-  - if your typeface is a display face, consider pairing another typeface for captions and small text
-- begin experimenting with JavaScript
-  - how does the interactive experience align with the concept of the site?
-
-
-### Step 5: Prototype Refinement
-* refine website specimen
-  - what kind of experience are you taking your visitor through with your website?
-  - how does each design choice — typesize, color, motion — align with the concept?
-  - finalize interactivity of the website — what is intuitive vs. what requires instructions?
-  - finalize typographic details
-* design the responsive version
-  - use `@media` queries to make a mobile-friendly version
-  - how does your typography adapt to the smaller screen?
-* consider a page or footer that contextualizes the project ("about section")
-* optional: consider expanding what and how you’re curating your content: use JavaScript, JSON and / or APIs to enhance the experience of your typeface on the web
- -->
-<h3>Technical Resources</h3>
+<h2>Technical Resources</h2>
 <h3>Glyphs Links</h3>
 <ul>
 <li><a href="https://glyphsapp.com/tutorials">Glyphs App</a></li>
@@ -159,13 +141,56 @@
 <li><a href="https://glyphsapp.com/tutorials/creating-a-variable-font">Glyphs: Creating a Variable Font</a></li>
 <li><a href="https://glyphsapp.com/learn/pixelfont">Glyphs: Creating a Pixel Font</a></li>
 </ul>
+<h3 id="shortcuts">Glyphs Shortcuts</h3>
+<p>Below are some shortcuts frequently used in the Glyphs App.</p>
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Send to background</td>
+<td><code>⌘A (select all) + ⌘J</code></td>
+</tr>
+<tr>
+<td>Toggle between background and foregraound</td>
+<td><code>⌘B</code></td>
+</tr>
+<tr>
+<td>Move by 10 units</td>
+<td><code>Shift + arrow keys</code></td>
+</tr>
+<tr>
+<td>Adjust sidebearings, left side (by ten units)</td>
+<td><code>⌃(ctrl)  + arrow keys ( + shift )</code></td>
+</tr>
+<tr>
+<td>Adjust sidebearings, right side (by ten units)</td>
+<td><code>⌘(command) + arrow keys ( + shift )</code></td>
+</tr>
+<tr>
+<td>Add Extremes Points*</td>
+<td><code>⌘ + ⌥ + E</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>*Extreme points are on-curve nodes that lie at 90°. They help structure the curves cleanly.</li>
+<li>Generally speaking, keeping the <code>shift</code> pressed adjusts arrow-key increments to <code>10</code> units; <code>shift + command</code> adjusts them to <code>100</code> units.</li>
+<li>The selected letter is the glyph on the right side of the cursor. You can adjust both the left and right side bearings of the glyph in this way, using those different keyboard shortcuts above.</li>
+</ul>
 <h3>Glyphs Plugins</h3>
-<p>You can install these through the Plugin Manager within the Glyphs app.<br>
-Before doing so, you must install the <strong>Modules</strong> (<code>FontTools</code> <code>Python</code> <code>RoboFab</code> <code>Vanilla</code>). Then, double-check your Glyphs App Python version after restarting.</p>
+<p>You can install plugins through the Plugin Manager within the Glyphs app. Before doing so, you must install the <strong>Modules</strong> (<code>FontTools</code> <code>Python</code> <code>RoboFab</code> <code>Vanilla</code>). Then, double-check your Glyphs App Python version after restarting. Below are some plugins you might find helpful:</p>
 <ul>
 <li>Word-o-Mat</li>
 <li>Show Angled Handles</li>
 <li>Show Tops and Bottoms</li>
+<li>Master Comopatibility</li>
+<li>Variable Font Preview 3 (Trial Version lasts 30days)</li>
+<li>Backdrop</li>
 </ul>
 <h3>Testing</h3>
 <ul>

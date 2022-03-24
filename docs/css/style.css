@@ -168,18 +168,17 @@ code {
   font-family: "Pentameter";
   --slnt: 0;
   --wdth: 75;
-  color: var(--thirdcolor);
   letter-spacing: 1px;
   font-style: normal;
   background: var(--code-bgcolor);
 }
-code .punctuation {
+code .token {
   color: var(--thirdcolor);
 }
-code .rule, code .selector {
+code .rule, code .selector, code .keyword {
   color: #555555;
 }
-code .property, code .tag {
+code .property, code .tag, code .function {
   color: var(--secondcolor);
 }
 code .string, code .attr-value {
@@ -515,7 +514,6 @@ th, td {
   font-family: "Pentameter";
   --slnt: 0;
   --wdth: 75;
-  color: var(--thirdcolor);
   letter-spacing: 1px;
   --slnt: 0;
   position: absolute;

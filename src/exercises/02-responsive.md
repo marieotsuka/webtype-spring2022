@@ -7,8 +7,10 @@ date: "2022-03-03"
 ## Resizing Windows
 In this exercise, you will take the layouts you created in last week’s exercise, and make them respond to the window size.
 
-### 1. Review notes on [Responsive Layouts](/notes/04-responsive/) as well as the technical tutorials assigned for this week.
-You should have an understanding of the following components of responsive design:
+### Technical Notes
+- [Responsive Layouts](/notes/04-responsive/)
+
+### 1. You should have an understanding of the following components of responsive design:
 - meta tag
 - fluid layout 
 - relative units

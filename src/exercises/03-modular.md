@@ -8,7 +8,6 @@ date: "2022-03-10"
 
 In today’s exercise, we will dive into Glyphs drawing by creating modular letters through the use of components.
 
-
 1. If you don’t yet have [Glyphs](https://glyphsapp.com/) yet, download it first
 2. Create 2 components shapes
 3. Pick your name, or a word with least 5 letters

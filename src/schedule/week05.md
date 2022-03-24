@@ -1,7 +1,7 @@
 ---
 title: Typeface as Interface
 date: 2022-03-17
-current: true
+current: false
 mode: '<a href="https://risd.zoom.us/j/97883162532" target="_blank">remote</a>'
 project: project2
 exercise: 05-change-over-time

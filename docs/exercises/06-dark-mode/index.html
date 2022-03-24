@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Dark Mode — WebType</title>
+	<meta name="description" content="Class website for Web Type, Spring 2022 at RISD">
+	<meta name="author" content="Marie Otsuka">
+	<link rel=icon href=/assets/img/favicon.png type="image/png">
+	<link rel="stylesheet" href="/css/style.css">
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script>
+	<script src="/assets/js/script.js"></script>
+</head>
+<body>
+<div class="container">
+	<header>
+	<nav>
+		<a href="/" class="home">Web Type</a>
+		<div class="menu-icon">≡≡</div>
+		<div class="nav-links">
+			<div class="meta">Web Type @ RISD</div>
+			<a href="/">index</a>
+			<a href="/syllabus/">syllabus</a>
+			<a href="/schedule/">schedule</a>
+			<a href="/projects/">projects</a>
+			<a href="/exercises/">exercises</a>
+			<a href="/readings/">readings</a>
+			<a href="/resources/">resources</a>
+			<a href="/colophon/">colophon</a>
+			
+			<br>
+			<br>
+			<div class="meta">Quick links</div>
+			<a href="https://risd.zoom.us/j/97883162532" target="_blank">zoom</a>
+			<a href="https://docs.google.com/spreadsheets/d/1pCrREKrOvXLRe-MtiWhGrCLuv4MRFct_YnuBqMec8KI/edit#gid=0" target="_blank">office hours</a>
+			<a href="https://docs.google.com/spreadsheets/d/1QXocofQNNG38kJWQWjjZe7wv4ikc8Ffnzg_6qoxGSqY/edit#gid=0" target="_blank">presentations</a>
+			<a href="https://github.com/risd-web/webtype-demos" target="_blank">demos repository</a>
+			<a href="https://risd.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=fe7e0ae6-604e-44ec-a7d7-ae3f0033a340" target="_blank">tutorial videos</a>	
+			<a href="https://drive.google.com/drive/folders/1f21gsrM7leOLwqET_ZrsLhG3KTlqQzBA?usp=sharing" target="_blank">technical slides</a>	
+		</div>
+	</nav>
+</header>
+
+	<main class="content">
+		
+<article class="content">
+	<h1>Dark Mode</h1>
+	<h2>Responding to the visitor’s environment</h2>
+<p>Responsive design takes into account the need for a design to adapt to different platforms and screensizes. With the introduction of “dark mode,” this has also expanded to responding to different light conditions. In the same way that operating systems are setting up color schemes for low-light conditions, websites are setting up alternate color ways.</p>
+<p>Through this exercise, we will use JavaScript &amp; jQuery to create a switch that toggle between two modes of your class website.</p>
+<h3>Technical Notes</h3>
+<ul>
+<li><a href="/notes/09-jQuery/">jQuery</a></li>
+<li><a href="https://github.com/RISD-Code-Lab/spring2021/tree/main/session-01">Code Lab Tutorial</a></li>
+</ul>
+<ol>
+<li>Create and style a button that will serve as a dark mode trigger in the HTML of your page</li>
+</ol>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>darkmode<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Your Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></code></pre>
+<ol start="2">
+<li>Setup your dark-mode styles in your <code>.css</code> file, consider how CSS styles cascade through the webpage, and how you can write specific tags using a parent class. Try and be as efficient as possible by changing your page’s appearance based on a single class.</li>
+</ol>
+<pre class="language-css"><code class="language-css"><span class="token selector">.darkmode</span><span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">.darkmode h1</span><span class="token punctuation">{</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> yellow<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<ol start="3">
+<li>Add a jQuery script tag in the <code>&lt;head&gt;</code> of your document to load in the jQuery library</li>
+</ol>
+<pre class="language-js"><code class="language-js"><span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">"https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code></pre>
+<ol start="4">
+<li>Create a new blank <code>script.js</code> file, and add a link to it under your jQuery script tag</li>
+</ol>
+<pre class="language-js"><code class="language-js"><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span> src<span class="token operator">=</span><span class="token string">"script.js"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code></pre>
+<ol start="5">
+<li>Connect your button to toggle the class for your darkmode settings. Here, we will toggle the styles by adding a class to the containing body. This way, we can write new rules for elements that have a body with the container class.</li>
+</ol>
+<p>Your code may look something like this:</p>
+<pre class="language-js"><code class="language-js"><span class="token function">$</span><span class="token punctuation">(</span>document<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">ready</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><br>     <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#darkmode"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toggleClass</span><span class="token punctuation">(</span><span class="token string">'darkmode'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<ol start="6">
+<li>As you add new style rules, think about how you want your “darkmode” to function. You might consider experimenting with other adjustments instead of styling an inverse-color theme. Think about how your typography might adapt to a darker background. Consider the potential of this visual toggle beyond what may be expected.</li>
+</ol>
+<h3>References</h3>
+<ul>
+<li><a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/dark-mode">iOS Dark Mode</a></li>
+<li><a href="https://support.apple.com/guide/mac-help/use-a-light-or-dark-appearance-mchl52e1c2d2/mac">Mac OS Dark Mode</a></li>
+<li><a href="https://developer.android.com/guide/topics/ui/look-and-feel/darktheme">Android Dark Theme</a></li>
+<li><a href="http://a-friend-is-writing.new-document.net/">A Friend is Writing</a></li>
+</ul>
+<h3>Resources</h3>
+<ul>
+<li><a href="https://www.w3schools.com/jquery/jquery_get_started.asp">JQuery Get Started</a></li>
+<li><a href="https://api.jquery.com/toggleclass/">JQuery Toggle Class</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity">CSS Specificity</a></li>
+<li><a href="https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/">A Complete Guide to Dark Mode on the Web</a></li>
+</ul>
+
+</article>
+	</main>
+	<footer>
+	<ul>
+		<li>WEB TYPE (RISD GRAPH-2313-01)</li>
+		<li>Thursdays 1:10pm–6:10pm, DC 407</li>
+		<li>Sometimes on <a href="https://risd.zoom.us/j/97883162532" target="_blank">Zoom</a></li>
+	</ul>
+</footer>
+
+</div>
+</body>
+</html>

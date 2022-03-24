@@ -49,7 +49,9 @@ Consider the design of transforming letterforms to be a tool for expressing a po
 ### Week 3: Drawing Refinement, Production  {#week-3}
 
 - Refine your drawing and complete the character sets for both of your masters
-- Export your font and begin testing your typeface on your class site.
+- Test out the interpolation; is the rate of change consistent across your letters?
+- Export your font and begin testing your typeface on your class website 
+- Begin thinking about the implementation of your typeface — how can it best be activated in the browser?
 
 ## Requirements
 
@@ -86,29 +88,8 @@ Consider the design of transforming letterforms to be a tool for expressing a po
 - [Typotheque: Wind](https://www.typotheque.com/fonts/wind/about)
 
 
-<!-- - prototype your website specimen
-  - what is the journey created through the website?
-  - how can you showcase different components of your typeface?
-  - if your typeface is a display face, consider pairing another typeface for captions and small text
-- begin experimenting with JavaScript
-  - how does the interactive experience align with the concept of the site?
 
-
-### Step 5: Prototype Refinement
-* refine website specimen
-  - what kind of experience are you taking your visitor through with your website?
-  - how does each design choice — typesize, color, motion — align with the concept?
-  - finalize interactivity of the website — what is intuitive vs. what requires instructions?
-  - finalize typographic details
-* design the responsive version
-  - use `@media` queries to make a mobile-friendly version
-  - how does your typography adapt to the smaller screen?
-* consider a page or footer that contextualizes the project ("about section")
-* optional: consider expanding what and how you’re curating your content: use JavaScript, JSON and / or APIs to enhance the experience of your typeface on the web
- -->
-
-
-### Technical Resources
+## Technical Resources
 
 ### Glyphs Links
 - [Glyphs App](https://glyphsapp.com/tutorials)
@@ -116,13 +97,32 @@ Consider the design of transforming letterforms to be a tool for expressing a po
 - [Glyphs: Creating a Variable Font](https://glyphsapp.com/tutorials/creating-a-variable-font)
 - [Glyphs: Creating a Pixel Font](https://glyphsapp.com/learn/pixelfont)
 
+### Glyphs Shortcuts {#shortcuts}
+Below are some shortcuts frequently used in the Glyphs App.
+
+| Description | Function |
+| --- | --- |
+| Send to background | `⌘A (select all) + ⌘J` |
+| Toggle between background and foregraound | `⌘B` | 
+| Move by 10 units | `Shift + arrow keys` |
+| Adjust sidebearings, left side (by ten units)  | `⌃(ctrl)  + arrow keys ( + shift )`|
+| Adjust sidebearings, right side (by ten units) | `⌘(command) + arrow keys ( + shift )` |
+| Add Extremes Points* | `⌘ + ⌥ + E` |
+
+- \*Extreme points are on-curve nodes that lie at 90°. They help structure the curves cleanly.
+- Generally speaking, keeping the `shift` pressed adjusts arrow-key increments to `10` units; `shift + command` adjusts them to `100` units.
+- The selected letter is the glyph on the right side of the cursor. You can adjust both the left and right side bearings of the glyph in this way, using those different keyboard shortcuts above.
+
+
 ### Glyphs Plugins
-You can install these through the Plugin Manager within the Glyphs app.
-Before doing so, you must install the **Modules** (`FontTools` `Python` `RoboFab` `Vanilla`). Then, double-check your Glyphs App Python version after restarting.
+You can install plugins through the Plugin Manager within the Glyphs app. Before doing so, you must install the **Modules** (`FontTools` `Python` `RoboFab` `Vanilla`). Then, double-check your Glyphs App Python version after restarting. Below are some plugins you might find helpful:
 
 - Word-o-Mat
 - Show Angled Handles
 - Show Tops and Bottoms
+- Master Comopatibility
+- Variable Font Preview 3 (Trial Version lasts 30days)
+- Backdrop
 
 ### Testing
 - [Font Goggles](https://github.com/justvanrossum/fontgoggles/releases/tag/v1.1)

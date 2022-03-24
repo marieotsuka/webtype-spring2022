@@ -64,7 +64,6 @@ a:hover{
 	font-family: 'Pentameter';
 	--slnt: 0;
 	--wdth: 75;
-	color: var(--thirdcolor);
 	letter-spacing: 1px;
 }
 @mixin meta{
@@ -218,13 +217,13 @@ code{
 	font-style: normal;
 	background: var(--code-bgcolor);
 
-	.punctuation{
+	.token{
 		color: var(--thirdcolor);
 	}
-	.rule, .selector{
+	.rule, .selector, .keyword{
 		color: rgb(85,85,85);
 	}
-	.property, .tag{
+	.property, .tag, .function{
 		color: var(--secondcolor);
 	}
 	.string, .attr-value{

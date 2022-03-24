@@ -1,8 +1,8 @@
 ---
 title: "JavaScript"
-date: 2021-04-08
+date: 2022-03-24
 summary: "Writing instructions"
-draft: true
+order: 8
 ---
 
 Unlike HTML and CSS, Javascript is a programming language and can perform all sorts of actions. JavaScript is list of instructions to be interpreted and executed by your computer, either by a browser or other JavaScript interpreter (in the command line.) 
@@ -27,7 +27,6 @@ Like CSS, JavaScript can be included within the `<head></head>` your `html` file
 <script language="javascript" type="text/javascript">
   JavaScript code 
 </script>
-
 
 <!-- External JavaScript -->
 <script language="javascript" src="js/filename.js"></script>
