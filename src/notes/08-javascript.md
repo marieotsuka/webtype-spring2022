@@ -18,6 +18,18 @@ Javascript can add interactivity to a page by manipulating the DOM (Document Obj
 - React to events triggered by the user or browser
 - Use an API via HTTP(S)
 
+## Example “Events”
+
+### Click
+[Click Click Click](https://clickclickclick.click/#10aec8ed02c5b558c4138de026fc2e23)
+[Form Form Form](http://www.c3.hu/collection/form/index1.html)
+[Click Rotation Demo](https://codepen.io/ZachSaucier/pen/gOXOyq)
+
+### Scroll
+[Complex: Danny Brown](https://www.complex.com/music/danny-brown-interview-sky-high-2013-cover-story)
+[Step & Repeat](https://mocastepandrepeat.tumblr.com/)
+[NYT: How the New Syria Took Shape](https://www.nytimes.com/interactive/2019/10/30/world/middleeast/syria-turkey-maps.html)
+
 
 ## Setup
 Like CSS, JavaScript can be included within the `<head></head>` your `html` file as well as linked as an external file. It can also be included at the bottom of your document, right before the closing `</body>` tag.
@@ -205,8 +217,8 @@ Logical operators combine multiple conditions
 
 |operator|description|
 |---|---|
-|`&&`| logical AND <br> `3 < 5 && 2 > 9 // evaluates to false`
-|`||`| logical OR <br> `3 < 5 || 2 > 9 // evaluates to true`
+|`&&`| logical AND <br> `3 < 5 && 2 > 9 // evaluates to false`|
+|`||`| logical OR <br> `3 < 5 || 2 > 9 // evaluates to true`|
 
 
 ## Conditionals

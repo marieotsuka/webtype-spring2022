@@ -1,15 +1,16 @@
 ---
-title: System as Architecture
+title: Tools as Poetry
 date: 2022-04-14
-mode: in-person
+mode: '<a href="https://risd.zoom.us/j/97883162532" target="_blank">remote</a>'
+current: false
+project: project3
+exercise: 
+reading: reading8
+tutorials:
+	- "[Codecademy Learn JavaScript: Scope](https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-scope), [Codecademy Learn JavaScript: Arrays](https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-arrays), [Codecademy Learn JavaScript: Loops](https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-loops)"
 ---
 
-<!-- - Presentation: Ásta Þrastardóttir
-- Demo: Responsive Design
-- Variable Font Web Specimen prototype reviews, group crits
-- Demo: Web APIs
-project: "project2.md"
-exercise: "n/a"
-reading: "Review"
-tutorials: "[Eloquent JavaScript: Chapter 4](https://eloquentjavascript.net/04_data.html#h_cqg63Sxe3o), [MDN: Introduction to Web APIs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction)"
-lectures: "[Responsive Design](lectures/06-responsive/), [jQuery and JSON](lectures/08-jquery/)" -->
+- Presentations: Kareno and Jessica
+- Discussion: Function as Narrative
+- Type Specimen [Small Groups Review](https://docs.google.com/spreadsheets/d/1WBiTwb1RcQhzgnds9JFp6vzfvYRPa4FVqLqSqKIMdIo/edit#gid=1010880196)
+- JavaScript / jQuery Q&A (optional)

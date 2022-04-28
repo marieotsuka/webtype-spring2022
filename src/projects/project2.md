@@ -107,20 +107,22 @@ Below are some shortcuts frequently used in the Glyphs App.
 | Move by 10 units | `Shift + arrow keys` |
 | Adjust sidebearings, left side (by ten units)  | `⌃(ctrl)  + arrow keys ( + shift )`|
 | Adjust sidebearings, right side (by ten units) | `⌘(command) + arrow keys ( + shift )` |
-| Add Extremes Points* | `⌘ + ⌥ + E` |
+| Add Extremes Points* | `⌥ + ⌘ + E` |
+| Kern (by ten units) | `⌥ + ⌘ + arrow keys ( + shift )` |
+| Toggle measurement line | `⌃ + ⌥ + ⌘ + drag` |
 
 - \*Extreme points are on-curve nodes that lie at 90°. They help structure the curves cleanly.
 - Generally speaking, keeping the `shift` pressed adjusts arrow-key increments to `10` units; `shift + command` adjusts them to `100` units.
 - The selected letter is the glyph on the right side of the cursor. You can adjust both the left and right side bearings of the glyph in this way, using those different keyboard shortcuts above.
 
 
-### Glyphs Plugins
+### Glyphs Plugins {#plugins}
 You can install plugins through the Plugin Manager within the Glyphs app. Before doing so, you must install the **Modules** (`FontTools` `Python` `RoboFab` `Vanilla`). Then, double-check your Glyphs App Python version after restarting. Below are some plugins you might find helpful:
 
 - Word-o-Mat
 - Show Angled Handles
 - Show Tops and Bottoms
-- Master Comopatibility
+- Master Compatibility
 - Variable Font Preview 3 (Trial Version lasts 30days)
 - Backdrop
 

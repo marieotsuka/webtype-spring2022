@@ -13,7 +13,7 @@ tutorials:
 
 - Discussion: On the Letterform of the Age
 - Exercise: Modular Letters
-- Project 1 presentation: Gabriel and Valia
+- Presentation: Gabriel and Valia
 - A talk on [Type & Tools](https://motsuka.com/webtype-lectures/type-tools/)
 - Introduce [Project 2](/projects/project2/)
 - Begin preparing project 2 proposal ideas and sketches

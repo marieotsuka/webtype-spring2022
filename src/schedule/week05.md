@@ -12,7 +12,7 @@ tutorials:
 ---
 
 - Discussion: Typeface as Programme
-- Project 1 presentation: Jacob and Max
+- Presentation: Jacob and Max
 - Talk on Interpolation, Transitions and Animations
 - Project 2 next steps
 - Exercise: Change over Time

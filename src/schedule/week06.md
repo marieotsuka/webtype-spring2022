@@ -2,7 +2,7 @@
 title: Typeface as Information
 date: 2022-03-24
 mode: in-person
-current: true
+current: false
 project: project2
 exercise: 06-dark-mode
 reading: reading6
@@ -13,8 +13,7 @@ tutorials:
 ---
     
 - Discussion: The Cube
-- Project 1 presentation: Dan
+- Presentation: Dan
 - Project 2 next steps
-<!-- - Talk on Computed Type -->
 - Exercise: Dark mode
 - [Individual meetings](https://docs.google.com/spreadsheets/d/1WBiTwb1RcQhzgnds9JFp6vzfvYRPa4FVqLqSqKIMdIo/edit#gid=1255719220)

@@ -1,9 +1,18 @@
 ---
-title: Computation as Poetry
+title: Software as Architecture
 date: 2022-04-28
-mode: in-person
+mode: '<a href="https://risd.zoom.us/j/97883162532" target="_blank">remote</a>'
+current: true
+project: project4
+exercise: 08-apis
+reading: reading10
+tutorials:
+    - "[Eloquent JavaScript: Chapter 4](https://eloquentjavascript.net/04_data.html#h_cqg63Sxe3o)"
+    - "[MDN: Introduction to Web APIs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction)"
 ---
 
-<!-- project: "project3.md"
-reading: "[MacKenzie Wark: Wendy Chun, on Software and the Machine](https://publicseminar.org/2015/07/wendy-chun-on-software-and-the-machine/) (for the original text, see PDF: [Wendy Chun: On Software](/pdf/wendychun_onsoftware.pdf))" 
-tutorials: "Review previous JavaScript / jQuery tutorials" -->
+- VF Final Crit Review
+- Discussion: Ryan Kuo Speaker Series
+- Presentations: Emily and Kat
+- Exercise: Introducing APIs
+- Project 4 progress review, [small groups](https://docs.google.com/spreadsheets/d/1WBiTwb1RcQhzgnds9JFp6vzfvYRPa4FVqLqSqKIMdIo/edit#gid=1457829370)

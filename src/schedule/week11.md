@@ -1,7 +1,7 @@
 ---
 title: Software as Ideology
 date: 2022-05-05
-mode: '<a href="https://risd.zoom.us/j/97883162532" target="_blank">remote</a>'
+mode: in-person
 ---
 
 <!-- project: "project3.md"

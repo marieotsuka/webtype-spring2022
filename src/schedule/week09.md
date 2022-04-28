@@ -1,14 +1,16 @@
 ---
-title: Design as Responsibility
+title: Diagram as Question
 date: 2022-04-21
-mode: '<a href="https://risd.zoom.us/j/97883162532" target="_blank">remote</a>'
+mode: in-person
+current: false
+project: project4
+exercise: 
+reading: reading9
+tutorials:
+    - "[Eloquent JavaScript: Chapter 4](https://eloquentjavascript.net/04_data.html#h_cqg63Sxe3o)"
+    - "[MDN: Introduction to Web APIs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction)"
 ---
 
-<!-- project: "project3.md"
-exercise: "n/a"
-reading: "[Cade Diem: On Weaponised Design](https://ourdataourselves.tacticaltech.org/posts/30-on-weaponised-design/)"
-tutorials: "Review previous JavaScript / jQuery tutorials"
-- Presentations: Jingyu and Daniel
-- Introduce Project 3
-- Variable Font Specimens Final Crit ([Sign Up](https://docs.google.com/spreadsheets/d/1iLWtgjB2GGkPRLjlcwTficTPRG5eHi7RBHwl1bIZipE/edit#gid=560519515))
- -->
+- Variable Type Specimen Final Review, [Full Group](https://docs.google.com/spreadsheets/d/1WBiTwb1RcQhzgnds9JFp6vzfvYRPa4FVqLqSqKIMdIo/edit#gid=926783019) with Guest Critic [Cem Eskinazi](https://www.cemeskinazi.com/)
+- Presentations: Ursula and Kim
+- [Project 4](/projects/project4/) Kickoff

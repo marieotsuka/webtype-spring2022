@@ -197,10 +197,10 @@ HEADER
 -------------------*/
 nav {
   --slnt: 0;
-  --wght: 300;
-  --wdth: 75;
+  --wght: 350;
+  --wdth: 110;
   --ss03: 0;
-  font-size: 30px;
+  font-size: calc(1.1 * var(--base));
 }
 nav .home {
   display: block;
@@ -215,7 +215,7 @@ nav .nav-links {
   position: fixed;
   top: 0;
   right: 0;
-  width: 40vw;
+  width: 30vw;
   height: 100vh;
   background: var(--secondcolor);
   z-index: 200;
@@ -851,11 +851,24 @@ MEDIA QUERIES
 
   .content .index-list time {
     display: inline-block;
+    width: 110px;
   }
 
   .content .index-list .mode {
     display: inline-block;
     text-align: left;
+  }
+
+  .resources aside {
+    position: static;
+    width: 100%;
+    border: 0;
+    right: auto;
+    top: 0;
+    padding: 0;
+  }
+  .resources article {
+    width: 100%;
   }
 
   footer {

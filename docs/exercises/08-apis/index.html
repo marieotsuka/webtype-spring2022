@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Application Programming Interface — WebType</title>
+	<meta name="description" content="Class website for Web Type, Spring 2022 at RISD">
+	<meta name="author" content="Marie Otsuka">
+	<link rel=icon href=/assets/img/favicon.png type="image/png">
+	<link rel="stylesheet" href="/css/style.css">
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script>
+	<script src="/assets/js/script.js"></script>
+</head>
+<body>
+<div class="container">
+	<header>
+	<nav>
+		<a href="/" class="home">Web Type</a>
+		<div class="menu-icon">≡≡</div>
+		<div class="nav-links">
+			<div class="meta">Web Type @ RISD</div>
+			<a href="/">index</a>
+			<a href="/syllabus/">syllabus</a>
+			<a href="/schedule/">schedule</a>
+			<a href="/projects/">projects</a>
+			<a href="/exercises/">exercises</a>
+			<a href="/readings/">readings</a>
+			<a href="/resources/">resources</a>
+			<a href="/colophon/">colophon</a>
+			
+			<br>
+			<br>
+			<div class="meta">Quick links</div>
+			<a href="https://risd.zoom.us/j/97883162532" target="_blank">zoom</a>
+			<a href="https://docs.google.com/spreadsheets/d/1pCrREKrOvXLRe-MtiWhGrCLuv4MRFct_YnuBqMec8KI/edit#gid=0" target="_blank">office hours</a>
+			<a href="https://docs.google.com/spreadsheets/d/1QXocofQNNG38kJWQWjjZe7wv4ikc8Ffnzg_6qoxGSqY/edit#gid=934689056" target="_blank">presentations</a>
+			<a href="https://github.com/risd-web/webtype-demos" target="_blank">demos repository</a>
+			<a href="https://risd.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=fe7e0ae6-604e-44ec-a7d7-ae3f0033a340" target="_blank">tutorial videos</a>	
+			<a href="https://drive.google.com/drive/folders/1f21gsrM7leOLwqET_ZrsLhG3KTlqQzBA?usp=sharing" target="_blank">technical slides</a>	
+		</div>
+	</nav>
+</header>
+
+	<main class="content">
+		
+<article class="content">
+	<h1>Application Programming Interface</h1>
+	<h2>Responding to Data</h2>
+<p>Publishing on the web enables us to interact, not only with browser conditions and user input, but data available on other areas of the internet.</p>
+<p>In today’s exercise, we will be diving into the <code>json</code> file format, how to access it, and how to use that data in your webpages. Review the notes on <a href="/notes/10-apis/">APIs</a> and check out this week’s demo code (<code>in-class-demos/week10</code> folder).</p>
+<p>We will create a webpage that adds structured data into a website.</p>
+<ol>
+<li>Organize / Select your data source</li>
+</ol>
+<ul>
+<li>This could be your own data for Project 4: set up a table in an excel/google-sheet format that you convert into JSON via a <a href="https://www.csvjson.com/csv2json">CSV to JSON Converter</a>.</li>
+<li>Or, you can choose an external data source from below:
+<ul>
+<li><a href="https://openweathermap.org/">Open Weather Map</a></li>
+<li><a href="https://rednoise.org/rita/">RiTa.js</a></li>
+<li><a href="https://www.data.gov/developers/apis">Data.gov APIs</a></li>
+<li><a href="https://apilist.fun/">Fun API List</a></li>
+<li><a href="https://developers.google.com/maps/documentation/javascript">Google Maps API</a></li>
+</ul>
+</li>
+<li>Note: most API services require you to register with them for an API Key to access their service</li>
+</ul>
+<ol start="2">
+<li>Fetch your data, and output your data into the console.</li>
+</ol>
+<ul>
+<li>This step is to verify that you are able to successfully access your data.</li>
+</ul>
+<ol start="3">
+<li>Using JavaScript object notation, access parts of your data.</li>
+</ol>
+<ul>
+<li>First use the console to make sure you are able to extract the correct item.</li>
+</ul>
+<ol start="4">
+<li>Create container structures in your HTML page to which you will insert your data.</li>
+</ol>
+<ul>
+<li>Append your data into your webpage using jQuery.</li>
+</ul>
+<h3>Resources</h3>
+<ul>
+<li>Check out the <a href="https://github.com/RISD-Code-Lab/spring2021/tree/main/session-04">Code Lab Tutorial</a> with Minkyoung Kim</li>
+<li><a href="https://www.csvjson.com/csv2json">CSV to JSON Converter</a></li>
+</ul>
+<h3>Reference</h3>
+<ul>
+<li><a href="https://weathergradient.com/">Weather Gradient</a></li>
+</ul>
+
+</article>
+	</main>
+	<footer>
+	<ul>
+		<li>WEB TYPE (RISD GRAPH-2313-01)</li>
+		<li>Thursdays 1:10pm–6:10pm, DC 407</li>
+		<li>Sometimes on <a href="https://risd.zoom.us/j/97883162532" target="_blank">Zoom</a></li>
+	</ul>
+</footer>
+
+</div>
+</body>
+</html>
