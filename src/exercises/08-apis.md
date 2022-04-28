@@ -32,6 +32,8 @@ We will create a webpage that adds structured data into a website.
 
 
 ### Resources
+* MDN: [Working with JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
+* MDN: [Introduction to Web APIs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction)
 * Check out the [Code Lab Tutorial](https://github.com/RISD-Code-Lab/spring2021/tree/main/session-04) with Minkyoung Kim
 * [CSV to JSON Converter](https://www.csvjson.com/csv2json)
 
