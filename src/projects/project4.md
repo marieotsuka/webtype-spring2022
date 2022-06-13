@@ -6,7 +6,7 @@ layout: page
 unit: 4
 ---
 
-> “... ther’s a fuzzy spectrum between graphic design, which might ask: ‘what does the interface look like?’, and software design, which asks: ‘what’s the algorithm beneath the surface that's organizing the data.’”
+> “... ther’s a fuzzy spectrum between graphic design, which might ask: ‘what does the interface look like?’, and software design, which asks: ‘what’s the algorithm beneath the surface that’s organizing the data.’”
 – Dan Michaelson
 
 In this project, you will develop a typographic diagram — a system — for a chosen collection of data. Here, “data” is a loose term for a collection of relational content.

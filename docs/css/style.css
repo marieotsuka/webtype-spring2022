@@ -407,6 +407,54 @@ SYLLABUS
   width: 80px;
 }
 
+#syllabus .schedule {
+  display: none;
+}
+
+@media print {
+  #syllabus {
+    color: black;
+    border-bottom-color: black;
+    max-width: 70%;
+    margin-left: 20%;
+    font-size: 9pt;
+  }
+  #syllabus h1 {
+    page-break-before: always;
+  }
+  #syllabus h1, #syllabus h2, #syllabus h3 {
+    page-break-after: avoid;
+  }
+  #syllabus h2 {
+    margin-top: 5px;
+  }
+  #syllabus h2, #syllabus time, #syllabus .mode {
+    font-size: 10pt;
+  }
+  #syllabus article h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  #syllabus .content .index-list .row {
+    border-bottom: 0;
+  }
+  #syllabus th, #syllabus td {
+    border-color: black;
+  }
+  #syllabus h1, #syllabus h2, #syllabus h3, #syllabus h4, #syllabus h5, #syllabus a {
+    color: black;
+  }
+  #syllabus main {
+    padding-top: 0;
+  }
+  #syllabus h3 {
+    padding-left: 0;
+    font-size: 10pt;
+  }
+  #syllabus .schedule {
+    display: block;
+  }
+}
 /*------------------
 SCHEDULE
 -------------------*/

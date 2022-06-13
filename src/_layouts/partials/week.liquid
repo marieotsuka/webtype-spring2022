@@ -9,6 +9,8 @@
 			<h4>Class</h4>
 			<div class="item">{{w.templateContent}}</div>
 		</div>
+
+		{% if w.data.exercise %}
 		<div class="row class">
 			<h4>Exercise</h4>
 			<div class="item">
@@ -19,6 +21,8 @@
 				{% endfor %}
 			</div>
 		</div>
+		{% endif %}
+
 		<div class="row">
 			<h4>Project</h4>
 			<div class="item">
@@ -29,6 +33,7 @@
 			{% endfor %}
 			</div>
 		</div>
+
 		<div class="row reading">
 			<h4>Reading</h4>
 			<div class="item">
@@ -41,6 +46,8 @@
 				</ul>
 			</div>
 		</div>
+
+		{% if w.data.technical %}
 		<div class="row">
 			<h4>Technical</h4>
 			<div class="item">
@@ -51,5 +58,6 @@
 				</ul>
 			</div>
 		</div>
+		{% endif %}
 	</div>
 </dd>

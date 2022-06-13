@@ -1,6 +1,116 @@
-<p>Your class site will serve as documentation for all of your work this semester.</p>
-<p>Design and develop a webpage that provides a link to each project and exercise. This index page will serve as a homepage for this class. You might also include alternate drafts / planning documents that you experimented before developing the final version of your website. (Links to Figma are great, but please do not link to any working documents such as <code>.psd</code> or <code>.ai</code> files as they can be too heavy.)</p>
-<p>As you organize / reorganize your Github repository, make sure to double check that all links, including assets such as fonts and images, are properly linked.</p>
-<ul>
-<li>Due: May 19 5:00pm EST</li>
-</ul>
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Class Site — WebType</title>
+	<meta name="description" content="Class website for Web Type, Spring 2022 at RISD">
+	<meta name="author" content="Marie Otsuka">
+	<link rel=icon href=/assets/img/favicon.png type="image/png">
+	<link rel="stylesheet" href="/css/style.css">
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script>
+	<script src="/assets/js/script.js"></script>
+</head>
+<body id="class-site">
+<div class="container">
+	<header>
+	<nav>
+		<a href="/" class="home">Web Type</a>
+		<div class="menu-icon">≡≡</div>
+		<div class="nav-links">
+			<div class="meta">Web Type @ RISD</div>
+			<a href="/">index</a>
+			<a href="/syllabus/">syllabus</a>
+			<a href="/schedule/">schedule</a>
+			<a href="/projects/">projects</a>
+			<a href="/exercises/">exercises</a>
+			<a href="/readings/">readings</a>
+			<a href="/resources/">resources</a>
+			<a href="/colophon/">colophon</a>
+			
+			<br>
+			<br>
+			<div class="meta">Quick links</div>
+			<a href="https://risd.zoom.us/j/97883162532" target="_blank">zoom</a>
+			<a href="https://docs.google.com/spreadsheets/d/1pCrREKrOvXLRe-MtiWhGrCLuv4MRFct_YnuBqMec8KI/edit#gid=0" target="_blank">office hours</a>
+			<a href="https://docs.google.com/spreadsheets/d/1QXocofQNNG38kJWQWjjZe7wv4ikc8Ffnzg_6qoxGSqY/edit#gid=934689056" target="_blank">presentations</a>
+			<a href="https://github.com/risd-web/webtype-demos" target="_blank">demos repository</a>
+			<a href="https://risd.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=fe7e0ae6-604e-44ec-a7d7-ae3f0033a340" target="_blank">tutorial videos</a>	
+			<a href="https://drive.google.com/drive/folders/1f21gsrM7leOLwqET_ZrsLhG3KTlqQzBA?usp=sharing" target="_blank">technical slides</a>	
+		</div>
+	</nav>
+</header>
+
+	<main class="content">
+		
+<article class="content">
+	<h1>Class Site</h1>
+	<p>Your class site will serve as documentation for all of your work this semester. This final compilation will be due a week after the final class, <em>Thursday May 19 @ 5:00pm EST.</em></p>
+<p>Organize your class site so that it includes a link to each project and exercise. (Some exercises required adding features directly onto your class site, so you do not need a separate link for those. Other exercises may have built upon each other; please link to the final result of your experimentations as well as any intermediary versions you may have.) If there is any other technical experimentation and draft code, those should live in its own directly.</p>
+<p>You might also include alternate drafts / planning documents that you experimented before developing the final version of your website. (Links to Figma are great, but please do not link to any working documents such as <code>.psd</code> or <code>.ai</code> files as they can be too heavy to manage on Github.)</p>
+<p>As you organize / reorganize your Github repository, make sure to double check that all links, including assets such as fonts and images, are properly linked. Make sure your images are optimized for web. <em>There should be no broken links. You should verify everything on your live site.</em> Any improvements made to your websites since the critiques will also be considered in the evaluation.</p>
+<p>Your Github Repository structure may look something like this:</p>
+<pre><code>myname-webtype
+	├ index.html
+	├ style.css
+	├ script.js
+	│
+	└ projects
+	│	│
+	│	└ project-1
+	│	│	├ index.html
+	│	│	└ style.css
+	│	│
+	│	└ project-2
+	│	│	└ variablefont.glyphs
+	│	│
+	│	└ project-3
+	│	│	├ index.html
+	│	│	├ font.woff2
+	│	│	├ style.css
+	│	│	└ script.js
+	│	│	
+	│	└ project-4
+	│	│	├ index.html
+	│	│	├ style.css
+	│	│	├ script.js
+	│	│	└ images
+	│	│		├ img1.png
+	│	│		├ img2.png	
+	│	|		...
+	└ exercises
+	│	│
+	│	└ layouts
+	│	│	├ index.html
+	│	│	└ style.css
+	│	│
+	│	└ modular-type
+	│	│	├ index.html
+	│	│	...
+	│	│
+	│	└ apis
+	│	│	├ index.html
+	│	│	...
+	...
+	└ archive
+	│	├ test1.html
+...
+</code></pre>
+
+</article>
+	</main>
+	<footer>
+	<ul>
+		<li>WEB TYPE (RISD GRAPH-2313-01)</li>
+		<li>Thursdays 1:10pm–6:10pm, DC 407</li>
+		<li>Sometimes on <a href="https://risd.zoom.us/j/97883162532" target="_blank">Zoom</a></li>
+	</ul>
+</footer>
+
+</div>
+</body>
+</html>

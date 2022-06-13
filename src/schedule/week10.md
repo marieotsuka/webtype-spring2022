@@ -2,7 +2,7 @@
 title: Software as Architecture
 date: 2022-04-28
 mode: '<a href="https://risd.zoom.us/j/97883162532" target="_blank">remote</a>'
-current: true
+current: false
 project: project4
 exercise: 08-apis
 reading: reading10

@@ -1,6 +1,6 @@
 ---
 title: Syllabus
-layout: page
+layout: syllabus
 weight: 1
 ---
 

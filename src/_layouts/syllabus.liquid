@@ -1,0 +1,20 @@
+---
+layout: default.liquid
+---
+
+<article class="content">
+	<h1>{{ title }}</h1>
+	{{ content }}
+</article>
+
+<div class="schedule">
+	<h1>Schedule</h1>
+	<ul class="index-list">
+		{% assign weeks = collections.schedule %}
+		{% for week in weeks %}
+		<li class="accordion open">
+			{% include "partials/week" w:week %}
+		</li>
+		{% endfor %}
+	</ul>
+</div>
